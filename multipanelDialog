@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Multi Field"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Add">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <footer
+                        jcr:primaryType="cq:Widget"
+                        hideLabel="false"
+                        name="./map"
+                        title="Add Menu"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="true"
+                            hideLabel="true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            height="2000"
+                            xtype="mymultipanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <titolo
+                                    jcr:primaryType="cq:Widget"
+                                    dName="titolo"
+                                    fieldLabel="Titolo"
+                                    width="100"
+                                    xtype="textfield"/>
+                                <submenu
+                                    jcr:primaryType="cq:Widget"
+                                    dName="submenu"
+                                    fieldLabel="Submenu"
+                                    width="25"
+                                    xtype="checkbox"/>
+                                <subsection
+                                    jcr:primaryType="cq:Widget"
+                                    dName="subsection"
+                                    fieldLabel="Subsection"
+                                    width="100"
+                                    xtype="textfield"/>
+                                <link
+                                    jcr:primaryType="cq:Widget"
+                                    dName="link"
+                                    fieldLabel="Link"
+                                    xtype="pathfield"/>
+                                
+                            </items>
+                        </fieldConfig>
+                    </footer>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>
