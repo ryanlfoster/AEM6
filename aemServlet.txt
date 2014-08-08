@@ -1,0 +1,8 @@
+@Component(immediate = true, metatype = false, label = "QuestionnaireServlet")
+   @Service
+   @Properties(value = {
+                    @org.apache.felix.scr.annotations.Property(name = "sling.servlet.methods", value = { "POST" }),
+                    @org.apache.felix.scr.annotations.Property(name = "sling.servlet.resourceTypes", value = { "sling/servlet/default" }),
+                    @org.apache.felix.scr.annotations.Property(name = "sling.servlet.selectors", value = { "POST" }),
+                    @org.apache.felix.scr.annotations.Property(name = "sling.servlet.extensions", value = { "html" })
+   })
