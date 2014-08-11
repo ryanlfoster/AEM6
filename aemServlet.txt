@@ -54,9 +54,12 @@ public class TestServlet extends SlingAllMethodsServlet {
 		Resource resource =
 				request.getResourceResolver().getResource("skytg24/components/content/locationDetails");
 				 RequestDispatcherOptions requestDispatcherOptions = new
-				RequestDispatcherOptions("skytg24/components/content/boxLocalita");
+				RequestDispatcherOptions();
+				 requestDispatcherOptions.setForceResourceType("skytg24/components/content/locationDetails");
+				 requestDispatcherOptions.setReplaceSelectors("cityStrip");
 				 RequestDispatcher requestDispatcher =
 						 request.getRequestDispatcher("/content/skytg24/it/meteo/previsioni/cerca_localita.html", requestDispatcherOptions);
+				
 				 requestDispatcher.include(request, response);
 		
 		
