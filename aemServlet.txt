@@ -1,8 +1,87 @@
+package com.sky.shaker.meteo.service;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Service;
+import org.apache.felix.scr.annotations.Properties;
+import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.SlingHttpServletResponse;
+import org.apache.sling.api.request.RequestDispatcherOptions;
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.servlets.SlingAllMethodsServlet;
+import org.slf4j.LoggerFactory;
+
+import com.day.cq.wcm.foundation.forms.FormsHelper;
 @Component(immediate = true, metatype = false, label = "QuestionnaireServlet")
-   @Service
-   @Properties(value = {
-                    @org.apache.felix.scr.annotations.Property(name = "sling.servlet.methods", value = { "POST" }),
-                    @org.apache.felix.scr.annotations.Property(name = "sling.servlet.resourceTypes", value = { "sling/servlet/default" }),
-                    @org.apache.felix.scr.annotations.Property(name = "sling.servlet.selectors", value = { "POST" }),
-                    @org.apache.felix.scr.annotations.Property(name = "sling.servlet.extensions", value = { "html" })
-   })
+@Service
+
+@Properties(value = {
+                 @org.apache.felix.scr.annotations.Property(name = "sling.servlet.methods", value = { "GET", "POST" }),
+                 @org.apache.felix.scr.annotations.Property(name = "sling.servlet.resourceTypes", value = { "sling/servlet/default" }),
+                 @org.apache.felix.scr.annotations.Property(name = "sling.servlet.selectors", value = { "POST" }),
+                 @org.apache.felix.scr.annotations.Property(name = "sling.servlet.extensions", value = { "do" })
+})
+public class TestServlet extends SlingAllMethodsServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7852936925908681934L;
+	protected org.slf4j.Logger logger = LoggerFactory.getLogger(TestServlet.class);
+	@Override
+	protected void doGet(SlingHttpServletRequest request,
+			SlingHttpServletResponse response) throws ServletException,
+			IOException {
+		// TODO Auto-generated method stub
+		
+//		response.sendRedirect("/content/testpage.html");
+		
+//		org.apache.sling.api.wrappers.SlingHttpServletRequestWrapper req =
+//				new org.apache.sling.api.wrappers.SlingHttpServletRequestWrapper(request) {
+//				public String getMethod() {
+//				return "GET";
+//				}
+//				};
+//				String path = "/content/.../test.html";
+//		javax.servlet.RequestDispatcher dispatcher = request.getRequestDispatcher("/content/skytg24/it/meteo/previsioni/cerca_localita.html");
+
+		Resource resource =
+				request.getResourceResolver().getResource("skytg24/components/content/locationDetails");
+				 RequestDispatcherOptions requestDispatcherOptions = new
+				RequestDispatcherOptions("skytg24/components/content/boxLocalita");
+				 RequestDispatcher requestDispatcher =
+						 request.getRequestDispatcher("/content/skytg24/it/meteo/previsioni/cerca_localita.html", requestDispatcherOptions);
+				 requestDispatcher.include(request, response);
+		
+		
+//		RequestDispatcherOptions pp = new RequestDispatcherOptions("skytg24/components/content/locationDetails");
+//		javax.servlet.RequestDispatcher dispatcher = request.getRequestDispatcher(resource, pp);
+//		org.apache.sling.api.resource.Resource prova = request.getResource().getResourceSuperType();
+		logger.debug("<<<<<<<<<<<<<<<<<<>>>>>>>>><" + request.getResource().getName());
+		
+		//              metodo da testare il forward ma dovrebbe essere comem l'include
+//				dispatcher.forward(request, response);
+				//				
+//				dispatcher.include(req, response);
+//		<sling:forward path="/content/skytg24/it/meteo/previsioni/cerca_localita" resourceType="skytg24/components/content/locationDetails" />
+//		org.apache.sling.api.resource.Resource
+//		org.apache.sling.api.resource.Resource prova = request.getResource();
+//		org.apache.sling.api.resource.ResourceResolver xxx=  prova.getResourceResolver();
+		
+		logger.debug("STATATATAT***************************");
+//		super.doGet(request, response);
+	}
+	@Override
+	protected void doPost(SlingHttpServletRequest request,
+			SlingHttpServletResponse response) throws ServletException,
+			IOException {
+		doGet(request,response);
+	
+	}
+}
