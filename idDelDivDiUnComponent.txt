@@ -1,0 +1,2 @@
+<div id="<%=currentNode.getIdentifier()%>"></div>
+<script type="text/javascript">document.getElementById("<%=currentNode.getIdentifier()%>").innertHTML="Hello World!";</script>
