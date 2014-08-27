@@ -1,0 +1,130 @@
+﻿@charset "UTF-8";
+
+	
+	.columns-2-AB-A,
+	.columns-2-AB-B { width: 49.3815%; }
+	
+	li .columns-2-AB-A,
+	li .columns-2-AB-B { _width: 46% !important; }
+	
+	.columns-2-Abb-A,
+	.columns-2-aaB-B { width: 65.155%;  }
+	
+	.columns-2-Abb-bb,
+	.columns-2-aaB-aa { width: 33.609%;  }
+	
+	.columns-2-aaBB-aa,
+	.columns-2-AAbb-bb { width: 23.822%; }
+	
+	.columns-2-aaBB-BB,
+	.columns-2-AAbb-AA { width: 73.300%; }
+	
+	.columns-3-ABC-A,
+	.columns-3-ABC-B,
+	.columns-3-ABC-C { width: 32.577%; }
+	
+	.columns-3-aaBC-aa,
+	.columns-3-ABcc-cc,
+	.columns-3-aaBcc-aa,
+	.columns-3-aaBcc-cc { width: 25.365% }
+	
+	.columns-3-aaBC-B,
+	.columns-3-aaBC-C,
+	.columns-3-ABcc-A,
+	.columns-3-ABcc-B { width: 36.085%; }
+	
+	.columns-3-aaBcc-B { width: 46.81%  }
+	
+	.columns-4-ABCD-A,
+	.columns-4-ABCD-B,
+	.columns-4-ABCD-C,
+	.columns-4-ABCD-D { width: 23.345%; }
+	
+	.columns-4-ABCD-A,
+	.columns-4-ABCD-B,
+	.columns-4-ABCD-C,
+	.columns-4-ABCD-D { width: 24.124%; }
+	
+	.columns-3-aaBC-B,
+	.columns-3-ABcc-B,
+	.columns-3-aaBcc-B,
+	.columns-3-ABC-B,
+	.columns-4-ABCD-B,
+	.columns-4-ABCD-C { margin-left: 1.237% }
+
+	/*--- 3-aaaBc ---*/
+	.columns-3-aaaBc-aaa { width: 13%; }
+	.columns-3-aaaBc-B { width: 60%; }
+	.columns-3-aaaBc-c { width: 25%;}
+	
+    /*--- 3-aaaBcc (for Phoenix) ---*/
+
+	.columns-3-aaaBcc-aaa { width: 20%;}
+	.columns-3-aaaBcc-B { width: 42%;}
+	.columns-3-aaaBcc-cc { width: 36%;}
+	
+	/*--- 3-aaBccc (for Phoenix) ---*/
+	
+	.columns-3-aaBccc-aa { width: 20%;}
+	.columns-3-aaBccc-B { width: 60%;}
+	.columns-3-aaBccc-cc { width: 16%;}
+	
+	
+	/*--- 5-ABCDE ---*/
+	.columns-5-ABCDE-A,
+	.columns-5-ABCDE-B,
+	.columns-5-ABCDE-C,
+	.columns-5-ABCDE-D,
+	.columns-5-ABCDE-E { width: 20%; }
+
+/*--- LAYOUT LOGIC ---*/
+
+#layoutLogic { width: 998px; }
+
+#content-banner,
+#content-subheader {
+	position: relative;
+	top: -17px;
+	left: -16px;
+	zoom: 100%;
+	margin: 0 -16px -5px 0;
+}
+
+#content-subheader {
+	width: 966px;
+	_margin-right: -32px;
+}
+
+#content-banner {
+	width: 998px;
+	_margin-right: -32px;
+}
+
+.banner-body {
+	padding: 17px 16px 4px 16px;
+}
+
+#content-marquee {
+	padding-top: 0;
+}
+
+#marquee-body {
+	margin-top: 0;
+}
+
+#content-body {
+	width: auto;
+	_height: 1em; /* take a minute to hate IE 6 */
+	*zoom: 100%; /* take 2 minutes to hate IE 7 */
+	padding-right: 16px;
+	padding-top: 17px;
+	position: relative;
+}
+
+#content-body .clip-sides {
+	margin-right: -16px;
+}
+
+#globalfooter {
+	width: 960px;
+}

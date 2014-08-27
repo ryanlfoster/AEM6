@@ -1,0 +1,149 @@
+/*	GLOBAL FOOTER
+	$Id: gfooter.css,v 1.7.2.1 2011/06/06 18:49:02 dgasior Exp $
+*/
+
+.SiteFooter {
+    padding-top: 9px;
+    clear: both;
+	_height: 100px;
+}
+
+.SiteFooterBar {
+    background: #343434 url(SiteFooter/tile.png) repeat-x left top;
+    _height: 1em;
+    *zoom: 100%;
+}
+
+.SiteFooterBar:after {
+    content: "\0020";
+    height: 0;
+    clear: both;
+    display: block;
+}
+
+.SiteFooterBar img {
+	border: 1px solid #252525; 
+	outline: 1px solid #474747;
+}
+
+.SiteFooterNav {
+    line-height: 19px;
+    padding-left: 11px;
+    padding-right: 11px;
+    position: relative;
+}
+
+.SiteFooterNavItem {
+    margin-left: 11px;
+}
+
+.SiteFooterRegionButton {
+    position: absolute;
+    left: 11px;
+    bottom: 0;
+}
+
+.SiteFooterMenuItemLeft {
+	font-weight: bold;
+}
+
+.SiteFooterMenuItemIcon {
+	padding: 2px 0 2px 38px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+a.SiteFooterMenuItemIcon {
+    _zoom: 1;
+}
+
+.SiteFooterMenuItemIconRegionBlue {
+    background-image: url(SiteFooter/region_blue.png);
+}
+
+.SiteFooterMenuItemIconRegionBlack {
+    background-image: url(SiteFooter/region_black.png);
+}
+
+.SiteFooterMenuItemIconEvidon {
+	background-position: left top;
+	padding-left: 18px;
+	background-image: url(SiteFooter/evidon.png);
+}
+
+.SiteFooterRegionPanel {
+    position: absolute;
+    background-color: #FFF;
+    border: 1px solid;
+    border-color: #D8D8D8 #B0B0B0 #737373;
+    *border-color: #D8D8D8 #2F4E6B #737373;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 5px 10px -moz-rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#999999', Direction=180, Strength=4);
+    z-index: 100;
+    bottom: 100%;
+    left: 0;
+    width: 700px;
+    color: #333;
+    padding: 16px;
+    margin-bottom: 6px;
+	margin-left: 6px;
+    line-height: normal;
+}
+
+.SiteFooterRegionPanelHeader {
+    font: 18px "Myriad Pro",Helvetica,sans-serif;
+    margin-bottom: 4px;
+}
+
+.SiteFooterRegionPanelHeaderClose {
+    margin-top: 3px;
+    *margin-top: -18px;
+    float: right;
+    text-indent: -9999px;
+    width: 17px;
+    height: 17px;
+    background: transparent url(SiteFooter/close.png) no-repeat;
+    cursor: pointer;
+}
+
+.SiteFooterRegionPanel dt {
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.SiteFooterRegionPanel dd {
+    margin-top: 2px;
+}
+
+.SiteFooterRegionPanel a {
+    cursor: pointer;
+}
+
+.SiteFooterColumns-4-A,
+.SiteFooterColumns-4-B,
+.SiteFooterColumns-4-C {
+    width: 23%;
+    margin-right: 12px;
+    float: left;
+}
+
+.SiteFooterColumns-4-D {
+    width: 23%;
+    float: right;
+}
+
+#SiteFooter .LayoutHItem,
+#SiteFooter a.SiteFooterNavItem {
+	float: right;
+}
+
+#SiteFooter .LayoutHAlignItems {
+	max-width: 680px;
+    _width: 680px;
+}
+
+.SiteFooterEvidonPixel {
+	display: none;
+}

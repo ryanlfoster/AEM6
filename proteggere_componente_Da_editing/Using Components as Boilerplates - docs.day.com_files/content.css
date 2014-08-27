@@ -1,0 +1,726 @@
+/*
+ * Copyright 1997-2010 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+
+/**
+ * Style sheets for the docs.day.com platform
+ */
+
+.center {
+    width: 640px;
+    max-width: 640px;
+}
+
+.product-button {
+    margin: 20px;
+}
+
+.comments {
+    margin-bottom: 40px;
+}
+
+.comments-title {
+    color: #aaa;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#comments-submit {
+    margin-top: 12px;
+}
+
+.comments-explanation {
+    color: #888;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size:11px; 
+}
+
+.search {
+    width:248px;
+    margin-top:10px;
+    padding-bottom:70px;
+}
+
+.search input {
+    width:174px;
+}
+
+.search_middle {
+    width:200px;
+}
+
+.search div {
+    margin-bottom:12px;
+}
+
+.toc {
+    margin-left: 0px;
+    margin-bottom: 25px;
+    font-size:11px; 
+    /* height:600px; */
+    /* overflow:auto; */
+}
+.level1 {
+    line-height: 18px;
+}
+.toc-level0 {
+    margin-top: 8px;
+    margin-left: 0px;
+    padding-top: 2px;
+/*  border-top-width: 1px;
+    border-top-style: dotted;
+    border-top-color: #5478AA;
+    font-weight: bold; */
+    padding-bottom: 2px;
+    line-height: 18px;
+}
+.toc-level1 {
+    margin-top: 8px;
+    margin-left: 0px;
+    padding-top: 2px;
+    border-top-width: 1px;
+    border-top-style: dotted;
+    border-top-color: #5478AA;
+    padding-bottom: 2px;
+    line-height: 18px;
+}
+.toc-level2 {
+    line-height: 15px;
+    margin-left: 10px;
+}
+.toc-level3 {
+    line-height: 13px;
+    margin-left: 20px;
+}
+
+.side {
+    border:0px solid black;
+    font-size:12px; 
+    color: #888;
+    margin-left:12px;
+    margin-top:12px;
+    min-width:250px;
+}
+
+.printerfriendly img {
+    float: left;
+}
+
+.printerfriendly p {
+    float: left;
+    margin-left: 3px;
+}
+
+.navigation {
+    /* position: fixed; */
+    margin-left:0px;
+    margin-top:0px;
+}
+
+.navigation li {
+    /* list-style-image: url(images/navlink.png); */
+    /* list-style-type:none; */
+}
+
+.relatedpages {
+    margin-top:20px;
+    margin-bottom:28px;
+}
+
+.relatedpages .listprefix {
+    font-size:10px; 
+    margin-left:0px;
+    margin-bottom:5px;
+}
+
+.relatedpages .item {
+    font-weight: bold;
+}
+
+.relatedpages .currentitem a:link, 
+    .relatedpages .currentitem a:visited, 
+    .relatedpages .currentitem a:hover {
+    color: #000;
+}
+
+h1 {
+    margin-top:4px;
+    margin-bottom:18px;
+}
+
+h2 {
+    margin-top:54px;
+    margin-bottom:8px;
+}
+
+h3 {
+    margin-top:42px;
+    margin-bottom:8px;
+}
+
+.title, h4 {
+    margin-top:30px;
+    margin-bottom:8px;
+}
+
+ul {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Helvetica, Arial;
+    font-size: 12px;
+    /*font-weight: bold;*/
+    color:#2F435F;
+    line-height: 16px;
+    border-top-width: 1px;
+    border-top-style: dotted;
+    padding-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #EEF8FC;
+    padding-bottom: 10px;
+    list-style-type: square;
+}
+
+ul ul {
+    /* line-height: 1em; */
+    list-style-type: square;
+    border-top-style: none;
+    margin-left: 12px;
+    padding-bottom: 8px;
+    padding-top: 2px;
+}
+
+ul li {
+    padding-bottom: 2px;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #5478AA;
+    padding-top: 2px;
+}
+
+ul li li {
+    padding-bottom: 2px;
+    border-bottom: none;
+    padding-top: 2px;
+}
+
+li code {
+    font-weight: normal;
+}
+
+
+.monospaced {
+    font-family:Courier;
+}
+
+.marked {
+    background-color: #FF0;
+}
+
+.markedmonospaced {
+    font-family:Courier;
+    background-color: #FF0;
+}
+
+.markedbold {
+    background-color: #FF0;
+    font-weight: bold;
+}
+
+.captcha-block {
+    margin-left: 0px;
+}
+
+.comment-info {
+    width: 300px;
+}
+
+.form_captcha_img {
+    background-color: #bbb;
+}
+
+
+
+/**
+ * Style sheets for the docs.day.com custom search engine
+ */
+
+table.gsc-branding {
+    display: none;
+}
+
+div.gsc-tabsArea {
+    display: none;
+}
+
+.gs-result .gs-title, .gs-result .gs-title * {
+    color: #2278AF;
+    text-decoration: none;
+    height: auto;
+}
+
+a.gs-title {
+    color: #2278AF;
+    text-decoration: none;
+    height: auto;
+}
+
+a.gs-title b {
+    color: #2278AF;
+    text-decoration: none;
+    font-weight: bold;
+    height: auto;
+}
+
+.gs-result, .gs-title, .gs-title a:link, .gs-title a:visited, .gs-title a:active, .gs-title b {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Helvetica, Arial;
+    font-size:11px; 
+    color: #2278AF;
+    height: auto;
+    text-decoration: none;
+}
+
+div.gs-title {
+    margin-left: 10px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Helvetica, Arial;
+    font-size:11px; 
+    color: #2278AF;
+    height: auto;
+    text-decoration: none;
+}
+
+div.gs-snippet {
+    margin-left: 10px;
+    font-size:11px; 
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Helvetica, Arial;
+    color: #444;
+}
+
+div.gs-visibleUrl-short {
+    display: none;
+}
+
+div.gs-visibleUrl-long {
+    visibility: visible;
+}
+
+
+
+/**
+ * Style sheets for the docs.day.com comments and auth layer
+ */
+
+div.signout {
+    margin-top: 30px;
+}
+
+.auth-check-section, #registerform, .signInToComment{
+    display: none;
+}
+
+.comments-form, .signInToComment {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+div#fancy_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 30;
+}
+
+div#fancy_loading {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    overflow: hidden;
+    background: transparent;
+    z-index: 100;
+}
+
+div#fancy_loading div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 480px;
+    background: transparent url('images/fancy_progress.png') no-repeat;
+}
+
+div#fancy_outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    padding: 20px 20px 40px 20px;
+    margin: 0;
+    background: transparent;
+    display: none;
+}
+
+div#fancy_inner {
+    position: relative;
+    width:100%;
+    height:100%;
+    background: #FFF;
+}
+
+div#fancy_content {
+    margin: 0;
+    z-index: 100;
+    position: absolute;
+}
+
+div#fancy_div {
+    background: #fff;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+img#fancy_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border:0; 
+    padding: 0; 
+    margin: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+div#fancy_close {
+    position: absolute;
+    top: -12px;
+    right: -15px;
+    height: 30px;
+    width: 30px;
+    background: url('images/fancy_closebox.png') top left no-repeat;
+    cursor: pointer;
+    z-index: 181;
+    display: none;
+}
+
+#fancy_frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#fancy_ajax {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+a#fancy_left, a#fancy_right {
+    position: absolute; 
+    bottom: 0px; 
+    height: 100%; 
+    width: 35%; 
+    cursor: pointer;
+    z-index: 111; 
+    display: none;
+    background-image: url("data:image/gif;base64,AAAA");
+    outline: none;
+    overflow: hidden;
+}
+
+a#fancy_left {
+    left: 0px; 
+}
+
+a#fancy_right {
+    right: 0px; 
+}
+
+span.fancy_ico {
+    position: absolute; 
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    z-index: 112; 
+    cursor: pointer;
+    display: block;
+}
+
+span#fancy_left_ico {
+    left: -9999px;
+    background: transparent url('images/fancy_left.png') no-repeat;
+}
+
+span#fancy_right_ico {
+    right: -9999px;
+    background: transparent url('images/fancy_right.png') no-repeat;
+}
+
+a#fancy_left:hover, a#fancy_right:hover {
+    visibility: visible;
+    background-color: transparent;
+}
+
+a#fancy_left:hover span {
+    left: 20px; 
+}
+
+a#fancy_right:hover span {
+    right: 20px; 
+}
+
+#fancy_bigIframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+div#fancy_bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 70;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+    
+div.fancy_bg {
+    position: absolute;
+    display: block;
+    z-index: 70;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+div#fancy_bg_n {
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent url('images/fancy_shadow_n.png') repeat-x;
+}
+
+div#fancy_bg_ne {
+    top: -20px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    background: transparent url('images/fancy_shadow_ne.png') no-repeat;
+}
+
+div#fancy_bg_e {
+    right: -20px;
+    height: 100%;
+    width: 20px;
+    background: transparent url('images/fancy_shadow_e.png') repeat-y;
+}
+
+div#fancy_bg_se {
+    bottom: -20px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    background: transparent url('images/fancy_shadow_se.png') no-repeat;
+}
+
+div#fancy_bg_s {
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent url('images/fancy_shadow_s.png') repeat-x;
+}
+
+div#fancy_bg_sw {
+    bottom: -20px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    background: transparent url('images/fancy_shadow_sw.png') no-repeat;
+}
+
+div#fancy_bg_w {
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: transparent url('images/fancy_shadow_w.png') repeat-y;
+}
+
+div#fancy_bg_nw {
+    top: -20px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    background: transparent url('images/fancy_shadow_nw.png') no-repeat;
+}
+
+div#fancy_title {
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+div#fancy_title div {
+    color: #FFF;
+    font: bold 12px Arial;
+    padding-bottom: 3px;
+    white-space: nowrap;
+}
+
+div#fancy_title table {
+    margin: 0 auto;
+}
+
+div#fancy_title table td {
+    padding: 0;
+    vertical-align: middle;
+}
+
+td#fancy_title_left {
+    height: 32px;
+    width: 15px;
+    background: transparent url('images/fancy_title_left.png') repeat-x;
+}
+
+td#fancy_title_main {
+    height: 32px;
+    background: transparent url('images/fancy_title_main.png') repeat-x;
+}
+
+td#fancy_title_right {
+    height: 32px;
+    width: 15px;
+    background: transparent url('images/fancy_title_right.png') repeat-x;
+}
+
+/**
+ * non-default fancy layer styles
+ */
+
+div#fancy_div {
+    background: transparent;
+    margin-top: 110px;
+    margin-left: 4px;
+}
+
+div#fancy_inner {
+    padding-top: 100px;
+    margin-top: -60px;
+    width: 486px;
+}
+
+.form_leftcol, .signin_option, .signin_subtitle {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Helvetica, Arial;
+    color: #000;
+    font-size: 12px;
+}
+
+div#fancy_content {
+    background-image: url('/etc/designs/docs/images/authmodal-header.png');
+}
+
+
+/**
+ * alignment override for old docbook markup in notes and cautions
+ */
+
+.icon-container .icon-content p.hDocbook-para {
+    margin-left: 0px;
+}
+
+
+/* General footer rules */
+
+.footer {
+    position: relative;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #6E6E6E;
+    font-size: 10px;
+    line-height: 15px;
+    color: #6E6E6E;
+    width: 900px;
+    zoom: 1; /* Hugging IE6 */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p a {
+    color: #6E6E6E;
+    white-space: nowrap;
+}
+.footer p a:hover {
+    color: #000000;
+}
+
+/* Copyright + agreement to Terms of Use and Privacy Policy */
+
+.footer-legal {
+    float: left;
+    width: 50%;
+}
+
+.footer-legal p {
+    margin-right: 20px;
+}
+
+/* Day Software is now part of Adobe */
+
+.footer-adobe {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.footer-adobe-icon {
+    position: absolute;
+    width: 37px;
+    height: 47px;
+    background: url(/etc/designs/docs/images/footer_adobe.gif) no-repeat;
+    text-indent: -1000em;
+}
+
+.footer-adobe-title,
+.footer-adobe-release,
+.footer-adobe-faq {
+    display: block;
+    margin: 0 180px 0 47px;
+}
+
+/* TRUSTe logo */
+
+.footer-truste a {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 165px;
+    height: 47px;
+    background: url(/etc/designs/docs/images/footer_truste.gif) no-repeat;
+    text-indent: -1000em;
+}

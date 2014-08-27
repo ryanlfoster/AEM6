@@ -1,0 +1,338 @@
+@charset "UTF-8";
+@import url(../adobe/screen/layout.css);
+@import url(../adobe/screen/gfooter.css);
+@import url(xnav/noscript.css);
+@import url(../adobe/Carousel/noscript.css);
+
+/*-------------------------------------------------------------------
+
+	Shell Overrides
+
+-------------------------------------------------------------------*/
+
+html {
+	border-top-style: none;
+}
+
+body { 
+	background: #222;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#content-header h1, /* useful until the SEO update is completed across all CS4 pages */
+#brand-label {
+	position: relative;
+	top: 0;
+	left: 0;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: normal;
+	color: #FFFFFF;
+	padding: 28px 24px 16px 16px;
+	margin: 0;
+}
+
+
+/*-------------------------------------------------------------------
+
+	layout wrappers
+
+-------------------------------------------------------------------*/
+
+/*--- 
+When the shade for xnav enables overflow hidden, content gets clipped. 
+Since cs4 doesn't have a drop shadow, i'm moving the padding down to the next element to fix it.
+---*/
+#content-layout {
+	padding-top: 0;
+}
+
+#content-wrapper {
+	padding-top: 17px;
+}
+
+
+/*-------------------------------------------------------------------
+
+	Headers
+
+-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------
+
+	Content Header
+
+-------------------------------------------------------------------*/
+
+#content-header,
+#content-header h1, /* useful until the SEO update is completed across all CS4 pages */
+#brand-label {
+	position: relative;
+}
+
+#content-header {
+	background-position: top left;
+	margin: 0;
+	width: 100%; /* important for IE...loser */
+}
+
+#brand-label,
+#content-header h1 /* useful until the SEO update is completed across all CS4 pages */
+{
+	width: auto;
+	padding-right: 16px; /* this is overriden by some layouts like pocket */
+	text-transform: uppercase;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-top: 24px;
+	font-size: 30px;
+}
+
+#content-subheader {
+	background-color: #EEE;
+	padding: 12px 16px 12px 16px;
+	color: #000;
+	font-size: 22px;
+	margin-right: -16px;
+	line-height:1.2em;
+	margin-bottom:0.5em;
+}
+
+
+/*-------------------------------------------------------------------
+
+	H3
+
+-------------------------------------------------------------------*/
+
+h3 {
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 1.2;
+	border-bottom-style: none;
+	padding-bottom: 0;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+
+
+/*-------------------------------------------------------------------
+
+	H4
+
+-------------------------------------------------------------------*/
+
+h4 {
+	font-weight: bold;
+	margin-bottom: 1ex;
+	line-height: 1.2;
+	margin-top: 1ex;
+}
+
+
+/*-------------------------------------------------------------------
+
+	Footer
+
+-------------------------------------------------------------------*/
+
+#content-footer {
+	border-top: 1px solid;
+	padding-top: 12px;
+}
+
+
+/*-------------------------------------------------------------------
+
+	Content
+
+-------------------------------------------------------------------*/
+
+.clip-sides {
+	_height: 1em;
+	*zoom: 1;
+}
+
+.intro {
+	font-size: 16px;
+}
+
+.intro-title,
+.intro h2 {
+	font-size: 140%;
+	margin: 0 0 .5ex 0;
+}
+
+.tag-title::after {
+	text-transform: uppercase;
+	padding: 0 3px;
+	background-color: #999;
+	color: #FFF;
+	margin-left: 2ex;
+	font-size: 80%;
+}
+
+dl.menu dt, 
+dl.menu dd {
+	margin-top: .5em;
+	margin-bottom: .5em;
+	vertical-align: bottom;
+}
+
+#content-pocket .here {
+	background-color: #047; 
+	color: #E2E2E2;
+	padding: 2px 0;
+}
+
+/*-------------------------------------------------------------------
+
+	Modal paging
+
+-------------------------------------------------------------------*/
+
+.story-menu {
+	top: 12px;
+	text-align: center;
+	position: relative;
+	height: 100px;
+}
+
+.story-page {
+	position: relative;
+	margin: 0 5px;
+}
+
+.story-menu .story-selection-sprite {
+	width: 70px;
+	height: 51px;
+	border: 2px solid red;
+	position: absolute;
+	z-index: 100;
+}
+
+#globalfooter .pipe {
+	font-size: 11px;
+	padding-left: 0;
+	font-weight: bold;
+	position: relative;
+	left: -6px;
+}
+
+
+/*-------------------------------------------------------------------------------
+
+	What's Inside Mnemonic Icons
+
+-------------------------------------------------------------------------------*/
+
+.acrobat { background-image: url(icon/acr-icon-fullcolor.png); }
+
+.acrobatconnectpro { background-image: url(icon/connect-icon-fullcolor.png); }
+
+.aftereffects { background-image: url(icon/ae-icon-fullcolor.png); }
+
+.bridge { background-image: url(icon/br-icon-fullcolor.png); }
+
+.contribute { background-image: url(icon/ct-icon-fullcolor.png); }
+
+.devicecentral { background-image: url(icon/devcen-icon-fullcolor.png); }
+
+.dreamweaver { background-image: url(icon/dw-icon-fullcolor.png); }
+
+.encore { background-image: url(icon/en-icon-fullcolor.png); }
+
+.fireworks { background-image: url(icon/fw-icon-fullcolor.png); }
+
+.flash { background-image: url(icon/fl-icon-fullcolor.png); }
+
+.illustrator { background-image: url(icon/ai-icon-fullcolor.png); }
+
+.indesign { background-image: url(icon/id-icon-fullcolor.png); }
+
+.onlocation { background-image: url(icon/ol-icon-fullcolor.png); }
+
+.photoshop { background-image: url(icon/ps-icon-fullcolor.png); }
+
+.premiere { background-image: url(icon/pr-icon-fullcolor.png); }
+
+.soundbooth { background-image: url(icon/sb-icon-fullcolor.png); }
+
+.versioncue { background-image: url(icon/vrscue-icon-fullcolor.png); }
+
+
+
+#content-body {
+	background-color: #FFF;
+	color: #444;
+}
+
+#content-footer {
+	border-top-color: #CCC;
+}
+
+
+
+.feature-price {
+	font-size: 17px;
+	line-height: 1.2;
+}
+
+.data tr.headerBlock th {
+	background-color: #7D7D7D;
+}
+
+.data tbody tr {
+	background-color: #E5E5E5;
+}
+
+caption {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: left;
+}
+
+#depthpath {
+	margin-bottom: -12px;
+}
+
+.feature-story {
+	width: 200px;
+}
+
+.on a:link,
+.on a:visited {
+	color: #000;
+}
+
+#content-pocket .dyn-treelist dt {
+	padding: 0;
+	margin: 0;
+	border-bottom: 2px solid #E2E2E2;
+	cursor: pointer;
+}
+
+.pocket-tree-title,
+.pocket-tree-desc {
+	display: block;
+}
+
+.pocket-tree-title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.pocket-tree-desc {
+	color: #444444;
+	font-weight: normal;
+	line-height: 1.25;
+	font-size: .916em;
+}
+
+#content-pocket .dyn-treelist dd {
+	margin: 0;
+	padding: 0;
+}

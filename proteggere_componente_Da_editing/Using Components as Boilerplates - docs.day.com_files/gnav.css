@@ -1,0 +1,408 @@
+/*	GLOBAL NAV
+	$Id: gnav.css,v 1.20 2010/11/03 17:47:51 dgasior Exp $
+*/
+
+
+.SiteHeader * {
+	z-index: inherit;  /* Make sure IE drops the header in front of other elements */
+}
+
+.SiteHeader {
+    position: relative;
+    margin: 0 0 11px;
+    line-height: 14px;
+	min-width: 935px;
+    font: normal 12px Helvetica, sans-serif;
+    color: #333;
+	zoom: 1;
+	z-index: 100;
+}
+
+.SiteHeaderHome,
+.SiteHeaderInfo,
+.SiteHeaderSearchButton {
+    text-indent: -9999px;
+}
+
+.SiteHeaderHome {
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 64px;
+    width: 39px;
+    display: block;
+    background: #F00 url(SiteHeader/logo.png) no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.SiteHeaderBar {
+    padding-left: 39px;
+    background: #333 url(SiteHeader/tile.png) repeat-x;
+    line-height: 39px;
+}
+
+.SiteHeaderBar,
+.SiteHeaderUser {
+    _height: 1em;
+	zoom: 1;
+}
+
+.SiteHeaderBar:after,
+.SiteHeaderUser:after {
+    clear: both;
+    content: "\0020";
+    height: 0;
+    display: block;
+}
+
+.SiteHeaderBar li {
+	float: left;
+}
+
+.SiteHeaderBarItem {
+    position: relative;
+    float: left;
+    border-left: 1px solid #4c4c4c;
+    border-right: 1px solid #000;
+    background: url(SiteHeader/sh_divider.png) right no-repeat;
+    padding: 1px 16px 0 16px;
+    margin: 0;
+    z-index: 1000;
+}
+
+.SiteHeaderBarItemFirst {
+    border-left: 1px solid #414141;
+}
+
+.SiteHeaderBarItemLast {
+    background: none;
+    border-right: 0;
+	padding: 1px 0 0 0;
+	width: 1px;
+}
+
+.SiteHeaderBarLink,
+a.SiteHeaderBarLink,
+a.SiteHeaderBarLink:link,
+a.SiteHeaderBarLink:visited,
+a.SiteHeaderBarLink:active,
+a.SiteHeaderBarLink:hover,
+a.SiteHeaderBarLink:visited:hover {
+    color: #DDD;
+    text-decoration: none;
+    text-shadow:  0 -1px 0 #151515;
+    -moz-text-shadow: 0 -1px 0 #151515;
+}
+
+.SiteHeaderBarItemHover, 
+.SiteHeaderBarItem:hover,
+#shStore.hover {
+    background: url(SiteHeader/hover.png) left repeat-x;
+	border-left: 1px solid #515151;
+}
+
+.SiteHeaderBarItemLastHover, 
+.SiteHeaderBarItemLast:hover {
+    background: none;
+	border-left: 1px solid #595959;
+}
+
+.SiteHeaderBarItem:active,
+.SiteHeaderBarItemActive {
+    background: url(SiteHeader/active.png) left repeat-x;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1px 16px 0 16px;
+	border-left: 1px solid #303030;
+}
+
+.SiteHeaderBarItemLast:active {
+    background: none;
+	border-left: 1px solid #595959;
+}
+
+.SiteHeaderUser {
+    padding-top: 4px;
+    padding-right: 4px;
+	font-size: 12px;
+}
+
+.SiteHeaderUserItem {
+	position: relative;
+    float: right;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.SiteHeaderUserItem,
+a.SiteHeaderUserItem,
+a.SiteHeaderUserItem:link,
+a.SiteHeaderUserItem:visited,
+a.SiteHeaderUserItem:active,
+.SiteHeaderUserItem a,
+.SiteHeaderUserItem a:link,
+.SiteHeaderUserItem a:visited {
+	color: #333;
+    text-decoration: none;
+}
+
+a.SiteHeaderUserItem:hover,
+a.SiteHeaderUserItem:visited:hover,
+.SiteHeaderUserItem a:hover,
+.SiteHeaderUserItem a:visited:hover {
+    color: #447099;
+    text-decoration: none;
+}
+
+.SiteHeaderCart,
+a.SiteHeaderCart,
+a.SiteHeaderCart:link,
+a.SiteHeaderCart:visited,
+a.SiteHeaderCart:active,
+.SiteHeaderCart a,
+.SiteHeaderCart a:link,
+.SiteHeaderCart a:visited {
+    background: transparent url(SiteHeader/cart_light.png) 0 4px no-repeat;
+	padding-left: 16px;
+}
+
+a.SiteHeaderCart:hover,
+a.SiteHeaderCart:visited:hover,
+.SiteHeaderCart a:hover,
+.SiteHeaderCart a:visited:hover {
+    background: transparent url(SiteHeader/cart_light_hover.png) 0 4px no-repeat;
+	padding-left: 16px;
+}
+
+.SiteHeaderArrow,
+a.SiteHeaderArrow,
+a.SiteHeaderArrow:link,
+a.SiteHeaderArrow:visited,
+a.SiteHeaderArrow:active,
+.SiteHeaderArrow a,
+.SiteHeaderArrow a:link,
+.SiteHeaderArrow a:visited {
+    background: transparent url(SiteHeader/arrow_light.png) right 6px no-repeat;
+	padding-right: 14px;
+}
+
+a.SiteHeaderArrow:hover,
+a.SiteHeaderArrow:visited:hover,
+.SiteHeaderArrow a:hover,
+.SiteHeaderArrow a:visited:hover {
+    background: transparent url(SiteHeader/arrow_light_hover.png) right 6px no-repeat;
+	padding-right: 14px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.SiteHeaderArrow,
+	a.SiteHeaderArrow,
+	a.SiteHeaderArrow:link,
+	a.SiteHeaderArrow:visited,
+	a.SiteHeaderArrow:active,
+	.SiteHeaderArrow a,
+	.SiteHeaderArrow a:link,
+	.SiteHeaderArrow a:visited {
+		background: transparent url(SiteHeader/arrow_light.png) right 5px no-repeat;
+	}
+	
+	a.SiteHeaderArrow:hover,
+	a.SiteHeaderArrow:visited:hover,
+	.SiteHeaderArrow a:hover,
+	.SiteHeaderArrow a:visited:hover {
+		background: transparent url(SiteHeader/arrow_light_hover.png) right 5px no-repeat;
+	}
+}
+
+.SiteHeaderInfo {
+    background: transparent url(SiteHeader/info.png) left center no-repeat;
+}
+
+.SiteHeaderInfo {
+    width: 16px;
+    height: 16px;
+	margin-left: 4px;
+	padding-top: 6px;
+	_padding-top: 0;
+	cursor: pointer;
+}
+
+a.SiteHeaderSearchButton {
+	width: 15px;
+    background: transparent url(SiteHeader/search_btn_tile.png) no-repeat 50% 50%;
+}
+
+a.SiteHeaderSearchButton:hover {
+    background: transparent url(SiteHeader/search_btn_hover.png) no-repeat 50% 50%;
+}
+
+a.SiteHeaderSearchButton:active {
+    background: transparent url(SiteHeader/search_btn_active.png) no-repeat 50% 50%;
+}
+
+.SiteHeaderSearch {
+	float: right;
+	width: 272px;
+	height: 40px;
+    background: #333 url(SiteHeader/search.png) no-repeat;
+}
+
+#search-submit {
+	display: none;
+}
+
+#search-input {
+	background-color: #2d2d2d;
+	border: none;
+	margin-left: 34px;
+	margin-top: 9px;
+	*margin-top: 0;
+	_margin-top: 9px;
+	padding-top: 4px;
+	_padding-top: 3px;
+	width: 220px;
+	color: #CCC;
+	font: 12px Arial,Helvetica,sans-serif;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#search-input { 
+		padding-top: 7px;
+	}
+}
+
+.SiteHeaderDropPanel {
+    position: absolute;
+    background-color: #FFF;
+    border: 1px solid;
+    border-color: #2F4E6B #B0B0B0 #737373;
+    *border-color: #2F4E6B #2F4E6B #737373;
+    box-shadow: 0 4px 10px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 4px 10px -moz-rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.5);
+    *filter: progid:DXImageTransform.Microsoft.Shadow(color='#999999', Direction=180, Strength=4);
+    z-index: 100;
+    top: 100%;
+	left: 0;
+	width: 220px;
+	color: #333;
+	padding: 6px 0;
+    margin-top: -1px;
+    _margin-top: 0;
+	margin-left: -1px;
+    font: normal 12px Helvetica, sans-serif;
+	zoom: 100%;
+}
+
+.SiteHeaderPopPanel {
+    position: absolute;
+	border-top: 1px solid #D8D8D8;
+    background-color: #FFF;
+    z-index: 100;
+    top: 100%;
+	right: 0;
+	color: #333;
+	margin: 0 1px;
+	padding: 6px 0;
+    font: normal 12px Helvetica, sans-serif;
+}
+
+.SiteHeaderPopPanelShadow {
+    position: absolute;
+    border: 1px solid;
+	border-top: 0;
+    border-color: #FFF #B0B0B0 #737373;
+    box-shadow: 0 4px 10px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 4px 10px -moz-rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.5);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#999999', Direction=180, Strength=4);
+    top: 100%;
+	right: 0;
+	z-index: 99;
+}
+
+.width-150 {
+	width: 150px;
+}
+
+.width-250 {
+	width: 250px;
+}
+
+.width-450 {
+	width: 450px;
+}
+
+div.SiteHeaderPanelRow {
+	padding: 6px 12px;
+	position: relative;
+}
+
+div.SiteHeaderPanelLink a,
+div.SiteHeaderPanelLink a:link,
+div.SiteHeaderPanelLink a:visited,
+div.SiteHeaderPanelLink a:active,
+div.SiteHeaderPanelLink a:visited {
+	text-decoration: none;
+	color: #333;
+}
+
+div.SiteHeaderPanelLinkHover,
+div.SiteHeaderPanelLinkHover a,
+div.SiteHeaderPanelLink:hover,
+div.SiteHeaderPanelLink a:hover {
+	background-color: #447099;
+	color: #FFF !important;  /* !important needed for IE 6 */
+}
+
+.SiteHeaderPanelHeader {
+	display: block;
+	font-weight: bold;
+}
+
+.SiteHeaderPanelHeader a {
+	width: 100%;
+	display: block;
+}
+
+#shBar {
+	_behavior: url(hover.htc);
+}
+
+.storeLink .SiteHeaderDropPanel {
+	display: none;
+}
+
+#shBar > #shStore:hover .SiteHeaderDropPanel {
+	display: block;
+}
+
+#shBar #shStore.hover .SiteHeaderDropPanel {
+	display: block;
+}
+
+/*	GLOBAL NAV OVERRIDES (adobe)
+	$Id: gnav_override.css,v 1.2 2010/09/30 17:49:02 qare Exp $
+*/
+
+.SiteHeader {
+	margin: 0 10px;
+	width: 990px;
+}
+
+.SiteHeaderBar li {
+	float: none;
+}
+
+.SiteHeaderBarItemLast {
+    border-right: 0;
+	width: 1px;
+    background: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.SiteHeaderInfo {
+		margin-top: -2px;
+	}
+}

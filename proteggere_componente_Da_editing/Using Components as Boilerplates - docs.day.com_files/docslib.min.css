@@ -1,0 +1,36 @@
+div.ov-content h1,div.ov-content h2,div.ov-content h3,div.ov-content h4,div.ov-content h5{color:#000;border-bottom-style:none;width:100%;padding-right:20px}
+div.ov-content h1{font-size:22px;font-weight:bold}
+div.ov-content h3{font-size:15px;font-weight:bold}
+div.ov-content h4{font-size:14px;font-weight:bold}
+div.ov-content p.edit{color:gray;float:none;width:100%;background:#eee}
+div.ov-content div.text p+p{margin-top:-0.7em}
+div.ov-sectionlinks{width:100%;float:none}
+div.ov-sectionlinks div.parsys div.parbase{float:left;padding-left:0;min-width:20%;padding-right:30px}
+div.ov-sectionlinks div.parsys div.new{clear:both}
+div.cq-editrollover-insert-container{clear:both}
+div.ov-content{width:990px;margin-left:20px;margin-right:10px;float:left}
+div.ov-main{width:660px;margin-right:15px;float:left}
+div.ov-side{width:300px;float:left}
+div.ov-content{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;line-height:1.3em;color:#333}
+div.ov-search{width:100%}
+div.ov-tweets{width:100%;margin-top:10px;clear:both}
+div.ov-related{width:100%}
+div.ov-start{width:100%}
+div.ov-sectiontitle{width:100%;clear:both;padding-top:5px}
+div.ov-sectiontitle div.parbase{float:none;width:100%}
+div.ov-content div.parbase{float:none}
+.search{width:286px;border:0;padding:0;margin:0;border-spacing:0;border-collapse:collapse}
+.search div{float:left;height:30px}
+.search input{position:absolute;border:0;color:#555;width:212px;height:16px;background:transparent url("../../designs/docs/images/search_icon.png") 2px 5px no-repeat;padding:5px 4px 0 20px}
+.search input.submit{background:0;width:39px;height:30px;padding:4px}
+.search_left{background:transparent url("../../designs/docs/images/search_left.png") left top no-repeat;width:9px}
+.search_middle{background:transparent url("../../designs/docs/images/search_middle.png") repeat-x;width:162px;padding:3px 0}
+.search_right{background:transparent url("../../designs/docs/images/search_right.png") right top no-repeat;width:39px}
+div.stationary div.main-cell{float:left;background-color:#FFF;max-width:680px;padding-left:40px}
+div.stationary div.main-cell-alone{float:left;background-color:#FFF;padding-left:0;max-width:904px}
+div.stationary div.side-cell{float:left;background-color:#FFF;max-width:264px;margin-right:10px}
+div.stationary{margin-left:34px;background-color:#FFF;width:964px}
+div#content-layout{background-color:#fff}
+div.endfloat{clear:both}
+.trail{max-width:640px}
+div.main-cell div.center{max-width:640px}

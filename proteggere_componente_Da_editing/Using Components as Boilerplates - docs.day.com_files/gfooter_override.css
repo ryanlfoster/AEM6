@@ -1,0 +1,69 @@
+/*	GLOBAL FOOTER OVERRIDES (adobe)
+	$Id: gfooter_override.css,v 1.4 2010/10/04 22:33:50 dgasior Exp $
+*/
+
+.SiteFooter {
+	width: 1006px;
+    background: transparent url(SiteFooter/tile.png) no-repeat left bottom;
+    _background: url(SiteFooter/tile_8bit.png) no-repeat left bottom;
+	_width: 999px;
+	padding-top: 1px;
+}
+
+.SiteFooterMenuItemIconRegionBlue {
+    background-image: url(SiteFooter/region_blue.png);
+}
+
+.SiteFooterMenuItemIconRegionBlack {
+    background-image: url(SiteFooter/region_black.png);
+}
+
+.SiteFooterRegionPanelHeaderClose {
+    background: transparent url(SiteFooter/close.png) no-repeat;
+}
+
+.SiteFooterBar {
+	background: none;
+	padding-right: 18px;
+	min-height: 54px;
+}
+
+.SiteFooterBar p {
+	font-size: 12px;
+}
+
+.SiteFooterNav {
+	padding-right: 18px;
+	_padding-right: 20px;
+}
+
+p.SiteFooterRow {
+	margin-bottom: 0;
+	_margin-right: 24px;
+}
+
+.SiteFooterRegionPanel {
+    padding: 14px 16px 16px;
+}
+
+.SiteFooterRegionPanel dd,
+.SiteFooterRegionPanel dt {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.SiteFooterRegionPanel dd {
+	line-height: 1.2em;
+	margin-top: 1px;
+}
+
+.SiteFooterRegionPanelHeader span.SiteFooterMenuItemIcon {
+	background-position: left bottom;
+}
+
+dl.SiteFooterColumns-4-A,
+dl.SiteFooterColumns-4-B,
+dl.SiteFooterColumns-4-C,
+dl.SiteFooterColumns-4-D {
+	margin: 0 12px 0 0;
+}
