@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/25430981/are-there-requestscope-variables-in-sightly
