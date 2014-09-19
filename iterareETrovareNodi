@@ -1,0 +1,12 @@
+log.debug("started");
+		log.debug("----------------nodo:" +getCurrentPage().getPath());
+		log.debug("----------------component:" +getCurrentPage().getPath()+"/jcr:content/parBefore/elezioni_blocco_dina");
+		
+		Resource nodeCons = getResourceResolver().getResource(getCurrentPage().getPath()+"/jcr:content/parBefore/elezioni_blocco_dina");
+		Node currentNode = nodeCons.adaptTo(Node.class);
+		
+		Node par = currentNode.getParent();
+		NodeIterator nodes = par.getNodes();
+		while (nodes.hasNext()) {
+			log.debug(nodes.next().toString());
+		}
