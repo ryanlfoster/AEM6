@@ -1,3 +1,8 @@
+Link ssi
+http://localhost:4502/content/skytg24/it/layout/spalle/spallaDestraMeteo.html
+http://www.slideshare.net/andrewmkhoury/aem-cq-dispatcher-caching-webinar-2013 pagina 23
+
+
 https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher.html
 http://www.cqtutorial.com/courses/cq-admin/cq-admin-lessons/cq-dispatcher/cq-dispatcher-apache-set-up
 http://brucelefebvre.com/blog/2013/08/22/setting-up-a-dispatcher-on-os-x/
