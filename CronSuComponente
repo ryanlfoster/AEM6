@@ -1,0 +1,121 @@
+package com.sky.shaker.tg24.elezioni.service.senato;
+
+import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.apache.sling.commons.scheduler.Scheduler;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Reference;
+import org.apache.felix.scr.annotations.Service;
+
+import com.adobe.cq.sightly.WCMUse;
+import com.sky.shaker.tg24.elezioni.ElectionSenatoService;
+import com.sky.shaker.tg24.elezioni.generator.senato.SingolaRipartizioneEsteraSenatoGenerator;
+import com.sky.shaker.tg24.elezioni.service.util.RequestUtils;
+import com.sky.shaker.tg24.elezioni.service.util.headgenerator.HeadGenerator;
+
+@Component(immediate = true, metatype = true)
+
+@Service(SingolaRipartizioneEsteraSenato.class)
+public class SingolaRipartizioneEsteraSenato extends WCMUse{
+	
+	protected final Logger log = LoggerFactory.getLogger(this.getClass());
+	private String content;
+	private String headString;
+	private final static Pattern URI = Pattern.compile(".*/(.*)/(.*)/(.*)/(.*)\\.html");
+	
+	/** The scheduler for rescheduling jobs. */
+    @Reference
+    private Scheduler scheduler;
+   
+	
+	@SuppressWarnings("deprecation")
+	@Override
+	public void activate() throws Exception
+	{
+		 Map<String, Serializable> config1 = new HashMap<String, Serializable>();
+	        boolean canRunConcurrently = true;
+	        long period = 10;
+		final Runnable job = new Runnable() {
+		    public void run() {
+		        log.debug("Executing the job");
+		    }
+		};
+		
+		 try {
+			 this.scheduler.addPeriodicJob("tes", job, config1,
+					 period, canRunConcurrently);
+	        } catch (Exception e) {
+	        	job.run();
+	        }
+		
+//		http://tg24.sky.it/tg24/speciale_elezioni/politiche/2013/senato/italiani_estero/ripartizioni.html
+		String uri = getRequest().getRequestURI();
+		String anno = getAnnoFromURI(uri);
+//		String regione = NamingManagement.encodeRegione(getRegioneFromURI(uri)).toUpperCase();
+//		String provincia = getProvinciaFromURI(uri).substring(10).replaceAll("_", " ").toUpperCase();
+//		String comune = getComuneFromURI(uri).substring(10).replaceAll("_", " ").toUpperCase();
+		ElectionSenatoService election = getSlingScriptHelper().getService(ElectionSenatoService.class);
+		SingolaRipartizioneEsteraSenatoGenerator singolaRipartizioneEsteraSenatoGenerator = new SingolaRipartizioneEsteraSenatoGenerator(anno, RequestUtils.getUrlShare(getRequest()));
+		content = singolaRipartizioneEsteraSenatoGenerator.getData();
+		headString = HeadGenerator.getHead(content);
+		getRequest().setAttribute("electionGeneratorData", HeadGenerator.removeHeadSection(content));
+//		log.debug(content);
+		
+	}
+
+	public String getContent() {
+		return content;
+	}
+	public String getHeadString() {
+		
+		return headString;
+	}
+	private String getAnnoFromURI(String s)
+	{
+		String output = "";
+		Matcher matcher = URI.matcher(s);
+		if(matcher.find())
+		{
+			output = matcher.group(1);
+		}
+		return output;
+	}	
+	
+	private String getRegioneFromURI(String s)
+	{
+		String output = "";
+		Matcher matcher = URI.matcher(s);
+		if(matcher.find())
+		{
+			output = matcher.group(3);
+		}
+		return output;
+	}	
+	private String getProvinciaFromURI(String s)
+	{
+		String output = "";
+		Matcher matcher = URI.matcher(s);
+		if(matcher.find())
+		{
+			output = matcher.group(4);
+		}
+		return output;
+	}
+	private String getComuneFromURI(String s)
+	{
+		String output = "";
+		Matcher matcher = URI.matcher(s);
+		if(matcher.find())
+		{
+			output = matcher.group(5);
+		}
+		return output;
+	}
+
+}
