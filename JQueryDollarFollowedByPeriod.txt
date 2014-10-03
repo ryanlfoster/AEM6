@@ -1,0 +1,5 @@
+http://stackoverflow.com/questions/4609133/what-is-the-difference-between-a-dollar-sign-and-a-dollar-sign-followed-by-a-per
+http://stackoverflow.com/questions/22156664/what-does-the-dot-after-dollar-sign-mean-in-jquery-when-declaring-variables
+http://stackoverflow.com/questions/3383927/when-should-a-period-be-used-after-in-jquery
+Esempio:
+http://static.sky.it/static/js/structure/site.js
