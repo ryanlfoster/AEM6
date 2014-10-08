@@ -1,0 +1,33 @@
+.deluxe-container-list ul {
+    list-style: none;
+}
+
+.deluxe-container-list ul li {
+    margin-top: 5px;
+}
+
+.j-deluxe-config-modal a.j-js-change {
+    margin-left: 5px;
+}
+
+.j-form label.radio-label {
+    font-weight: normal;
+}
+
+.j-deluxe-config-modal span.error {
+    display: inline;
+    color: red;
+    font-weight: bold;
+    font-size: .889em;
+}
+
+div.ask-a-question-container .j-form {
+    width: 95%;
+}
+
+a.deluxe-config-link {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    z-index: 3;
+}

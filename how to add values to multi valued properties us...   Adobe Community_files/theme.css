@@ -1,0 +1,280 @@
+body {background-color: #f8f8f8;color: #333;font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;margin: 0 auto;}
+h1, h2, h3, h4, h5, h6 {}.font-color-normal, a.font-color-normal:link, a.font-color-normal:visited { color: #333; }a, a:visited, a:link, .j-impact-list .j-metric .j-count {color: #3A91D7;}.j-impact-list .j-bar .j-bar-index {background-color: #3A91D7;}a:hover {color: #246;}.font-color-meta {color: #999;}.j-menu .font-color-meta {color: #8b8b8b;}a.font-color-meta:link, a.font-color-meta:visited, .font-color-meta a:link, .font-color-meta a:visited {color: #8ca9cd;}a.font-color-meta:hover, a.font-color-meta:focus, a.font-color-meta:active, .font-color-meta a:hover, .font-color-meta a:focus, .font-color-meta a:active {color: #3A91D7;}.font-color-meta-light, a.font-color-meta-light:link, a.font-color-meta-light:visited {color: #a9a9a9;}a.font-color-meta-light:hover, a.font-color-meta-light:active {color: #999;}.j-rc3, .j-rc4, .j-rc5, .j-rc6, .j-rc7, .j-tile, .j-box.j-enhanced, .j-box.j-enhanced header, .j-box.j-enhanced .j-box-body, .jive-widget, .jive-widget .jive-box-header, .jive-widget .jive-widget-body, .j-popover, .j-pop {-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;}.j-globalNavLink:link, .j-globalNavLink:visited, .j-globalNavLink:hover, .j-globalNavLink:active, .j-globalNav .j-globalNav-li.j-nav-create a.j-globalNavLink, #j-compact-header a .j-user-name {color: #ffffff;}.j-globalNav > li.j-globalNav-li > a.j-globalNavLink:hover, .j-globalNav > li.j-globalNav-li > a.j-globalNavLink:focus, .j-globalNav li.active .j-globalNavLink, #j-compact-header a:hover .j-user-name, #j-compact-header a:focus .j-user-name, #j-compact-header li.active .j-user-name { color: #ffffff; }.j-globalNav > li.j-globalNav-li > a.j-globalNavLink:hover, .j-globalNav > li.j-globalNav-li > a.j-globalNavLink:focus, .j-globalNav li.j-globalNav-li.active .j-globalNavLink, #j-compact-header a:hover .j-user-name, #j-compact-header a:focus .j-user-name, #j-compact-header li.active .j-user-name { color: #ffffff; }.j-navbadge-count { background-color:#FF9C01; }#j-globalNav-bg {background-color: #343434;background-image: url(http://adobe.ps.jiveint.com/resources/images/palette-1014/navbarBgImage-1391543447263-nav-bg-red.png);background-position: left top;background-repeat: repeat;background-attachment: scroll;border-style: solid;}#j-header, #j-compact-header{background-color: #333;background-image: none;}
+h1#jive-global-header-title a {color: #fafafa;}#j-satNav-wrap .j-navLabel, #j-satNav-wrap li a.j-globalNavLink { color: #ffffff; }.j-search-left  { background-position: -296px -61px; }.j-search-right { background-position: -330px -61px; }.focused .j-search-left { background-position: -100px -2092px; }.focused .j-search-right { background-position: -134px -2092px; }.j-bigtab-nav {background-color: #ededed;}.jive-widget-header, .jive-widget-body {padding-left: 7px; padding-right: 7px;}.content-small img.featured-user-img, .content-small .j-place-overview img.j-place-photo {max-width: 194px; min-width: 194px;}.jive-widget-header div.j-act-filter-controls {top: 5px; right: 5px;}.j-box.j-enhanced, .jive-widget {background: #fff;}.j-box.j-enhanced header, .jive-widget .jive-widget-header h4, .j-box header h4, .j-tile header h4, .j-box header h3 {color: #333;}.j-box.j-enhanced, .j-tile, .jive-widget{border-style: solid;border-color: #dbdbdb;border-width: 1px;}.j-box.j-enhanced header, .jive-widget .jive-box-header {background-color: transparent;border-style: solid none;border-top-color: #eeeeee;border-top-width: 0px;border-bottom-color: #eeeeee;border-bottom-width: 0px;}.jive-icon-actions               { background-position: -1104px -400px; }.jive-icon-activity              { background-position: -1232px -400px; }.jive-icon-activity-pulse        { background-position: -1296px -400px; }.jive-icon-activity-pulse-active { background-position: -1360px -400px; }.jive-icon-communications        { background-position: -1040px -400px; }.jive-icon-dashboard             { background-position: -1168px -400px; }.jive-icon-moderate              { background-position:  -976px -400px; }.jive-icon-getstarted            { background-position: -1424px -400px; }#j-compact-header #j-satNav .j-navLabel { display: none; }
+
+
+
+
+
+
+
+/* ----------------------------------- TYPOGRAPHY ----------------------------------- */
+body {font-family: "adobe-clean", "Helvetica Neue", Arial, sans-serif;}
+.jive-content header h1 {line-height:1.6em}
+
+
+
+/* ----------------------------------- GENERAL ----------------------------------- */
+/* hide guest messaging */
+.j-guest-tip.jive-info-box {display:none}
+
+
+
+/* ----------------------------------- HEADER ----------------------------------- */
+#j-globalNav-bg {background:url(../images/nav-bg.gif);}
+#jive-nav-link-home {border-left:solid 1px #666;}
+#jive-nav-link-work, #jive-nav-link-conx, #jive-nav-link-places {display:none}
+
+.custom-logo {margin-left:20px; display:inline-block;}
+.custom-logo img {display:block}
+
+#j-main {padding-top:30px}
+#jive-breadcrumb {margin:-20px 0 10px 60px; font-size:13px;}
+#jive-breadcrumb a {color:#3A91D7}
+
+#j-satNav li.register {display:none;}
+
+
+
+/* ----------------------------------- POPOVERS & MODALS ----------------------------------- */
+div.j-pop,
+.j-pop .j-pop-desc,
+.j-pop > div.j-pop-main,
+.jive-modal,
+.jive-modal-content {-moz-border-radius:0; -webkit-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0;}
+div.j-pop,
+.j-pop .j-pop-desc,
+.j-pop > div.j-pop-main {border-color:#fff;}
+div.j-pop.jive-modal {background-color:rgba(16,16,16,.9); border-color:#333;}
+#j-satNav-menu .j-satellite-links {border-radius:0;}
+div.j-pop {background:#fff; box-shadow:0 5px 20px 0 rgba(0,0,0,0.75)}
+
+.j-pop .belowArrow, .j-pop .aboveArrow {height:9px;}
+
+.j-pop .j-menu li a:active,
+.j-pop .j-menu li a:focus,
+.j-pop .j-menu li a.j-selected,
+.j-pop .j-menu li.j-selected a {background:#098ae6; box-shadow:none; border-top-color:#098ae6; border-bottom-color:#098ae6}
+
+/* UNBOLD */
+.j-pop .j-menu li, .j-pop .j-menu li > a, 
+.j-pop .j-menu li a.j-follow-button, 
+.j-pop .j-menu .j-disabled-actionItem {font-weight:normal;}
+
+
+
+/* ----------------------------------- BUTTONS ----------------------------------- */
+button, input[type="button"], input[type="reset"], input[type="submit"], .j-btn-global,
+button:hover, button:focus, [type="button"]:hover, [type="button"]:focus, [type="reset"]:hover, [type="reset"]:focus, [type="submit"]:hover, [type="submit"]:focus, .j-btn-global:hover, .j-btn-global:focus {background:#EFEFEF;}
+
+button.j-btn-callout, input[type="button"].j-btn-callout, input[type="reset"].j-btn-callout, input[type="submit"].j-btn-callout, .j-btn-callout,
+button.j-btn-callout:hover, button.j-btn-callout:focus, input[type="button"].j-btn-callout:hover, input[type="button"].j-btn-callout:focus, input[type="reset"].j-btn-callout:hover, input[type="reset"].j-btn-callout:focus, input[type="submit"].j-btn-callout:hover, input[type="submit"].j-btn-callout:focus, .j-btn-callout:hover, .j-btn-callout:focus {background:#3A91D7; -webkit-box-shadow:0 1px 3px rgba(0,0,0,.3); -moz-box-shadow:0 1px 3px rgba(0,0,0,.3); box-shadow:0 1px 3px rgba(0,0,0,.3);}
+
+
+
+
+
+
+/* ----------------------------------- ANNOUNCEMENTS ----------------------------------- */
+#jive-alert,
+.j-act-announcement .j-init,
+.j-comm-entry.j-act-announcement, .j-comm-entry.j-act-unread.j-act-announcement {background:#fff; -moz-border-radius:0; -webkit-border-radius:0; -ms-border-radius:0; -o-border-radius:0; border-radius:0;}
+#jive-alert-counter {background:none transparent}
+.j-init .j-act-title .jive-icon-med, .j-init .jive-icon-big {left:-25px;}
+
+
+
+
+/* ----------------------------------- STATUS POINTS ICONS ----------------------------------- */
+.j-thread-post .j-thread-pointer, .jive-create-thread .j-thread-pointer {top:56px;}
+.jive-widget-container-small .jive-widget-topmemberswidget .jive-sidebar-topmembers .jive-username-link, .jive-widget-container-small .jive-widget-newestmemberswidget .jive-sidebar-newestmembers .jive-username-link {max-width:82px;}
+.j-thread-post header .j-status-levels {text-align:right; position:absolute; top:52px; right:0; width:100px;}
+
+/* make room on threads */
+#jive-thread-messages-container {padding-left:60px; box-sizing:border-box; -moz-box-sizing:border-box;}
+.jive-thread-info {margin-left:-60px}
+
+
+
+
+/* ----------------------------------- PLACES ----------------------------------- */
+#jive-place-link-about {display:none}
+.j-placeTitle {font-weight:100;}
+.j-page-header .j-placeName {line-height: 45px;}
+
+/* Image: Remove background, box-shadow, and border */
+.j-page-header .j-placeHdImg {border:none; background:none transparent; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; line-height:inherit; z-index:4;}
+
+/* Background: Fill to browser edge */ 
+.j-body-place #jive-body .j-page-header {margin:0 -20px 20px}
+.j-page-header .j-placeHdImg {left:20px;}
+.j-placeImageDisplayContainer {left:25px;}
+.j-placeHdImg label {line-height:130px;}
+.j-page-header .j-placeHdActions {right:10px;}
+.j-placeActions {right:30px;}
+
+/* Remove background gradient */
+.j-page-header .j-place-header-overlay {background:none transparent;}
+#j-placeNav {background:rgba(0,0,0); background:rgba(0,0,0,.5);}
+
+/* hide community admins on place > people left rail */
+.j-body-place .j-contained-tabs-place .j-column-s .j-box-owners {display: none;}
+
+
+
+
+/* ----------------------------------- REMOVING CONTAINERS ----------------------------------- */
+.j-contained, .j-empty {border:none; background:none transparent; position:relative;}
+.j-body-place .j-contained #jive-widget-container,
+.j-contained #jive-widget-container,
+.j-layout #jive-widget-container,
+.j-contained-tabs {padding:0}
+#j-browse-filters {margin-right:0}
+
+/* BROWSE/HOME/INBOX/ACTIVITY CONTAINER */
+.j-body-home .j-layout-sl .j-column-s {background:#fff; border:solid 1px #ccc;}
+
+.j-second-nav ul>li.active,
+.j-second-nav ul>li.active span.active-bg,
+.j-second-nav ul>li.j-browse-filter-group-item > a {background:none; height:auto;}
+.j-homenav-item.selected,
+.j-homenav-item.selected:before,
+.j-second-nav li.j-browse-filter-group-item.active_item,
+.j-second-nav li.j-browse-filter-group-item.active_item:before {background:#f8f8f8}
+.j-second-nav li.j-browse-filter-group-item.active_item,
+.j-second-nav li.j-browse-filter-group-item.active_item:before {padding:0; width:194px; left:-4px; border:solid 1px #ccc; border-right:none;}
+.j-second-nav ul>li a {border:none}
+.j-second-nav li.j-browse-filter-group-item.active_item:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	left: 2px;
+	height: 1px;
+	width: 192px;
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,.2);
+	box-shadow: 0 0 1px rgba(0,0,0,.2);
+}
+.j-second-nav ul.j-labels {padding:0 8px 10px}
+.j-second-nav li.j-browse-filter-group-item.active_item > a {padding:9px 22px 7px 19px; font-size:14px; line-height:18px;}
+.j-second-nav ul>li.active a.j-browse-filter-pin:hover {background-color:transparent}
+
+.j-thumb, .j-thumb-back {background-color:transparent}
+.j-browse-filter-row.j-bottom-row {margin-bottom:0; border:none;}
+
+.j-second-nav {margin-left:0;}
+.j-browse-content.j-layout-sl .j-column,
+.j-browse-people.j-layout-sl .j-column,
+.j-browse-places.j-layout-sl .j-column {margin-bottom:0}
+.j-browse-content.j-layout-sl .j-column-s,
+.j-browse-people.j-layout-sl .j-column-s,
+.j-browse-places.j-layout-sl .j-column-s {width:190px; height:100%; position:absolute; background:#fff; border:solid 1px #ccc; border-right:none; box-sizing:border-box; -moz-box-sizing:border-box;}
+.j-browse-content.j-layout-sl .j-column-l,
+.j-browse-people.j-layout-sl .j-column-l,
+.j-browse-places.j-layout-sl .j-column-l {margin-left:190px;}
+.j-browse-content.j-layout-sl .j-column-wrap-l,
+.j-browse-people.j-layout-sl .j-column-wrap-l,
+.j-browse-places.j-layout-sl .j-column-wrap-l {margin-left:-190px;}
+
+.j-box-actions:first-child {margin-top:20px;}
+
+body.j-body-home #jive-alert {margin:0 0 20px 0;}
+.j-body-home .j-layout-sl .j-column-l {margin-left:210px;}
+.j-ibx-content-controls {margin-right:0; margin-left:0;}
+.j-split-view .j-act-panel {padding-right:10px; padding-left:10px;}
+
+#j-comm-activity-list .j-act-filter-bar,
+.j-act-panel .j-act-title.j-fixed-title,
+.j-ibx-content-controls,
+.j-sb,
+#j-actions-page-tabs,
+.jive-body-search .j-layout-sl .j-column-s {border:solid 1px #ccc;}
+body.jive-view-profile-photosavatars .j-contained-tabs,
+body.jive-body-profile-edit .j-contained-tab,
+body.j-body-preferences .j-contained-tabs {border-top:solid 1px #ccc}
+.j-comm-stream,
+.j-aq-marked-filters,
+.j-act-filter-bar.j-sub-bar.tasks {border-right:solid 1px #ccc; border-left:solid 1px #ccc;}
+.j-aq-marked-filters {border-radius:0; -webkit-border-radius:0; -moz-border-radius:0;}
+.j-show-more-preview {margin-left:-40px;}
+.j-act-header,
+#j-as-create-menu,
+.j-act-stream,
+.j-main-mb-entry .j-mb {margin-left:0}
+#j-as-create-menu {margin-top:5px}
+.j-act-panel .j-act-title.j-fixed-title {left:-10px; right:-10px;}
+
+.j-followed-item {top:13px}
+
+/* ADD-ONS */
+body.j-body-preferences .j-contained-tabs {padding-top:20px}
+
+/* WIDGETS */
+.j-box.j-enhanced, .jive-widget {background:transparent}
+
+/* SEARCH */
+.jive-body-search .j-body-main {background:transparent}
+.jive-body-search .j-layout-sl .j-column-s {background:#fff}
+
+
+
+/* ----------------------------------- WIDGETS + TILES ----------------------------------- */
+.jive-widget-header h4,
+.j-tile .j-tile-header h4 {font-size:22px; text-transform:none; font-weight:300;}
+.j-tile .j-tile-header {line-height:1.25}
+
+.jive-widget {background:none transparent; margin:0 -10px 10px;}
+/* fixes for negative margin effect */
+#jive-widget-content {padding-left:10px; padding-right:10px;}
+#jive-body-layout-lss .jive-body-layout-l {margin-right:-480px;}
+#jive-body-layout-lss .jive-body-layout-l .jive-widget-container-large {margin-right:480px;}
+#jive-body-layout-ll,
+#jive-body-layout-tll,
+#jive-body-layout-llb,
+#jive-body-layout-tllb {margin-left:-30px;}
+#jive-body-layout-ll .jive-body-layout-l1, 
+#jive-body-layout-ll .jive-body-layout-l2,
+#jive-body-layout-tll .jive-body-layout-l2,
+#jive-body-layout-tll .jive-body-layout-l3,
+#jive-body-layout-llb .jive-body-layout-l1, 
+#jive-body-layout-llb .jive-body-layout-l2,
+#jive-body-layout-tllb .jive-body-layout-l2,
+#jive-body-layout-tllb .jive-body-layout-l3 {width:50%; overflow:visible; padding-left:30px; box-sizing:border-box; -moz-box-sizing:border-box;}
+#jive-body-layout-tll .jive-body-layout-l1,
+#jive-body-layout-llb .jive-body-layout-l3,
+#jive-body-layout-tllb .jive-body-layout-l1,
+#jive-body-layout-tllb .jive-body-layout-l4 {padding-left:30px; box-sizing:border-box; -moz-box-sizing:border-box;}
+
+.jive-widget-header {padding-top:18px;}
+.jive-widget-body {padding-bottom:16px;}
+.jive-widget-header, 
+.jive-widget-body {padding-right:20px; padding-left:20px;}
+.jive-widget.jive-widget-borderless {background:transparent;}
+.jive-widget-borderless .jive-widget-header {padding-top:0;}
+.jive-widget-borderless .jive-widget-body {padding:0;}
+.jive-widget-borderless .jive-widget-header, 
+.jive-widget-borderless .jive-widget-body {padding-right:0; padding-left:0;}
+.content-small img.featured-user-img, 
+.content-small .j-place-overview img.j-place-photo {width:100%; min-width:168px}
+
+/* SEARCH / ASK WIDGETS */
+#j-search-widget .j-spotlight-search {margin-bottom:20px;}
+.ask-a-question-container {background:transparent; border:none; padding:0;}
+.jive-widget-deluxeaskaquestionwidget .jive-widget-handle a {float:right; font-size:13px; margin-top:9px;}
+div.ask-a-question-container .j-form {width:100%;}
+div.ask-a-question-container .j-form input[type="text"] {width:100%; -webkit-box-sizing:border-boz; -moz-box-sizing:border-box; box-sizing:border-box;}
+div.ask-a-question-container h4 {font-weight: normal; font-size: 14px;}
+
+/* POINTS WIDGETS */
+.points-info {font-size:16px; padding:10px 20px;}
+.jive-widget-body .jive-html-text-widget .points-info ul li {list-style:none}
+.nowrap {white-space:nowrap;}
+.help-icon {display:inline-block; vertical-align:center}
+.mvp {padding-top:10px}
+
+
+
+/* ----------------------------------- CONTENT ----------------------------------- */
+.jive-thread-info {background:transparent; padding:14px 0; margin-top:20px; border-right-width:0; border-left-width:0; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;}
+.j-thread-post h1 a {color:#333; text-decoration:none;}

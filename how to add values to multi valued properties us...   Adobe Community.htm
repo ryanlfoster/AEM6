@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://forums.adobe.com/thread/1105563 -->
+<html lang="it" class="cssanimations wf-adobeclean-i4-active wf-adobeclean-i7-active wf-adobeclean-n3-active wf-adobeclean-n4-active wf-adobeclean-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./how to add values to multi valued properties us...   Adobe Community_files/event"></script><script type="text/javascript" src="./how to add values to multi valued properties us...   Adobe Community_files/shares.json"></script><script type="text/javascript" src="./how to add values to multi valued properties us...   Adobe Community_files/counter020.js"></script><script type="text/javascript" src="./how to add values to multi valued properties us...   Adobe Community_files/event(1)"></script><script type="text/javascript" async="async">s_c_il[4].cdw=s_c_il[4].d.write;s_c_il[4].cdwb="";s_c_il[4].d.write=function(m){s_c_il[4].cdwb+=m};
+var TIDNum=Number(new Date);
+var TIDflag=0;
+var outgoingSAMCAPcode;
+var TIDquerysub="";
+if (s_adobe.getQueryParam('sdid')) {
+  outgoingSAMCAPcode=s_adobe.getQueryParam('sdid');
+   if (outgoingSAMCAPcode.match(/^[a-zA-Z0-9_]*$/)) {
+      TIDquerysub="sdid="+outgoingSAMCAPcode+"&";
+      TIDflag=1;
+   }
+}
+if(s_adobe.getQueryParam('trackingid')) {
+  outgoingSAMCAPcode=s_adobe.getQueryParam('trackingid');
+   if (outgoingSAMCAPcode.match(/^[a-zA-Z0-9_]*$/)) {
+      TIDquerysub=TIDquerysub+"trackingid="+outgoingSAMCAPcode+"&";
+      TIDflag=1;
+   }  
+}
+if(s_adobe.getQueryParam('promoid')) {
+  outgoingSAMCAPcode=s_adobe.getQueryParam('promoid');
+   if (outgoingSAMCAPcode.match(/^[a-zA-Z0-9_]*$/)) {
+      TIDquerysub=TIDquerysub+"promoid="+outgoingSAMCAPcode+"&";
+      TIDflag=1;
+   }  
+}
+if(TIDflag > 0) {
+  TIDquerysub=TIDquerysub.replace(/\&$/,"");
+  scTIDImg=document.createElement('img');
+  scTIDImg.src=document.location.protocol + '//www.adobe.com/images/pixel.gif?'+TIDNum+"&"+TIDquerysub;
+  scTIDImg.style.display="none";
+  document.body.appendChild(scTIDImg);
+}
+s_c_il[4].d.write=s_c_il[4].cdw;s_c_il[4].crl(0,1)</script><script type="text/javascript" async="async" src="./how to add values to multi valued properties us...   Adobe Community_files/microsites.js"></script><script type="text/javascript" async="async" src="./how to add values to multi valued properties us...   Adobe Community_files/CHL.js"></script><meta charset="utf-8"><!--[if IE]><![endif]--><title>how to add values to multi valued properties us... | Adobe Community</title>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+<script>
+    if (top != self) {
+        var isSafeTopUrl = false;
+        try {
+            var topUrl = top.location.href;
+            var topUrlQsIdx = topUrl.indexOf('?');
+            if (topUrlQsIdx > 0) {
+                topUrl = topUrl.substring(0, topUrlQsIdx);
+            }
+            topUrl = topUrl.toLowerCase();
+            var safeTopUrls = new Array( 'https://forums.adobe.com/theme-site.jspa', 'https://forums.adobe.com/skin-advanced.jspa', 'https://forums.adobe.com/skin-advanced!UploadSkinZip.jspa' );
+            for (var i = 0; i < safeTopUrls.length; i++) {
+                if (safeTopUrls[i].toLowerCase() == topUrl) {
+                    isSafeTopUrl = true;
+                    break;
+                }
+            }
+        } catch (err) {
+        }
+        if (!isSafeTopUrl) {
+            top.location = location;
+        }
+    }
+</script>
+<link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/jive-base.css" type="text/css" media="all"><link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/jive.css" type="text/css" media="all"><link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/jive-icons.css" type="text/css" media="all"><link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/jive-streambuilder.css" type="text/css" media="all"><link rel="stylesheet" type="text/css" href="./how to add values to multi valued properties us...   Adobe Community_files/translate.css" media="all"><link rel="search" href="https://forums.adobe.com/opensearch.xml" title="Adobe Community" type="application/opensearchdescription+xml"><link rel="shortcut icon" type="image/x-icon" href="https://forums.adobe.com/themes/adobe-global/images/favicon.ico"><!--[if lt IE 9]><script src="/7.0.0.0/resources/scripts/vendor/html5shiv.min.js"></script><![endif]--><script src="./how to add values to multi valued properties us...   Adobe Community_files/3d3c654def50dccdd85cd30264501e9d.js"></script>
+
+
+
+
+<meta name="description" content="Hi,    I am able to use a multi valued property in JSP which is populated manually using CRXDE. I am able to set the multi valued property only by">
+
+<link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/jive-content.css" type="text/css" media="all">
+<link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/jive-bridges.css" type="text/css" media="all">
+<link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/content.css" type="text/css" media="all">
+<link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/jfo.css" type="text/css" media="all">
+
+    <link rel="alternate" type="application/rss+xml" title=" CQ5 (read only) Feed delle discussioni" href="https://forums.adobe.com/community/feeds/threads?community=4588">
+
+<link rel="alternate" type="application/rss+xml" title="Messages in &#39;how to add values to multi valued properties using JSP&#39; Feed della discussione" href="https://forums.adobe.com/community/feeds/messages?thread=1105563">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN action bar -->
+
+    
+
+<!-- END action bar -->
+
+
+<link rel="canonical" href="https://forums.adobe.com/thread/1105563?start=0&tstart=0">
+
+
+
+<link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/image_nav.css" type="text/css" media="all"><link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/deluxe_ask_a_question.css" type="text/css" media="all"><link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/socialmedia.css" type="text/css" media="all"><link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/jive-videomodule.css" type="text/css" media="all"><link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/jive-exobjects-icons.css" type="text/css" media="all"><script type="text/javascript" src="./how to add values to multi valued properties us...   Adobe Community_files/fxk4olf.js"></script>
+<style type="text/css">.tk-adobe-clean,body{font-family:"adobe-clean","Helvetica Neue","Arial",sans-serif;}</style><link rel="stylesheet" href="https://use.typekit.com/c/86afc2/1w;adobe-clean,2,Zz4:N:i4,Zz6:N:i7,Zz2:N:n3,Zz3:N:n4,Zz5:N:n7/d?3bb2a6e53c9684ffdc9a99f11b5b2a6292ba26c3ce2f5bc89d77ae6c2e25087f3d1dc32dc56f2ee12cae9dc1e78367146b4fef922096a21618bfcf5e4b8234eea69ae22bb407d6980ac4af9448907c848f1b06df09edf616c65a174fe82433f1841d79e92181bda6f435d3a3d87789ea68df07f15d640c37d7a3d37588d2e6ae579051291af6656cb0548cf9b50f756d72de2d5e3403065a3c1d65933409f85284801e5eb14047d4c61d1ca8a18c02478d6b790b0f854a1ee3d9adbfa2483eafd4bda832d436422d25d811a970e530d554df81ee2e469fa1bba09b2ebd755127ed279841d494fadedf67838bad12427ad6748bff44dce5f20ba461e426e29fcb02d2af1eaeeb98d5ca72ac06fc8c49334278ea635bb3d68e30f76bd8f0f7af9584069b9788068ed2f36a502196460cadd70e8fc488ccf8b63cb7e00bd675cf4381f41afaecb06a651efc967a3c813b913c092a88de9cc8e8e4fc8653d74b5740a4ea51471b99808ebeae1f5f6f54ada2075dc3"><script type="text/javascript">
+	try{
+		Typekit.load();
+	} catch(e) {
+	}
+</script>
+<link rel="stylesheet" href="./how to add values to multi valued properties us...   Adobe Community_files/theme.css" type="text/css" media="all">
+    <style type="text/css">
+/* ------------ CORE BUG FIXES ------------ */
+.j-body-home #jive-alert {margin-bottom:0;} /* JIVE-38244 */
+.jive-widget-formatted-body {padding:0;} /*JIVE-38796*/
+.j-invite-modal .j-form {width: auto;}
+.j-pop-row.j-last {padding: 10px 15px 10px;}
+.j-slide .j-slide-image-wrapper {line-height:1;} /* JIVE-39463 */
+.j-page-header .j-placeName {vertical-align:middle;} /* JIVE-39483 */
+
+#j-globalNav .j-pop>div.j-menu {width:200px;} /* JIVE-38784 */
+
+/* PATCH FOR JIVE-24107 */
+.j-thumb-view > li {margin:0;}
+.j-thumb {width:224px; padding:0;}
+.j-thumb-view > li {overflow:hidden; width:237px; height:286px; margin:-14px -8px -9px -16px; padding:14px 16px 18px;}
+.j-browse-bookmarks .j-thumb-view > li, .j-browse-content .j-thumb-view > li {height:253px;}
+.j-browse-history .j-thumb-view > li {height:286px}
+.j-browse-content .j-thumb-view > li {height:251px}
+.j-thumb-back.j-thumb-back-small {width:215px; height:229px; background-position:-235px -532px; margin:-7px 0 0 -6px;}
+    </style>
+    
+    <style type="text/css">
+    /* custom-css goes here */
+    </style>
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><link rel="stylesheet" type="text/css" href="./how to add values to multi valued properties us...   Adobe Community_files/widget006.old.css" media="all"><link rel="stylesheet" type="text/css" href="./how to add values to multi valued properties us...   Adobe Community_files/counter015.css" media="all"></head><body class="jive-body-content j-thread jive-body-content-thread j-header-mode-simple" data-twttr-rendered="true"><iframe id="twttrHubFrameSecure" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" name="twttrHubFrameSecure" src="./how to add values to multi valued properties us...   Adobe Community_files/hub.1c5a573e465d84666458a45e49b0a735.htm" style="position: absolute; top: -9999em; width: 10px; height: 10px;"></iframe><a id="top"></a><div id="j-header-wrap" data-company-name="" data-no-user-bar="false" role="banner"><header id="j-compact-header" class="clearfix"><!-- Navigational buttons/links --><nav id="j-globalNav-bg" role="navigation" aria-label="Jive" data-mode="simple"><ul id="j-globalNav" role="menubar" class="j-globalNav"><li class="j-simple-nav-logo j-globalNav-li"><a class="custom-logo" href="http://adobe.com/" onclick="s_objectID=&quot;http://adobe.com/_1&quot;;return this.s_oc?this.s_oc(e):true"><img src="./how to add values to multi valued properties us...   Adobe Community_files/logo.png" alt="Adobe"></a></li><li id="jive-nav-link-home" class="  j-globalNav-li j-ui-elem"><a href="https://forums.adobe.com/home" class="j-globalNavLink j-ui-elem " role="menuitem" onclick="s_objectID=&quot;https://forums.adobe.com/home_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="nav-link  ">Pagina iniziale</span></a></li><li id="jive-nav-link-work" class="  j-globalNav-li j-ui-elem"><a href="https://forums.adobe.com/content" class="j-globalNavLink j-ui-elem " role="menuitem" onclick="s_objectID=&quot;https://forums.adobe.com/content_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="nav-link  ">Contenuti</span></a></li><li id="jive-nav-link-conx" class="  j-globalNav-li j-ui-elem"><a href="https://forums.adobe.com/people" class="j-globalNavLink j-ui-elem " role="menuitem" onclick="s_objectID=&quot;https://forums.adobe.com/people_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="nav-link  ">Utenti</span></a></li><li id="jive-nav-link-places" class="  j-globalNav-li j-ui-elem"><a href="https://forums.adobe.com/places" class="j-globalNavLink j-ui-elem " role="menuitem" onclick="s_objectID=&quot;https://forums.adobe.com/places_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="nav-link  ">Sezioni</span></a></li><li id="custom-nav-popular" aria-haspopup="true" class="custom-nav-link j-globalNav-li j-ui-elem"><a href="https://forums.adobe.com/thread/1105563#" class="j-globalNavLink j-ui-elem " role="menuitem" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="nav-link j-ui-elem">Popular<span class="j-ui-elem j-nav-more"></span></span></a><div id="custom-nav-popular-menu" class="j-menu j-pop-main" style="display:none;"><span class="j-508-label a11y-boundary">Menu begins</span><ul><li><a href="https://forums.adobe.com/community/creative_cloud" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/creative_cloud_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Creative Cloud</a></li><li><a href="https://forums.adobe.com/community/download_install_setup" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/download_install_setup_1&quot;;return this.s_oc?this.s_oc(e):true">Downloading, Installing, Setting Up</a></li><li><a href="https://forums.adobe.com/community/flashplayer" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/flashplayer_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Flash Player</a></li><li><a href="https://forums.adobe.com/community/adobe_reader_forums" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/adobe_reader_forums_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Reader</a></li><li><a href="https://forums.adobe.com/community/photoshop" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/photoshop_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Photoshop</a></li><li><a href="https://forums.adobe.com/community/lightroom" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/lightroom_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Photoshop Lightroom</a></li><li><a href="https://forums.adobe.com/community/photoshop_elements" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/photoshop_elements_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Photoshop Elements</a></li><li><a href="https://forums.adobe.com/community/dreamweaver" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/dreamweaver_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Dreamweaver </a></li><li><a href="https://forums.adobe.com/community/muse" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/muse_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Muse</a></li><li><a href="https://forums.adobe.com/community/edge_animate" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/edge_animate_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Edge Animate</a></li><li><a href="https://forums.adobe.com/community/premiere" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/premiere_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Premiere Pro</a></li><li><a href="https://forums.adobe.com/community/aftereffects_general_discussion" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/aftereffects_general_discussion_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe After Effects</a></li><li><a href="https://forums.adobe.com/community/illustrator" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/illustrator_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe Illustrator</a></li><li><a href="https://forums.adobe.com/community/indesign" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/community/indesign_1&quot;;return this.s_oc?this.s_oc(e):true">Adobe InDesign</a></li><li><a href="https://forums.adobe.com/places" class="j-ui-elem" onclick="s_objectID=&quot;https://forums.adobe.com/places_2&quot;;return this.s_oc?this.s_oc(e):true">View all communities</a></li></ul></div></li></ul><div id="j-links"><ul class="j-globalNav"><li class="j-nav-create j-nav-user j-globalNav-li js-satellite-nav-container" aria-haspopup="true"><ul id="j-satNav"><li class="login"><a href="https://forums.adobe.com/login.jspa" class="login" id="navLogin" title="Esegui l’accesso" onclick="s_objectID=&quot;https://forums.adobe.com/login.jspa_1&quot;;return this.s_oc?this.s_oc(e):true">Esegui l’accesso</a></li></ul><div id="j-satNav-menu" class="clearfix" style="display:none;"></div></li></ul><div id="j-spotlight-search" role="search" data-mode="simple"><span id="searchpopupanchor" class="j-ui-elem j-search-left"></span><span><label for="autosearch" class="j-508-label">Cerca</label><input data-spotlight-enabled="true" id="autosearch" class="j-ui-elem" data-component="autosearch" data-popup-anchor="searchpopupanchor" placeholder="Cerca" type="text" role="combobox" data-hidetypes="bookmarks frequent recent " data-community-name="Adobe Community"></span><span class="j-ui-elem j-search-right"></span><span class="jive-icon-sml jive-glyph-delete" data-component="button" data-type="clear" data-field="autosearch"></span></div></div></nav></header></div><section id="j-main" class="clearfix"><div id="jive-body" class="clearfix">
+<div id="jive-breadcrumb"><span><a href="https://forums.adobe.com/welcome" onclick="s_objectID=&quot;https://forums.adobe.com/welcome_1&quot;;return this.s_oc?this.s_oc(e):true">Tutte le sezioni</a> &gt; <a href="https://forums.adobe.com/community/digital_marketing_suite" onclick="s_objectID=&quot;https://forums.adobe.com/community/digital_marketing_suite_1&quot;;return this.s_oc?this.s_oc(e):true">Digital Marketing Suite</a> &gt; <a href="https://forums.adobe.com/community/digital_marketing_suite/cq5" onclick="s_objectID=&quot;https://forums.adobe.com/community/digital_marketing_suite/cq5_1&quot;;return this.s_oc?this.s_oc(e):true">CQ5 (read only)</a> &gt;             <a href="https://forums.adobe.com/community/digital_marketing_suite/cq5/content?filterID=contentstatus[published]~objecttype~objecttype[thread]" onclick="s_objectID=&quot;https://forums.adobe.com/community/digital_marketing_suite/cq5/content?filterID=contentstatus[pub_1&quot;;return this.s_oc?this.s_oc(e):true">Discussioni</a>
+</span></div>
+
+
+<div id="rte-template" style="display:none;">
+        <input type="hidden" name="jive.token.name" value="message.post.1105563">
+        <input type="hidden" name="message.post.1105563" value="[placeholder]">
+	<form action="https://forums.adobe.com/post.jspa?container=4588&containerType=14&thread=1105563&message=4876896&reply=true" method="post" name="isInline" id="postform">
+	<input type="hidden" name="containerType" value="14">
+	<input type="hidden" name="container" value="4588">
+
+		<input type="hidden" name="thread" value="1105563">
+
+		<input type="hidden" name="reply" value="true">
+        <input type="hidden" name="message" value="">
+        <input type="hidden" name="inlinePost" value="true">
+    <input type="hidden" class="js-outcome-attachment" name="outcome" value="">
+
+<input type="hidden" name="postedFromGUIEditor" id="postTypeFlag" value="false">
+
+	<div class="jive-error-message jive-error-box" id="dwr-error-table" style="display:none;" aria-live="polite" aria-atomic="true">
+		<div>
+			<span class="jive-icon-med jive-icon-redalert"></span>
+			<span class="jive-error-text" id="dwr-error-text"></span>
+		</div>
+	</div>
+
+
+
+	<div class="jive-error-message jive-error-box" id="post-error-table" style="display:none;" aria-live="polite" aria-atomic="true">
+		<div id="post-error-subject" style="display:none;">
+Inserisci un titolo.		</div>
+		<div id="post-error-body" style="display:none;">
+Non è possibile postare un messaggio vuoto. Inserisci il messaggio e riprova.		</div>
+	</div>
+	<input type="hidden" name="subject" size="75" maxlength="255" id="subject01" value="how to add values to multi valued properties using JSP">
+
+
+<textarea name="body" rows="10" class="jive-comment-textarea"></textarea>
+
+
+<div>
+    <input type="submit" name="post" class="jive-form-button-save j-btn-callout" value="Aggiungi risposta">
+    <input type="button" name="cancel" class="jive-form-button-cancel" value="Annulla">
+</div>
+</form>
+</div>
+
+
+<!-- draft deps -->
+
+
+
+
+
+
+<!-- BEGIN layout -->
+<div class="j-layout j-layout-ls clearfix">
+
+<!-- BEGIN large column -->
+<div class="j-column-wrap-l">
+<div class="j-column j-column-l lg-margin">
+<!-- moderation feedback message -->
+
+<!-- hidden div used in parsing of ajax response to indicate that we have a moderated message -->
+
+
+
+
+
+<div id="object-follow-notify" class="jive-info-box" style="display:none" aria-live="polite" aria-atomic="true"></div>
+
+<div id="content-featured-notify" class="jive-info-box" style="display:none" aria-live="polite" aria-atomic="true"></div>
+
+
+
+
+
+
+<!-- BEGIN thread messages -->
+<div id="jive-thread-messages-container" class="jive-thread-messages" role="main">
+
+
+    <!-- BEGIN thread info -->
+    <div class="jive-thread-info clearfix j-rc4">
+
+<ul class="js-outcome-badge-container js-outcome-badge-container-top j-outcome-badge-container-top j-outcome-badge-container js-ed-1-1105563 j-outcome-summary-container clearfix" data-object-type="1" data-object-id="1105563" aria-label="Distintivi risultato" data-allowed-outcome-types="&quot;List(\&quot;finalized\&quot;, \&quot;outdated\&quot;, \&quot;official\&quot;)&quot;" aria-live="polite"></ul>
+        <!-- BEGIN pagination-->
+
+            <strong class="font-color-meta j-thread-info-block">5 Risposte</strong>
+        <span class=" j-thread-info-block font-color-meta">
+                <a href="https://forums.adobe.com/message/4885946?tstart=0#4885946" class="localScroll" onclick="s_objectID=&quot;https://forums.adobe.com/message/4885946?tstart=0#4885946_1&quot;;return this.s_oc?this.s_oc(e):true">Ultima risposta</a>:
+        30-nov-2012 0.26 da
+Rajesh Pandian            </span>
+
+
+
+            <a class="j-rss-icon" href="https://forums.adobe.com/community/feeds/messages?thread=1105563" onclick="s_objectID=&quot;https://forums.adobe.com/community/feeds/messages?thread=1105563_1&quot;;return this.s_oc?this.s_oc(e):true">
+                <img class="jive-icon-sml jive-icon-rss" src="./how to add values to multi valued properties us...   Adobe Community_files/transparent.png" title="RSS" alt="RSS">
+            </a>
+
+
+    </div>
+    <!-- END thread info -->
+
+    <!-- BEGIN original thread post -->
+         
+
+        <div class="jive-content j-op j-rc4  js-tlo js-ed-1-1105563" role="article" data-object-type="1" data-object-id="1105563">
+
+            <div class="j-thread-post j-rc4 ">
+                <span class="j-thread-pointer j-ui-elem"></span>
+
+                <a name="1105563"></a><a name="4876896"></a>
+
+                <header class="js-original-header">
+
+                    <h1>
+                        <a href="https://forums.adobe.com/message/4876896#4876896" onclick="s_objectID=&quot;https://forums.adobe.com/message/4876896#4876896_1&quot;;return this.s_oc?this.s_oc(e):true">how to add values to multi valued properties using JSP</a>
+                    </h1><p class="jive-answer-type jive-answer-type-answered font-color-meta" style="">Questa domanda è ora <strong class="font-color-okay">Con risposta</strong>.</p>
+
+                        <div class="j-post-avatar">
+
+<a href="https://forums.adobe.com/people/Rajesh%20Pandian" data-externalid="" data-username="Rajesh%20Pandian" data-avatarid="-1" class="j-avatar jiveTT-hover-user " data-userid="1840402" data-presence="null" onclick="s_objectID=&quot;https://forums.adobe.com/people/Rajesh%20Pandian_1&quot;;return this.s_oc?this.s_oc(e):true">
+    <img class="jive-avatar" src="./how to add values to multi valued properties us...   Adobe Community_files/46.png" data-avatarid="-1" data-username="Rajesh%20Pandian" border="0" height="46" data-height="46" width="46" alt="Rajesh Pandian">
+    </a>
+
+        
+		
+<span class="j-status-levels"><img src="./how to add values to multi valued properties us...   Adobe Community_files/member_46x12.BW.png" alt="Community Member" title="Community Member"></span>
+                        </div>
+                                <span class="j-post-author">
+                                        <strong><a href="https://forums.adobe.com/people/Rajesh%20Pandian" data-externalid="" data-username="Rajesh%20Pandian" data-avatarid="-1" id="jive-184040222941179789442063" data-userid="1840402" data-presence="null" class="jiveTT-hover-user jive-username-link" onclick="s_objectID=&quot;https://forums.adobe.com/people/Rajesh%20Pandian_2&quot;;return this.s_oc?this.s_oc(e):true">Rajesh Pandian</a></strong> 27-nov-2012 4.46
+                                </span>
+
+<ul class="js-outcome-badge-container j-outcome-badge-container js-ed-1-1105563 j-outcome-tlo-badge-container" data-object-type="1" data-object-id="1105563" aria-label="Distintivi risultato" data-allowed-outcome-types="&quot;List(\&quot;decision\&quot;, \&quot;success\&quot;, \&quot;pending\&quot;, \&quot;helpful\&quot;, \&quot;resolved\&quot;)&quot;" aria-live="polite"></ul>
+                </header>
+                <section class="j-original-message">
+                <!-- [DocumentBodyStart:109ea1e3-2a7e-4777-98f2-986127c02b1f] --><div class="jive-rendered-content"><p>Hi,</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>I am able to use a multi valued property in JSP which is populated manually using CRXDE. I am able to set the multi valued property only by completely replacing it, but not by appending values to it.</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Can you please help me to append values to the multi valued property?</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Thanks in advance,</p><p>Rajesh.</p></div><!-- [DocumentBodyEnd:109ea1e3-2a7e-4777-98f2-986127c02b1f] -->
+
+
+                <div class="j-answer-rollup"><!-- Embedded Correct Answer --><div class="j-inline-correct-answer"><header class="j-author-block"><span class="j-avatar-container"><a href="https://forums.adobe.com/people/rush_pawan" title="rush_pawan" class="j-avatar  jiveTT-hover-user" data-userid="1733229" data-online="false" data-presence="null" data-externalid="" data-avatarid="16051" data-username="rush_pawan" onclick="s_objectID=&quot;https://forums.adobe.com/people/rush_pawan_1&quot;;return this.s_oc?this.s_oc(e):true"><img class="jive-avatar" src="./how to add values to multi valued properties us...   Adobe Community_files/32.png" data-avatarid="16051" data-username="rush_pawan" height="32" data-height="32" width="32" data-random="0hs4viqmj4b8iwwmi" alt="rush_pawan" title="rush_pawan"></a></span><div class="j-author-info"><strong class="font-color-okay j-line1">Risposta esatta </strong><span class="font-color-meta j-line2">da <a href="https://forums.adobe.com/people/rush_pawan" data-username="rush_pawan" data-avatarid="16051" data-userid="1733229" data-online="false" data-presence="null" data-externalid="" class="jive-username-link  jiveTT-hover-user  " onclick="s_objectID=&quot;https://forums.adobe.com/people/rush_pawan_2&quot;;return this.s_oc?this.s_oc(e):true">rush_pawan</a> il 28-nov-2012 13.04</span></div></header><section><!-- [DocumentBodyStart:6dae5e9b-f457-486b-9053-d8070d2c1af0] --><div class="jive-rendered-content"><p>Hi,</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Use this code. Taken an example of updating String data property (you can tweak as needed)</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Node pageNode=currentPage.getContentResource().adaptTo(Node.class);</p><p>Value vs[]=new Value[0];</p><p>List&lt;Value&gt; employeeIdList=new ArrayList&lt;Value&gt;(); </p><p>for(Value v : pageNode.getProperty("mytest").getValues()) {</p><p>&nbsp;&nbsp; if(v!=null){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; employeeIdList.add(v);</p><p>&nbsp;&nbsp; }</p><p>}</p><p>ValueFactory vFactory=pageNode.getSession().getValueFactory();</p><p>Value newValue=vFactory.createValue("nextvalue");</p><p>employeeIdList.add(newValue);</p><p>Value[] finalValues=(Value[])employeeIdList.toArray(vs);</p><p>pageNode.setProperty("mytest",finalValues);</p><p>pageNode.save()</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>I hope this will help you. If any issue let me know.</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Thanks,</p><p>Pawan</p></div><!-- [DocumentBodyEnd:6dae5e9b-f457-486b-9053-d8070d2c1af0] --></section><footer><strong><a href="https://forums.adobe.com/thread/1105563#4881028" class="jive-inline-correct-answer-context-link localScroll" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#4881028_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="jive-icon-sml jive-icon-arrow-generic-down"></span>Visualizza la risposta nel contesto</a></strong></footer></div></div></section>
+
+                <footer>
+
+
+                    <ul class="clearfix">
+                        <li class="j-footer-left font-color-meta">
+     
+        <span class="jive-content-footer-item">
+            2496&nbsp;Visualizzazioni
+        </span>
+
+                        </li>
+
+
+                        <li class="j-footer-left font-color-meta">
+
+    <!-- BEGIN view/add/edit tags -->
+    <span class="jive-content-footer-item jive-content-footer-tags">
+            <span class="jive-icon-sml jive-icon-tag"></span>Tag: <span id="jive-edit-inline-add-none" style="display:none;">nessuno</span> <span style="display:none;" id="jive-edit-inline-placeholder"> (<a href="https://forums.adobe.com/thread/1105563#" class="jive-edit-inline-tags-link" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_2&quot;;return this.s_oc?this.s_oc(e):true">aggiungi</a>)</span>
+
+            <span class="jive-thread-post-details-tags" id="jive-thread-post-details-tags_BxlY0e">
+            </span>
+    </span>
+    <!-- END view/add/edit tags -->
+                        </li>
+
+
+                    <li><div class="translate-outer-div"><a href="https://forums.adobe.com/thread/1105563#" class="translate-button" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_3&quot;;return this.s_oc?this.s_oc(e):true">Translate</a><a href="https://forums.adobe.com/thread/1105563#" class="translate-original-button" style="display: none" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_4&quot;;return this.s_oc?this.s_oc(e):true">Show Original</a><span class="translate-waiting" style="display: none">Translating...</span></div></li></ul>
+
+                </footer>
+
+                <div class="jive-thread-ratings clearfix">
+        <div class="jive-content-rating clearfix" data-guid="MR8N1SAZV6LDCFNI6KY6YL2BV9Y66PQC">
+
+<script type="text/javascript">
+    $j(document).ready(function() {
+
+        var i18n = {
+            avgUserRatingTitlei18n : "Valutazione utenti media",
+            avgUserRatingLabeli18n : "Valutazione utenti media",
+            rateRatingLabel : "valutazione",
+            myRatingLabel : "La mia valutazione:",
+            rateRatingsLabel : "Valutazioni",
+            ratingSavingText : "Salvataggio in corso...",
+            rateSavedText : "Salvataggio eseguito.",
+            rateRatingSaved : "Valutazione salvata!",
+            writeAReview : "Scrivi una recensione",
+            commentOnRating : "Commento sulla tua valutazione",
+            formSubmitPleaseWait:'Attendi...'
+        };
+        var rteOptions = {
+            controller    : jiveControl,
+            preset        : "mini-w-quote",
+            preferredMode : "advanced",
+            startMode     : "advanced",
+            mobileUI      : false,
+            communityName : 'Adobe Community',
+            height        : 200
+        };
+
+
+        new jive.Rate(14, 4588, 1, 1105563, 'thread', i18n, true, 'MR8N1SAZV6LDCFNI6KY6YL2BV9Y66PQC', rteOptions);
+    });
+
+</script>
+
+        <div class="jive-content-avgrating" tabindex="0" aria-labelledby="j-rating-score"><span class="j-508-label" id="j-rating-score">Valutazione utenti media: Nessuna valutazione (0 Valutazioni)</span><div class="jive-content-avgrating-title">Valutazione utenti media</div><div class="jive-content-avgrating-score" title="Valutazione utenti media: 0 di 5"><span class="j-508-label">Nessuna valutazione</span><span class="jive-icon-avgrating-1 jive-icon-med jive-icon-rate-avg-off"></span><span class="jive-icon-avgrating-2 jive-icon-med jive-icon-rate-avg-off"></span><span class="jive-icon-avgrating-3 jive-icon-med jive-icon-rate-avg-off"></span><span class="jive-icon-avgrating-4 jive-icon-med jive-icon-rate-avg-off"></span><span class="jive-icon-avgrating-5 jive-icon-med jive-icon-rate-avg-off"></span></div><div class="jive-content-rating-print" style="display: none;">0</div><div class="jive-content-avgrating-count">(0 Valutazioni)</div></div><div class="jive-content-userrating jive-content-myrating-print"><div class="j-rating-container clearfix"><div class="j-rating clearfix"><div class="jive-content-userrating-title">La mia valutazione: <span class="jive-content-userrating-desc"></span></div><div class="jive-content-userrating-score"><a href="javascript:void(0);" class="jive-icon-userrating-1 jive-icon-med jive-icon-rate-usr-off" aria-labelledby="button-score-label-1" role="button" aria-pressed="false" onclick="s_objectID=&quot;javascript:void(0);_1&quot;;return this.s_oc?this.s_oc(e):true"><span id="button-score-label-1" class="j-508-label">Valuta Scarso(1 di 5)</span></a><a href="javascript:void(0);" class="jive-icon-userrating-2 jive-icon-med jive-icon-rate-usr-off" aria-labelledby="button-score-label-2" role="button" aria-pressed="false" onclick="s_objectID=&quot;javascript:void(0);_2&quot;;return this.s_oc?this.s_oc(e):true"><span id="button-score-label-2" class="j-508-label">Valuta Sotto la media(2 di 5)</span></a><a href="javascript:void(0);" class="jive-icon-userrating-3 jive-icon-med jive-icon-rate-usr-off" aria-labelledby="button-score-label-3" role="button" aria-pressed="false" onclick="s_objectID=&quot;javascript:void(0);_3&quot;;return this.s_oc?this.s_oc(e):true"><span id="button-score-label-3" class="j-508-label">Valuta Nella media(3 di 5)</span></a><a href="javascript:void(0);" class="jive-icon-userrating-4 jive-icon-med jive-icon-rate-usr-off" aria-labelledby="button-score-label-4" role="button" aria-pressed="false" onclick="s_objectID=&quot;javascript:void(0);_4&quot;;return this.s_oc?this.s_oc(e):true"><span id="button-score-label-4" class="j-508-label">Valuta Sopra la media(4 di 5)</span></a><a href="javascript:void(0);" class="jive-icon-userrating-5 jive-icon-med jive-icon-rate-usr-off" aria-labelledby="button-score-label-5" role="button" aria-pressed="false" onclick="s_objectID=&quot;javascript:void(0);_5&quot;;return this.s_oc?this.s_oc(e):true"><span id="button-score-label-5" class="j-508-label">Valuta Eccezionale(5 di 5)</span></a><div class="jive-content-userrating-saved" style="display: none;" role="status"></div></div></div><div class="j-rating-comment-instruct"><p class="font-color-okay" role="status"><strong>Valutazione salvata!</strong></p></div></div></div><div class="j-rating-comment"><ul class="jive-comment"><li><div class="jive-comment-arrow"></div><div class="jive-comment-content"><p class="jive-comment-meta font-color-meta-light">Commento sulla tua valutazione</p><div class="jive-rating-comment-body"> </div></div></li></ul></div></div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="success-moderation-edit" class="jive-content-moderation-box" style="display:none"></div>
+
+    <!-- END original thread post -->
+
+
+<ul id="js-outcome-summary-container-1-1105563" class="js-outcome-summary-container j-outcome-summary-container js-ed-1-1105563" data-object-type="1" data-object-id="1105563" aria-label="Riepilogo risultato" role="group"></ul>
+<div id="jive-rolled-up-replies" class="j-so-finalized-rollup j-rc4" style="display:none">
+    Il contenuto è stato contrassegnato come conclusivo.&nbsp;
+    <a id="jive-unroll-replies" class="j-so-finalized-unroll j-comment-count" href="https://forums.adobe.com/thread/1105563#" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_5&quot;;return this.s_oc?this.s_oc(e):true">
+Mostra                 5 risposte
+    </a>
+</div>
+
+<div id="jive-replies">
+<!-- BEGIN reply -->
+
+
+    <ul class="jive-discussion-replies jive-discussion-flat jive-discussion-indent-0">
+    <li class="reply" id="discussion-4877202" data-object-type="2" data-object-id="4877202">
+
+
+        <div id="thread-message-4877202" class="jive-thread-message clearfix">
+
+            <div class="js-thread-post-wrapper j-thread-post-wrapper j-rc4  jive-content">
+
+                <div class="j-thread-post  j-rc4" id="4877202">
+
+                    <span class="j-thread-pointer j-ui-elem"></span>
+                    <a name="4877202"></a>
+
+                    <header>
+
+                        <h6>
+                            <strong>
+                                    <a class="font-color-meta-light" href="https://forums.adobe.com/message/4877202#4877202" title="Collegamento alla risposta #1" onclick="s_objectID=&quot;https://forums.adobe.com/message/4877202#4877202_1&quot;;return this.s_oc?this.s_oc(e):true">1.</a>
+
+                                <a class="font-color-meta-light" href="https://forums.adobe.com/message/4877202#4877202" onclick="s_objectID=&quot;https://forums.adobe.com/message/4877202#4877202_2&quot;;return this.s_oc?this.s_oc(e):true">Re: how to add values to multi valued properties using JSP</a>
+                            </strong>
+                        </h6>
+
+                        <div class="j-post-avatar">
+
+<a href="https://forums.adobe.com/people/Veena_07" data-externalid="" data-username="Veena_07" data-avatarid="-1" class="j-avatar jiveTT-hover-user " data-userid="1815436" data-presence="null" onclick="s_objectID=&quot;https://forums.adobe.com/people/Veena_07_1&quot;;return this.s_oc?this.s_oc(e):true">
+    <img class="jive-avatar" src="./how to add values to multi valued properties us...   Adobe Community_files/46(1).png" data-avatarid="-1" data-username="Veena_07" border="0" height="46" data-height="46" width="46" alt="Veena_07">
+    </a>
+
+        
+		
+<span class="j-status-levels"><img src="./how to add values to multi valued properties us...   Adobe Community_files/member_46x12.BW.png" alt="Community Member" title="Community Member"><img class="jive-status-level-image-right" src="./how to add values to multi valued properties us...   Adobe Community_files/plus.one_12x12.BW.png" data-points="10"></span>
+                        </div>
+
+<span class="j-post-author ">
+
+            <strong>
+
+                    <!-- Office can post messages on behalf of someone who's not in the system -->
+                    <!-- Add a link to their email address if this is the case -->
+<a href="https://forums.adobe.com/people/Veena_07" data-externalid="" data-username="Veena_07" data-avatarid="-1" id="jive-181543622941179881656513" data-userid="1815436" data-presence="null" class="jiveTT-hover-user jive-username-link" onclick="s_objectID=&quot;https://forums.adobe.com/people/Veena_07_2&quot;;return this.s_oc?this.s_oc(e):true">Veena_07</a>            </strong>
+
+        27-nov-2012 7.12
+
+
+                <span class="font-color-meta-light j-thread-replyto">
+                    (<a href="https://forums.adobe.com/message/4876896#4876896" title="Vai a messaggio" class="font-color-meta-light " onclick="s_objectID=&quot;https://forums.adobe.com/message/4876896#4876896_2&quot;;return this.s_oc?this.s_oc(e):true">in risposta a Rajesh Pandian</a>)
+                </span>
+
+
+    </span>
+
+                    </header>
+
+                    <section>
+
+
+                    <!-- [DocumentBodyStart:e147ae96-bfed-4df6-ae8a-a86e110f6804] --><div class="jive-rendered-content"><p>Hi Rajesh</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp; Can u explain a bit more on ur requirement. Am not clear on ur question</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Thanks </p><p>Veena</p></div><!-- [DocumentBodyEnd:e147ae96-bfed-4df6-ae8a-a86e110f6804] -->
+
+                    </section>
+
+<ul class="js-outcome-badge-container j-outcome-badge-container js-ed-2-4877202 j-outcome-badge-container" data-object-type="2" data-object-id="4877202" data-parent-object-type="1" data-parent-object-id="1105563" aria-label="Distintivi risultato" data-allowed-outcome-types="&quot;List(\&quot;decision\&quot;, \&quot;success\&quot;, \&quot;pending\&quot;, \&quot;helpful\&quot;, \&quot;resolved\&quot;)&quot;" aria-live="polite"></ul>
+                    <footer>
+                        <ul class="clearfix">
+
+
+                                <li class="discussion-message-acclaim">    <span data-type="small" data-can-like="false" data-ratingtype="like" data-likes="0" class="js-acclaim-container acclaim-container  acclaim-like-container  j-disabled">
+        <span>
+            <span class="j-social-action">
+            <span class="jive-icon-sml jive-icon-like"></span>
+
+Preferenza
+            </span>
+            <label class="j-508-label" id="showLikes-4877202-2-count-label">
+Visualizza 0 Mi piace            </label>
+                (<a href="https://forums.adobe.com/thread/1105563#" class=" jive-acclaim-likedlink" role="button" aria-labelledby="showLikes-4877202-2-count-label" data-command="showLikes" data-object-id="4877202" data-object-type="2" data-count="0" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_6&quot;;return this.s_oc?this.s_oc(e):true">0</a>)
+        </span>
+    </span>
+</li>
+
+                            <li class="j-footer-left j-message-action-button">
+<a href="https://forums.adobe.com/thread/1105563#" class="font-color-meta js-outcome-button j-outcome-button" data-object-type="2" data-object-id="4877202" data-dom-actions="[]" data-root-community="Adobe Community" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_7&quot;;return this.s_oc?this.s_oc(e):true">Azioni <span class="j-ui-elem j-action-down-arrow"></span></a>                            </li>
+                        <li><div class="translate-outer-div"><a href="https://forums.adobe.com/thread/1105563#" class="translate-button" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_8&quot;;return this.s_oc?this.s_oc(e):true">Translate</a><a href="https://forums.adobe.com/thread/1105563#" class="translate-original-button" style="display: none" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_9&quot;;return this.s_oc?this.s_oc(e):true">Show Original</a><span class="translate-waiting" style="display: none">Translating...</span></div></li></ul>
+                    </footer>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </li>
+    
+<!-- END reply -->
+
+<!-- BEGIN reply -->
+
+
+    <li class="reply" id="discussion-4879125" data-object-type="2" data-object-id="4879125">
+
+
+        <div id="thread-message-4879125" class="jive-thread-message clearfix">
+
+            <div class="js-thread-post-wrapper j-thread-post-wrapper j-rc4  jive-content">
+
+                <div class="j-thread-post  j-rc4" id="4879125">
+
+                    <span class="j-thread-pointer j-ui-elem"></span>
+                    <a name="4879125"></a>
+
+                    <header>
+
+                        <h6>
+                            <strong>
+                                    <a class="font-color-meta-light" href="https://forums.adobe.com/message/4879125#4879125" title="Collegamento alla risposta #2" onclick="s_objectID=&quot;https://forums.adobe.com/message/4879125#4879125_1&quot;;return this.s_oc?this.s_oc(e):true">2.</a>
+
+                                <a class="font-color-meta-light" href="https://forums.adobe.com/message/4879125#4879125" onclick="s_objectID=&quot;https://forums.adobe.com/message/4879125#4879125_2&quot;;return this.s_oc?this.s_oc(e):true">Re: how to add values to multi valued properties using JSP</a>
+                            </strong>
+                        </h6>
+
+                        <div class="j-post-avatar">
+
+<a href="https://forums.adobe.com/people/rush_pawan" data-externalid="" data-username="rush_pawan" data-avatarid="16051" class="j-avatar jiveTT-hover-user " data-userid="1733229" data-presence="null" onclick="s_objectID=&quot;https://forums.adobe.com/people/rush_pawan_3&quot;;return this.s_oc?this.s_oc(e):true">
+    <img class="jive-avatar" src="./how to add values to multi valued properties us...   Adobe Community_files/46(2).png" data-avatarid="16051" data-username="rush_pawan" border="0" height="46" data-height="46" width="46" alt="rush_pawan">
+    </a>
+
+        
+		
+<span class="j-status-levels"><img src="./how to add values to multi valued properties us...   Adobe Community_files/member_46x12.BW.png" alt="Community Member" title="Community Member"><img class="jive-status-level-image-right" src="./how to add values to multi valued properties us...   Adobe Community_files/plus.one_12x12.BW.png" data-points="425"></span>
+                        </div>
+
+<span class="j-post-author ">
+
+            <strong>
+
+                    <!-- Office can post messages on behalf of someone who's not in the system -->
+                    <!-- Add a link to their email address if this is the case -->
+<a href="https://forums.adobe.com/people/rush_pawan" data-externalid="" data-username="rush_pawan" data-avatarid="16051" id="jive-173322922941179954198154" data-userid="1733229" data-presence="null" class="jiveTT-hover-user jive-username-link" onclick="s_objectID=&quot;https://forums.adobe.com/people/rush_pawan_4&quot;;return this.s_oc?this.s_oc(e):true">rush_pawan</a>            </strong>
+
+        27-nov-2012 18.01
+
+
+                <span class="font-color-meta-light j-thread-replyto">
+                    (<a href="https://forums.adobe.com/message/4877202#4877202" title="Vai a messaggio" class="font-color-meta-light " onclick="s_objectID=&quot;https://forums.adobe.com/message/4877202#4877202_3&quot;;return this.s_oc?this.s_oc(e):true">in risposta a Veena_07</a>)
+                </span>
+
+
+    </span>
+
+                    </header>
+
+                    <section>
+
+
+                    <!-- [DocumentBodyStart:361c13b6-a010-4815-b369-1dbe4bf23ac6] --><div class="jive-rendered-content"><p>Hi,</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Please use "javax.jcr.Node" class to set property of any of the node in CQ. If you have resource or page object and just adapt it to Node and then you can set it. Example below</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Let say you have a page node (resource) and want to set a property with multi value </p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Node pageNode=currentPage.getContentResource().adaptTo(Node.class);</p><p>//Node resourceNode=resource.adaptTo(Node.class);</p><p>String[] value={"first","second","third"};</p><p>pageNode.setProperty("prop1",value);</p><p>pageNode.save();</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Above example is for string[] but you can set different types as well. Please refer below API</p><p><a class="jive-link-external-small" href="http://www.day.com/maven/jsr170/javadocs/jcr-1.0/javax/jcr/Node.html" rel="nofollow" target="_blank" onclick="s_objectID=&quot;http://www.day.com/maven/jsr170/javadocs/jcr-1.0/javax/jcr/Node.html_1&quot;;return this.s_oc?this.s_oc(e):true">http://www.day.com/maven/jsr170/javadocs/jcr-1.0/javax/jcr/Node.html</a></p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>I hope it helps you. Let me know for more information.</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Thanks,</p><p>Pawan</p></div><!-- [DocumentBodyEnd:361c13b6-a010-4815-b369-1dbe4bf23ac6] -->
+
+                    </section>
+
+<ul class="js-outcome-badge-container j-outcome-badge-container js-ed-2-4879125 j-outcome-badge-container" data-object-type="2" data-object-id="4879125" data-parent-object-type="1" data-parent-object-id="1105563" aria-label="Distintivi risultato" data-allowed-outcome-types="&quot;List(\&quot;decision\&quot;, \&quot;success\&quot;, \&quot;pending\&quot;, \&quot;helpful\&quot;, \&quot;resolved\&quot;)&quot;" aria-live="polite"></ul>
+                    <footer>
+                        <ul class="clearfix">
+
+
+                                <li class="discussion-message-acclaim">    <span data-type="small" data-can-like="false" data-ratingtype="like" data-likes="0" class="js-acclaim-container acclaim-container  acclaim-like-container  j-disabled">
+        <span>
+            <span class="j-social-action">
+            <span class="jive-icon-sml jive-icon-like"></span>
+
+Preferenza
+            </span>
+            <label class="j-508-label" id="showLikes-4879125-2-count-label">
+Visualizza 0 Mi piace            </label>
+                (<a href="https://forums.adobe.com/thread/1105563#" class=" jive-acclaim-likedlink" role="button" aria-labelledby="showLikes-4879125-2-count-label" data-command="showLikes" data-object-id="4879125" data-object-type="2" data-count="0" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_10&quot;;return this.s_oc?this.s_oc(e):true">0</a>)
+        </span>
+    </span>
+</li>
+
+                            <li class="j-footer-left j-message-action-button">
+<a href="https://forums.adobe.com/thread/1105563#" class="font-color-meta js-outcome-button j-outcome-button" data-object-type="2" data-object-id="4879125" data-dom-actions="[]" data-root-community="Adobe Community" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_11&quot;;return this.s_oc?this.s_oc(e):true">Azioni <span class="j-ui-elem j-action-down-arrow"></span></a>                            </li>
+                        <li><div class="translate-outer-div"><a href="https://forums.adobe.com/thread/1105563#" class="translate-button" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_12&quot;;return this.s_oc?this.s_oc(e):true">Translate</a><a href="https://forums.adobe.com/thread/1105563#" class="translate-original-button" style="display: none" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_13&quot;;return this.s_oc?this.s_oc(e):true">Show Original</a><span class="translate-waiting" style="display: none">Translating...</span></div></li></ul>
+                    </footer>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </li>
+    
+<!-- END reply -->
+
+<!-- BEGIN reply -->
+
+
+    <li class="reply" id="discussion-4880034" data-object-type="2" data-object-id="4880034">
+
+
+        <div id="thread-message-4880034" class="jive-thread-message clearfix">
+
+            <div class="js-thread-post-wrapper j-thread-post-wrapper j-rc4 j-op  jive-content">
+
+                <div class="j-thread-post  j-rc4" id="4880034">
+
+                    <span class="j-thread-pointer j-ui-elem"></span>
+                    <a name="4880034"></a>
+
+                    <header>
+
+                        <h6>
+                            <strong>
+                                    <a class="font-color-meta-light" href="https://forums.adobe.com/message/4880034#4880034" title="Collegamento alla risposta #3" onclick="s_objectID=&quot;https://forums.adobe.com/message/4880034#4880034_1&quot;;return this.s_oc?this.s_oc(e):true">3.</a>
+
+                                <a class="font-color-meta-light" href="https://forums.adobe.com/message/4880034#4880034" onclick="s_objectID=&quot;https://forums.adobe.com/message/4880034#4880034_2&quot;;return this.s_oc?this.s_oc(e):true">Re: how to add values to multi valued properties using JSP</a>
+                            </strong>
+                        </h6>
+
+                        <div class="j-post-avatar">
+
+<a href="https://forums.adobe.com/people/Rajesh%20Pandian" data-externalid="" data-username="Rajesh%20Pandian" data-avatarid="-1" class="j-avatar jiveTT-hover-user " data-userid="1840402" data-presence="null" onclick="s_objectID=&quot;https://forums.adobe.com/people/Rajesh%20Pandian_3&quot;;return this.s_oc?this.s_oc(e):true">
+    <img class="jive-avatar" src="./how to add values to multi valued properties us...   Adobe Community_files/46.png" data-avatarid="-1" data-username="Rajesh%20Pandian" border="0" height="46" data-height="46" width="46" alt="Rajesh Pandian">
+    </a>
+
+        
+		
+<span class="j-status-levels"><img src="./how to add values to multi valued properties us...   Adobe Community_files/member_46x12.BW.png" alt="Community Member" title="Community Member"></span>
+                        </div>
+
+<span class="j-post-author ">
+
+            <strong>
+
+                    <!-- Office can post messages on behalf of someone who's not in the system -->
+                    <!-- Add a link to their email address if this is the case -->
+<a href="https://forums.adobe.com/people/Rajesh%20Pandian" data-externalid="" data-username="Rajesh%20Pandian" data-avatarid="-1" id="jive-184040222941180001522736" data-userid="1840402" data-presence="null" class="jiveTT-hover-user jive-username-link" onclick="s_objectID=&quot;https://forums.adobe.com/people/Rajesh%20Pandian_4&quot;;return this.s_oc?this.s_oc(e):true">Rajesh Pandian</a>            </strong>
+
+        28-nov-2012 6.12
+
+
+                <span class="font-color-meta-light j-thread-replyto">
+                    (<a href="https://forums.adobe.com/message/4877202#4877202" title="Vai a messaggio" class="font-color-meta-light " onclick="s_objectID=&quot;https://forums.adobe.com/message/4877202#4877202_4&quot;;return this.s_oc?this.s_oc(e):true">in risposta a Veena_07</a>)
+                </span>
+
+
+    </span>
+
+                    </header>
+
+                    <section>
+
+
+                    <!-- [DocumentBodyStart:04335579-2499-47d8-8035-79e53624817b] --><div class="jive-rendered-content"><p>We have a requirement where we need to append values to a Multi-valued property. </p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>We are able to replace the whole list of values present in the multi valued property using a value array in JSP through Node.setProperty().</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>But we need to append values to the Multi valued property and not replace the whole content.</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>For example, say we have a property named "Employee_Id" which is a multi valued property and has values [1001,1002,1003]</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Now, if we need to append a value, say 1004, to the multi valued property we have to get all the values of this property using Node.getProperty,</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>List&lt;Value&gt; employeeIdList = new ArrayList&lt;Value&gt;();</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>for(Value v : node.getProperty("Employee_Id").getValues()) {</p><p>&nbsp;&nbsp; if(v!=null){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; employeeIdList.add(v);</p><p>&nbsp;&nbsp; }</p><p> }</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Then we have to add the value "1004" to the employeeIdList before setting the Employee_Id property with this list of values.</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>I need a way to append the values to the property directly without using an exrternal list to populate it.</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Can you please help?</p></div><!-- [DocumentBodyEnd:04335579-2499-47d8-8035-79e53624817b] -->
+
+                    </section>
+
+<ul class="js-outcome-badge-container j-outcome-badge-container js-ed-2-4880034 j-outcome-badge-container" data-object-type="2" data-object-id="4880034" data-parent-object-type="1" data-parent-object-id="1105563" aria-label="Distintivi risultato" data-allowed-outcome-types="&quot;List(\&quot;decision\&quot;, \&quot;success\&quot;, \&quot;pending\&quot;, \&quot;helpful\&quot;, \&quot;resolved\&quot;)&quot;" aria-live="polite"></ul>
+                    <footer>
+                        <ul class="clearfix">
+
+
+                                <li class="discussion-message-acclaim">    <span data-type="small" data-can-like="false" data-ratingtype="like" data-likes="0" class="js-acclaim-container acclaim-container  acclaim-like-container  j-disabled">
+        <span>
+            <span class="j-social-action">
+            <span class="jive-icon-sml jive-icon-like"></span>
+
+Preferenza
+            </span>
+            <label class="j-508-label" id="showLikes-4880034-2-count-label">
+Visualizza 0 Mi piace            </label>
+                (<a href="https://forums.adobe.com/thread/1105563#" class=" jive-acclaim-likedlink" role="button" aria-labelledby="showLikes-4880034-2-count-label" data-command="showLikes" data-object-id="4880034" data-object-type="2" data-count="0" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_14&quot;;return this.s_oc?this.s_oc(e):true">0</a>)
+        </span>
+    </span>
+</li>
+
+                            <li class="j-footer-left j-message-action-button">
+<a href="https://forums.adobe.com/thread/1105563#" class="font-color-meta js-outcome-button j-outcome-button" data-object-type="2" data-object-id="4880034" data-dom-actions="[]" data-root-community="Adobe Community" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_15&quot;;return this.s_oc?this.s_oc(e):true">Azioni <span class="j-ui-elem j-action-down-arrow"></span></a>                            </li>
+                        <li><div class="translate-outer-div"><a href="https://forums.adobe.com/thread/1105563#" class="translate-button" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_16&quot;;return this.s_oc?this.s_oc(e):true">Translate</a><a href="https://forums.adobe.com/thread/1105563#" class="translate-original-button" style="display: none" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_17&quot;;return this.s_oc?this.s_oc(e):true">Show Original</a><span class="translate-waiting" style="display: none">Translating...</span></div></li></ul>
+                    </footer>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </li>
+    
+<!-- END reply -->
+
+<!-- BEGIN reply -->
+
+
+    <li class="reply" id="discussion-4881028" data-object-type="2" data-object-id="4881028">
+
+
+        <div id="thread-message-4881028" class="jive-thread-message clearfix">
+
+            <div class="js-thread-post-wrapper j-thread-post-wrapper j-rc4  jive-content j-correct">
+
+                <div class="j-thread-post  j-rc4" id="4881028">
+
+                    <span class="j-thread-pointer j-ui-elem"></span>
+                    <a name="4881028"></a>
+
+                    <header>
+
+                        <h6><span class="thisCorrect" style=""><span class="jive-icon-med jive-icon-discussion-okay"></span><span class="jive-thread-reply-message-correct-label font-color-okay">Risposta esatta</span></span>
+                            <strong>
+                                    <a class="font-color-meta-light" href="https://forums.adobe.com/message/4881028#4881028" title="Collegamento alla risposta #4" onclick="s_objectID=&quot;https://forums.adobe.com/message/4881028#4881028_1&quot;;return this.s_oc?this.s_oc(e):true">4.</a>
+
+                                <a class="font-color-meta-light" href="https://forums.adobe.com/message/4881028#4881028" onclick="s_objectID=&quot;https://forums.adobe.com/message/4881028#4881028_2&quot;;return this.s_oc?this.s_oc(e):true">Re: how to add values to multi valued properties using JSP</a>
+                            </strong>
+                        </h6>
+
+                        <div class="j-post-avatar">
+
+<a href="https://forums.adobe.com/people/rush_pawan" data-externalid="" data-username="rush_pawan" data-avatarid="16051" class="j-avatar jiveTT-hover-user " data-userid="1733229" data-presence="null" onclick="s_objectID=&quot;https://forums.adobe.com/people/rush_pawan_5&quot;;return this.s_oc?this.s_oc(e):true">
+    <img class="jive-avatar" src="./how to add values to multi valued properties us...   Adobe Community_files/46(2).png" data-avatarid="16051" data-username="rush_pawan" border="0" height="46" data-height="46" width="46" alt="rush_pawan">
+    </a>
+
+        
+		
+<span class="j-status-levels"><img src="./how to add values to multi valued properties us...   Adobe Community_files/member_46x12.BW.png" alt="Community Member" title="Community Member"><img class="jive-status-level-image-right" src="./how to add values to multi valued properties us...   Adobe Community_files/plus.one_12x12.BW.png" data-points="425"></span>
+                        </div>
+
+<span class="j-post-author ">
+
+            <strong>
+
+                    <!-- Office can post messages on behalf of someone who's not in the system -->
+                    <!-- Add a link to their email address if this is the case -->
+<a href="https://forums.adobe.com/people/rush_pawan" data-externalid="" data-username="rush_pawan" data-avatarid="16051" id="jive-173322922941180060555883" data-userid="1733229" data-presence="null" class="jiveTT-hover-user jive-username-link" onclick="s_objectID=&quot;https://forums.adobe.com/people/rush_pawan_6&quot;;return this.s_oc?this.s_oc(e):true">rush_pawan</a>            </strong>
+
+        28-nov-2012 13.04
+
+
+                <span class="font-color-meta-light j-thread-replyto">
+                    (<a href="https://forums.adobe.com/message/4880034#4880034" title="Vai a messaggio" class="font-color-meta-light " onclick="s_objectID=&quot;https://forums.adobe.com/message/4880034#4880034_3&quot;;return this.s_oc?this.s_oc(e):true">in risposta a Rajesh Pandian</a>)
+                </span>
+
+
+    </span>
+
+                    <a class="j-star j-correct-star j-ui-elem popped"></a></header>
+
+                    <section>
+
+
+                    <!-- [DocumentBodyStart:6dae5e9b-f457-486b-9053-d8070d2c1af0] --><div class="jive-rendered-content"><p>Hi,</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Use this code. Taken an example of updating String data property (you can tweak as needed)</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Node pageNode=currentPage.getContentResource().adaptTo(Node.class);</p><p>Value vs[]=new Value[0];</p><p>List&lt;Value&gt; employeeIdList=new ArrayList&lt;Value&gt;(); </p><p>for(Value v : pageNode.getProperty("mytest").getValues()) {</p><p>&nbsp;&nbsp; if(v!=null){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; employeeIdList.add(v);</p><p>&nbsp;&nbsp; }</p><p>}</p><p>ValueFactory vFactory=pageNode.getSession().getValueFactory();</p><p>Value newValue=vFactory.createValue("nextvalue");</p><p>employeeIdList.add(newValue);</p><p>Value[] finalValues=(Value[])employeeIdList.toArray(vs);</p><p>pageNode.setProperty("mytest",finalValues);</p><p>pageNode.save()</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>I hope this will help you. If any issue let me know.</p><p style="min-height: 8pt; padding: 0px;">&nbsp;</p><p>Thanks,</p><p>Pawan</p></div><!-- [DocumentBodyEnd:6dae5e9b-f457-486b-9053-d8070d2c1af0] -->
+
+                    </section>
+
+<ul class="js-outcome-badge-container j-outcome-badge-container js-ed-2-4881028 j-outcome-badge-container" data-object-type="2" data-object-id="4881028" data-parent-object-type="1" data-parent-object-id="1105563" aria-label="Distintivi risultato" data-allowed-outcome-types="&quot;List(\&quot;decision\&quot;, \&quot;success\&quot;, \&quot;pending\&quot;, \&quot;helpful\&quot;, \&quot;resolved\&quot;)&quot;" aria-live="polite"></ul>
+                    <footer>
+                        <ul class="clearfix">
+
+
+                                <li class="discussion-message-acclaim">    <span data-type="small" data-can-like="false" data-ratingtype="like" data-likes="0" class="js-acclaim-container acclaim-container  acclaim-like-container  j-disabled">
+        <span>
+            <span class="j-social-action">
+            <span class="jive-icon-sml jive-icon-like"></span>
+
+Preferenza
+            </span>
+            <label class="j-508-label" id="showLikes-4881028-2-count-label">
+Visualizza 0 Mi piace            </label>
+                (<a href="https://forums.adobe.com/thread/1105563#" class=" jive-acclaim-likedlink" role="button" aria-labelledby="showLikes-4881028-2-count-label" data-command="showLikes" data-object-id="4881028" data-object-type="2" data-count="0" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_18&quot;;return this.s_oc?this.s_oc(e):true">0</a>)
+        </span>
+    </span>
+</li>
+
+                            <li class="j-footer-left j-message-action-button">
+<a href="https://forums.adobe.com/thread/1105563#" class="font-color-meta js-outcome-button j-outcome-button" data-object-type="2" data-object-id="4881028" data-dom-actions="[]" data-root-community="Adobe Community" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_19&quot;;return this.s_oc?this.s_oc(e):true">Azioni <span class="j-ui-elem j-action-down-arrow"></span></a>                            </li>
+                        <li><div class="translate-outer-div"><a href="https://forums.adobe.com/thread/1105563#" class="translate-button" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_20&quot;;return this.s_oc?this.s_oc(e):true">Translate</a><a href="https://forums.adobe.com/thread/1105563#" class="translate-original-button" style="display: none" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_21&quot;;return this.s_oc?this.s_oc(e):true">Show Original</a><span class="translate-waiting" style="display: none">Translating...</span></div></li></ul>
+                    </footer>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </li>
+    
+<!-- END reply -->
+
+<!-- BEGIN reply -->
+
+
+    <li class="reply" id="discussion-4885946" data-object-type="2" data-object-id="4885946">
+
+
+        <div id="thread-message-4885946" class="jive-thread-message clearfix">
+
+            <div class="js-thread-post-wrapper j-thread-post-wrapper j-rc4 j-op  jive-content">
+
+                <div class="j-thread-post  j-rc4" id="4885946">
+
+                    <span class="j-thread-pointer j-ui-elem"></span>
+                    <a name="4885946"></a>
+
+                    <header>
+
+                        <h6>
+                            <strong>
+                                    <a class="font-color-meta-light" href="https://forums.adobe.com/message/4885946#4885946" title="Collegamento alla risposta #5" onclick="s_objectID=&quot;https://forums.adobe.com/message/4885946#4885946_1&quot;;return this.s_oc?this.s_oc(e):true">5.</a>
+
+                                <a class="font-color-meta-light" href="https://forums.adobe.com/message/4885946#4885946" onclick="s_objectID=&quot;https://forums.adobe.com/message/4885946#4885946_2&quot;;return this.s_oc?this.s_oc(e):true">Re: how to add values to multi valued properties using JSP</a>
+                            </strong>
+                        </h6>
+
+                        <div class="j-post-avatar">
+
+<a href="https://forums.adobe.com/people/Rajesh%20Pandian" data-externalid="" data-username="Rajesh%20Pandian" data-avatarid="-1" class="j-avatar jiveTT-hover-user " data-userid="1840402" data-presence="null" onclick="s_objectID=&quot;https://forums.adobe.com/people/Rajesh%20Pandian_5&quot;;return this.s_oc?this.s_oc(e):true">
+    <img class="jive-avatar" src="./how to add values to multi valued properties us...   Adobe Community_files/46.png" data-avatarid="-1" data-username="Rajesh%20Pandian" border="0" height="46" data-height="46" width="46" alt="Rajesh Pandian">
+    </a>
+
+        
+		
+<span class="j-status-levels"><img src="./how to add values to multi valued properties us...   Adobe Community_files/member_46x12.BW.png" alt="Community Member" title="Community Member"></span>
+                        </div>
+
+<span class="j-post-author ">
+
+            <strong>
+
+                    <!-- Office can post messages on behalf of someone who's not in the system -->
+                    <!-- Add a link to their email address if this is the case -->
+<a href="https://forums.adobe.com/people/Rajesh%20Pandian" data-externalid="" data-username="Rajesh%20Pandian" data-avatarid="-1" id="jive-184040222941180116769516" data-userid="1840402" data-presence="null" class="jiveTT-hover-user jive-username-link" onclick="s_objectID=&quot;https://forums.adobe.com/people/Rajesh%20Pandian_6&quot;;return this.s_oc?this.s_oc(e):true">Rajesh Pandian</a>            </strong>
+
+        30-nov-2012 0.26
+
+
+                <span class="font-color-meta-light j-thread-replyto">
+                    (<a href="https://forums.adobe.com/message/4881028#4881028" title="Vai a messaggio" class="font-color-meta-light " onclick="s_objectID=&quot;https://forums.adobe.com/message/4881028#4881028_3&quot;;return this.s_oc?this.s_oc(e):true">in risposta a rush_pawan</a>)
+                </span>
+
+
+    </span>
+
+                    </header>
+
+                    <section>
+
+
+                    <!-- [DocumentBodyStart:22c0e061-446a-40eb-b53d-5dd2f6b18151] --><div class="jive-rendered-content"><p>Dude Awesome man.It worked as a charm. Keep up the good work <span aria-label="Happy" class="emoticon-inline emoticon_happy" style="height:16px;width:16px;"></span> Thanks a lot Bro <strong>\m/</strong></p></div><!-- [DocumentBodyEnd:22c0e061-446a-40eb-b53d-5dd2f6b18151] -->
+
+                    </section>
+
+<ul class="js-outcome-badge-container j-outcome-badge-container js-ed-2-4885946 j-outcome-badge-container" data-object-type="2" data-object-id="4885946" data-parent-object-type="1" data-parent-object-id="1105563" aria-label="Distintivi risultato" data-allowed-outcome-types="&quot;List(\&quot;decision\&quot;, \&quot;success\&quot;, \&quot;pending\&quot;, \&quot;helpful\&quot;, \&quot;resolved\&quot;)&quot;" aria-live="polite"></ul>
+                    <footer>
+                        <ul class="clearfix">
+
+
+                                <li class="discussion-message-acclaim">    <span data-type="small" data-can-like="false" data-ratingtype="like" data-likes="0" class="js-acclaim-container acclaim-container  acclaim-like-container  j-disabled">
+        <span>
+            <span class="j-social-action">
+            <span class="jive-icon-sml jive-icon-like"></span>
+
+Preferenza
+            </span>
+            <label class="j-508-label" id="showLikes-4885946-2-count-label">
+Visualizza 0 Mi piace            </label>
+                (<a href="https://forums.adobe.com/thread/1105563#" class=" jive-acclaim-likedlink" role="button" aria-labelledby="showLikes-4885946-2-count-label" data-command="showLikes" data-object-id="4885946" data-object-type="2" data-count="0" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_22&quot;;return this.s_oc?this.s_oc(e):true">0</a>)
+        </span>
+    </span>
+</li>
+
+                            <li class="j-footer-left j-message-action-button">
+<a href="https://forums.adobe.com/thread/1105563#" class="font-color-meta js-outcome-button j-outcome-button" data-object-type="2" data-object-id="4885946" data-dom-actions="[]" data-root-community="Adobe Community" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_23&quot;;return this.s_oc?this.s_oc(e):true">Azioni <span class="j-ui-elem j-action-down-arrow"></span></a>                            </li>
+                        <li><div class="translate-outer-div"><a href="https://forums.adobe.com/thread/1105563#" class="translate-button" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_24&quot;;return this.s_oc?this.s_oc(e):true">Translate</a><a href="https://forums.adobe.com/thread/1105563#" class="translate-original-button" style="display: none" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#_25&quot;;return this.s_oc?this.s_oc(e):true">Show Original</a><span class="translate-waiting" style="display: none">Translating...</span></div></li></ul>
+                    </footer>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </li>
+    </ul>
+    
+<!-- END reply -->
+
+
+
+
+    <div id="jive-thread-reply-footer" class="clearfix">
+            <a href="https://forums.adobe.com/thread/1105563#1105563" class="localScroll" onclick="s_objectID=&quot;https://forums.adobe.com/thread/1105563#1105563_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="jive-icon-sml jive-icon-arrow-top"></span>Torna al post originale</a>
+    </div>
+
+
+</div>
+<!-- END messages -->
+
+</div>
+</div>
+<!-- END large column -->
+</div>
+
+    <!-- BEGIN small -->
+    <div class="j-column-wrap-s">
+        <div class="j-column-s j-column j-content-extras">
+
+
+
+
+<div class="j-box j-box-actions" role="toolbar" aria-labeledby="jive-action-sidebar-tab-header_thread-actions-tab" style="display: none;">
+    <header>
+        <h4 id="jive-action-sidebar-tab-header_thread-actions-tab">Azioni</h4>
+    </header>
+    <div id="jive-action-sidebar_thread-actions-tab" class="j-box-body">
+
+        <div id="jive-action-sidebar-tab-_thread-actions-tab" class="jive-action-sidebar-tab-first" style="display: none;">
+
+
+
+            <ul id="jive-action-sidebar-tab-list_thread-actions-tab" class=" j-icon-list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div> <!-- /#jive-action-sidebar-tab-_id -->
+
+            <script type="text/javascript">
+                $j(document).ready(function() {
+                    $j('#jive-action-sidebar-tab-_thread-actions-tab').hide();
+                });
+            </script>
+    </div>
+
+
+</div><div class="j-box"><header><h4>Share This</h4></header><div class="j-box-body"><div id="socialmedia-socialpeek"><!-- AddThis Button BEGIN --><div id="socialmedia-addthis"><div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_pinterest_share.com addthis_button_preferred_1"></a>
+<a class="addthis_button_facebook addthis_button_preferred_2 at300b" title="Facebook" href="https://forums.adobe.com/thread/1105563#"><span class="at16nc at300bs at15nc at15t_facebook at16t_facebook"><span class="at_a11y">Share on facebook</span></span></a>
+<a class="addthis_button_twitter addthis_button_preferred_3 at300b" title="Tweet" href="https://forums.adobe.com/thread/1105563#"><span class="at16nc at300bs at15nc at15t_twitter at16t_twitter"><span class="at_a11y">Share on twitter</span></span></a>
+<a class="addthis_button_email addthis_button_preferred_4 at300b" target="_blank" title="Email" href="https://forums.adobe.com/thread/1105563#"><span class="at16nc at300bs at15nc at15t_email at16t_email"><span class="at_a11y">Share on email</span></span></a>
+<a class="addthis_button_compact at300m" href="https://forums.adobe.com/thread/1105563#"><span class="at16nc at300bs at15nc at15t_compact at16t_compact"><span class="at_a11y">More Sharing Services</span></span></a>
+<a class="addthis_counter addthis_bubble_style" href="https://forums.adobe.com/thread/1105563#" style="display: inline-block;"><a class="addthis_button_expanded" target="_blank" title="View more services" href="https://forums.adobe.com/thread/1105563#">0</a><a class="atc_s addthis_button_compact"><span></span></a></a>
+<div class="atclear"></div></div>
+</div><!-- AddThis Button END --></div></div></div><!-- /.j-box-actions -->
+    <script type="text/javascript">
+        $j(document).ready(function() {
+            $j('[id^=jive-action-sidebar_]').each(function() {
+                var me = $j(this);
+                if (me.find("ul[id^=jive-action-sidebar-tab-list_] > li").length == 0) { me.closest('.j-box-actions').hide(); }
+            });
+        });
+    </script>
+
+
+    <!-- BEGIN sidebar box 'More Like This' -->
+    <div class="j-box">
+        <header>
+            <h4 id="more-like-header-2-4.876.896">Contenuti simili</h4>
+        </header>
+        <nav class="j-box-body" role="navigation" aria-labeledby="more-like-header-2-4.876.896">
+                <div id="jive-more-like-this-2-4876896"><ul class="j-icon-list"><li><a href="https://forums.adobe.com/message/4880034#4880034" onclick="s_objectID=&quot;https://forums.adobe.com/message/4880034#4880034_4&quot;;return this.s_oc?this.s_oc(e):true"><span class="jive-icon-med jive-icon-discussion-correct"></span>Re: how to add values to multi valued properties using JSP</a></li><li><a href="https://forums.adobe.com/message/4915082#4915082" onclick="s_objectID=&quot;https://forums.adobe.com/message/4915082#4915082_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="jive-icon-med jive-icon-discussion-question"></span>Re: CRXDE very slow (after removing .crxde)</a></li><li><a href="https://forums.adobe.com/message/4662766#4662766" onclick="s_objectID=&quot;https://forums.adobe.com/message/4662766#4662766_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="jive-icon-med jive-icon-discussion-question"></span>Re: Custom template does not appear</a></li><li><a href="https://forums.adobe.com/message/5511471#5511471" onclick="s_objectID=&quot;https://forums.adobe.com/message/5511471#5511471_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="jive-icon-med jive-icon-discussion-correct"></span>Re: Uploading a package with /etc/tags/something makes /etc disappear in CRXDE Lite in AEM 5.6?</a></li><li><a href="https://forums.adobe.com/message/6393083#6393083" onclick="s_objectID=&quot;https://forums.adobe.com/message/6393083#6393083_1&quot;;return this.s_oc?this.s_oc(e):true"><span class="jive-icon-med jive-icon-discussion"></span>Re: Insert images into div like words (text-align)</a></li></ul></div>
+        </nav>
+    </div>
+
+    <!-- END sidebar box 'More Like This' -->
+
+            
+            
+
+
+            <div class="j-box">
+                <header>
+                    <h4>Legenda</h4>
+                </header>
+                <div class="j-box-body jive-box-questionLegend">
+                    <ul class="j-icon-list font-color-meta">
+                            <li><span class="jive-icon-med jive-icon-discussion-correct"></span>
+<strong class="jive-thread-reply-message-correct-label">Risposte esatte</strong> - 10 punti                            </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END small column -->
+
+
+</div>
+<!-- END layout -->
+
+</div></section><div id="jiveTT-note" class="jive-tooltip2 notedefault snp-mouseoffset" role="tooltip"><div class="jive-tooltip2-mid j-mini-modal j-mini-modal-place"><div class="jive-tooltip2-mid-padding j-modal-content clearfix j-js-note-body" id="jive-note-body"></div></div></div><div id="jiveTT-note-additems" class="jive-tooltip2 notedefault snp-mouseoffset"><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content clearfix" id="jive-note-additems-body"></div></div></div><div id="jiveTT-note-checkpoint" class="jive-tooltip2 notedefault snp-mouseoffset"><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content" id="jive-note-checkpoint-body"></div></div></div><div id="jiveTT-note-tasks" class="jive-tooltip2 notedefault snp-mouseoffset"><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content" id="jive-note-tasks-body"></div></div></div>
+    <div class="j-js-footer-wrap"><footer id="j-footer" role="contentinfo"><div id="j-footer-poweredBy">© 2007-2014 Jive Software &nbsp; | <a class="font-color-meta" href="http://www.jivesoftware.com/poweredby/" target="_blank" title="Versione Jive Software: 7.0.0.1 , revisione: 20140123092810.f635376.develop" onclick="s_objectID=&quot;http://www.jivesoftware.com/poweredby/_1&quot;;return this.s_oc?this.s_oc(e):true"><img src="./how to add values to multi valued properties us...   Adobe Community_files/powered_by_Jive.png" title="Powered by Jive" alt="Powered by Jive"></a></div><div class="j-footer-nav"><a class="font-color-meta" href="http://helpx.adobe.com/support.html" onclick="s_objectID=&quot;http://helpx.adobe.com/support.html_1&quot;;return this.s_oc?this.s_oc(e):true">Guida</a> | <a class="font-color-meta" href="http://www.adobe.com/go/terms" onclick="s_objectID=&quot;http://www.adobe.com/go/terms_1&quot;;return this.s_oc?this.s_oc(e):true">Terms of Use</a> | <a class="font-color-meta" href="http://www.adobe.com/go/privacy" onclick="s_objectID=&quot;http://www.adobe.com/go/privacy_1&quot;;return this.s_oc?this.s_oc(e):true">Privacy Policy and Cookies (UPDATED)</a></div><div class="j-footer-jiveVersion">Versione Jive Software: 7.0.0.1 , revisione: 20140123092810.f635376.develop</div><span id="speakSpan" class="j-508-label" role="marquee" aria-live="assertive" aria-relevant="all"></span><script language="JavaScript" type="text/javascript">//<![CDATA[
+function whitespaceTrim(str){return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');}
+//]]></script>
+<script type="text/javascript" src="./how to add values to multi valued properties us...   Adobe Community_files/s_chl_code.js"></script><div id="mboxScriptContainer" style="display:none;visibility:hidden;"></div><style>.mboxDefault{visibility:hidden;}</style>
+<script type="text/javascript">//<![CDATA[
+if(s_chl){ var pna=document.title.split("Space: ").toString().replace(',', '').split(" | ");
+var listv;if(document.getElementById('jive-breadcrumb')){var bcd=document.getElementById('jive-breadcrumb').getElementsByTagName('a');
+for(var i=1;i<bcd.length;i++){pna.push(whitespaceTrim(bcd[i].innerHTML));}pna.splice(pna.length,0,pna[0]);
+pna.shift();listv=pna[1];pna=pna.join(" : ");pna = pna.replace("Adobe Community", "forums.adobe.com");s_chl.pageName=s_chl.eVar7=s_chl.campaign=pna;
+}else{s_chl.pageName=s_chl.eVar7=s_chl.campaign=document.title;}
+s_chl.channel='forums.adobe.com';s_chl.list1=listv;s_chl.t();
+}//]]></script>
+<script language="JavaScript" type="text/javascript">//<![CDATA[
+var scJsHost = (("https:" == document.location.protocol) ? "https://www.adobe.com" : "http://wwwimages.adobe.com");
+document.write(unescape("%3Cscript src='" + scJsHost + "/uber/js/atm/s_code_microsites.js' type='text/javascript'%3E%3C/script%3E"));
+//]]></script><script src="./how to add values to multi valued properties us...   Adobe Community_files/s_code_microsites.js" type="text/javascript"></script>
+<script type="text/javascript">//<![CDATA[
+$j(function(){if(s_adobe){var pname = document.title.split("Space: ").toString().replace(',', '').split(" | ");s_adobe.channel=" ";
+if(document.getElementById('jive-breadcrumb')){var bcd=document.getElementById('jive-breadcrumb').getElementsByTagName('a');for(var i=1;i<bcd.length;i++){
+pname.push(whitespaceTrim(bcd[i].innerHTML));}
+pname.splice(pname.length,0,pname[0]);pname.shift();pname=pname.join(" : ");pname = pname.replace("Adobe Community","forums.adobe.com")
+s_adobe.pageName=pname;var pathname = document.location.pathname;if(bcd.length > 1){s_adobe.channel=whitespaceTrim(bcd[1].innerHTML);}
+if(s_adobe.channel=="International Forums"){if(bcd.length > 2){s_adobe.channel = bcd[2].getAttribute("href");
+s_adobe.channel = "International Forums_"+s_adobe.channel.substring(s_adobe.channel.indexOf("international_forums")+21,s_adobe.channel.indexOf('?'));}}}
+else{pname=document.title;s_adobe.pageName = pname.replace("Adobe Community","forums.adobe.com");s_adobe.channel="Forums HomePage";}
+if(typeof _jive_locale != 'undefined' && _jive_locale != null){s_adobe.prop4= _jive_locale.toLowerCase();}else{s_adobe.prop4= "en_us";}
+s_adobe.server=location.hostname;s_adobe.t();}});
+function omniture_translate(locale_code){if(s_adobe){var pageNamebeforeTranslate = s_adobe.pageName;
+s_adobe.pageName = "forums.adobe.com:TranslateButtonClick:"+locale_code.toLowerCase();s_adobe.t();s_adobe.pageName = pageNamebeforeTranslate;}}
+//]]></script></footer></div><div class="j-alert-container" role="alert" aria-live="polite" aria-atomic="true"></div><span id="j-speak-accessibility" class="j-508-label" role="status" aria-live="polite" aria-relevant="all" aria-atomic="true"></span><script>(function() {var prepareUrl = function(url) {if (url.indexOf(";") > 0) {url = url.substring(0, url.indexOf(";"));}if (url.charAt(url.length - 1) == '/') {url = url.substring(0, url.length - 1);}return url}; if (typeof(window._jive_base_url) == "undefined") {window._jive_base_url = prepareUrl("\/")}if (typeof(window._jive_base_absolute_url) == "undefined") {window._jive_base_absolute_url = prepareUrl("https:\/\/forums.adobe.com")}if (typeof(window._jive_resource_url) == "undefined") {window._jive_resource_url = prepareUrl("\/7.0.0.0\/")}if (typeof(window._jive_theme_url) == "undefined") {window._jive_theme_url = prepareUrl("\/themes\/adobe-global\/")}if (typeof(window._jive_current_user) == "undefined") {window._jive_current_user = {anonymous: true, partner: false, visible: true, username: 'ANONYMOUS', ID: '-1', enabled: true, avatarID: '-1', displayName: 'ANONYMOUS'};}})(); var _jive_effective_user_id = "-1"; var _jive_auth_token ="no-user"; var _jive_locale = "it_IT"; var _jive_translation_language = "it"; var _jive_browser_event = {"providers":["activityStream.poll","appAlert.create"],"since":1412753614784}; var _jive_browser_event_polling_delay =  30000.0 ; var _jive_socket_events = {"socketEvents":["tiledata.push","activityStream.push"]}; var _jive_realtime_push_enabled =  false ;var _jive_timezoneoffset =  -7.0 ; var jive = jive || {}; jive.global = jive.global || {}; jive.global.instanceID = 'c2437d08-3f65-4a49-bea7-60ec2087e808'; jive.global.containerType = '14'; jive.global.containerID = '4588';jive.global.containerBrowseId = '1413280';window.SPELL_LANGS = "English (Canada)\x3den_ca,English (United Kingdom)\x3den_gb,+English (United States)\x3den_us,French\x3dfr,French (Canada)\x3dfr_ca,German\x3dde,Italian\x3dit,Spanish\x3des"; window.CS_BASE_URL = ""; window.CS_RESOURCE_BASE_URL = "\/7.0.0.0"; window.tinyMCEPreInit = {suffix : "_src", base : CS_BASE_URL + "/resources/scripts/tiny_mce3"}; if (typeof(_jive_project_i18n) == "undefined") {var _jive_project_i18n = new Array(); _jive_project_i18n['project.calendar.task'] = "Attività"; _jive_project_i18n['project.calendar.tasks'] = "Attività"; _jive_project_i18n['project.calendar.checkpoint'] = "Punto di controllo"; _jive_project_i18n['project.calendar.checkpoints'] = "Punti di controllo"; _jive_project_i18n['global.edit'] = "Modifica"; _jive_project_i18n['global.delete'] = "Elimina"; _jive_project_i18n['project.task.mark.complete'] = "Segna come completata"; _jive_project_i18n['project.task.assign.to.me'] = "Assegna a me"; _jive_project_i18n['task.incomplete.link'] = "Da completare"; _jive_project_i18n['project.checkPoint.create.link'] = "Crea un punto di controllo"; _jive_project_i18n['project.task.create.link'] = "Crea un’attività";}</script><script>var containerShortUrl = "\/container-short.jspa"; var videoShortUrl = "\/view-video-short.jspa"; var profileShortUrl = "\/profile-short.jspa"; var profileLoadingTooltip = "Caricamento profilo utente"; var profileErrorTooltip = "Si è verificato un errore durante il caricamento delle informazioni del profilo."; var followErrorMessage = "Si è verificato un errore interno mentre l’oggetto veniva seguito."; var ajaxErrorMessage = "Si è verificato un errore imprevisto. Verifica che la sessione non sia scaduta durante la visualizzazione della pagina."; var ajaxNotFoundMessage = "Impossibile trovare l’elemento specificato.";; var ajaxUnauthorizedMessage = "Non sei autorizzato a eseguire questa operazione. Se non sei collegato, esegui la procedura di accesso e riprova.";
+        (function() {
+            var originalWrite = document.write;
+            document.write = function() {
+                if(typeof $j != 'undefined' && $j.isReady) {
+                    console.warn("document.write called after document was loaded: ", arguments);
+                }
+                else {
+                    // In IE before version 8 `document.write()` does not
+                    // implement Function methods, like `apply()`.
+                    return Function.prototype.apply.call(originalWrite, document, arguments);
+                }
+            }
+        })();
+        </script><script>
+reg(["osapi","shindig","gadgets"], ["/7.0.0.0/resources/scripts/gen/c519d09e4603ef85769dbfa729ac2bf5.js"],function(){
+define('gadgets', gadgets); define('shindig', shindig); define('osapi', osapi);
+
+
+});
+</script><script type="text/javascript">window.appsMarketEnabled = false;</script><script>
+reg(["JAF","appContainer","syntheticAppContainer"], ["/7.0.0.0/resources/scripts/gen/b6057690ca9ab02208817bfebc5bbad5.js"],function(){
+define('JAF', ['osapi'], function(osapi) {return {};});
+
+define('appContainer', ['jive/app/core_container/'+'mock'], function(C) { return new C(); }); define('syntheticAppContainer', ['jive/app/core_container/'+'tile_app', 'jive/app/core_container/'+'main', 'jive/app/core_container/'+'common_container'], function(C) {var c = new C(); c.initActionLinkContext({coreAPIType: 'osapi.jive.core.Discussion', id: 1105563  }); return c;});
+
+
+});
+</script><script src="./how to add values to multi valued properties us...   Adobe Community_files/70358fea9d3ce8a3dc78a3c86ba8930c.js"></script>
+<script>
+if (dwr == null) var dwr = {};
+if (dwr.engine == null) dwr.engine = {};
+if (DWREngine == null) var DWREngine = dwr.engine;
+
+DWREngine._origScriptSessionId = "90DE58CA9B1FE92CF292942B333B2380";
+DWREngine._sessionCookieName = "JSESSIONID"; // JSESSIONID
+DWREngine._allowGetForSafariButMakeForgeryEasier = "true";
+DWREngine._scriptTagProtection = "throw 'allowScriptTagRemoting is false.';";
+DWREngine._defaultPath = "/dwr/interface";
+DWREngine._pollWithXhr = "false";
+if (jQuery.fn.message && DWREngine.setErrorHandler) {
+    DWREngine.setErrorHandler(function(message, ex) {
+        dwr.engine._debug('Error: ' + ex.name + ', ' + ex.message, true);
+        if (message == null || message == '') jQuery('<p>A server error has occurred.</p>').message({ style: 'error' });
+        // Ignore NS_ERROR_NOT_AVAILABLE if Mozilla is being narky
+        else if (message.indexOf('0x80040111') != -1) dwr.engine._debug(message);
+        else jQuery('<p/>').text(message).message({ style: 'error' });
+    })
+}
+
+
+jive.rte.defaultStyles = ["\/plugins\/customer-service-plugin\/resources\/styles\/image_nav.css","\/plugins\/customer-service-plugin\/resources\/styles\/deluxe_ask_a_question.css","\/plugins\/social-media\/resources\/styles\/socialmedia.css?v\x3d7.0.0-0","\/plugins\/video\/resources\/styles\/jive-videomodule.css"];
+
+var jiveControl = null; require(['jive/model/control'], function(JiveModelController) {jiveControl = new JiveModelController();}); jive.rte.mobileUI = false;
+
+jive.observable = jive.conc.observable;
+
+jive.global.typeToNumeric = {"update":1464927464,"person":3,"idea":3227383,"discussion":1,"collaboration":2800,"extStreamActivity":-960826044,"blog":37,"space":14,"document":102,"share":109400031,"poll":18,"file":102,"webhook":1224013431,"dm":109016030,"carousel":1527402675,"mention":550,"contentVersion":120,"slide":1606291040,"privateprop":987082157,"video":1100,"invite":350,"announcement":22,"post":38,"static":1140061448,"task":602,"streamEntry":1501,"securityGroup":4,"image":111,"interaction":2801,"attachment":13,"favorite":800,"outcome":2700,"extprop":-1840153649,"url":801,"message":2,"project":600,"system":-2,"embedded_video":1100,"group":700,"comment":105,"user":2020}; jive.global.typeToMacroName = {"update":"microblog","person":"user","idea":"idea","post":"blogpost","discussion":"thread","extStreamActivity":"tilestream","task":"task","blog":"blog","space":"community","url":"external-site","message":"message","project":"project","document":"document","poll":"polls","file":"document","embedded_video":"videolink","group":"group","video":"videolink"};
+
+$j.ajaxSettings.traditional = true;
+
+$j(function(){define('documentReady',document);});
+
+require(['tAMD/hooks'], function(h) {h.on('define', 'Zapatec.Calendar', function(id, deps, factory, next) {reg(['Zapatec.Calendar.translations'], ['\/7.0.0.0\/resources\/scripts\/zapatec\/zpcal\/lang\/calendar-it.js'], function() {define('Zapatec.Calendar.translations', {});}); require(['Zapatec.Calendar.translations'], $j.noop); next(id, deps.concat('Zapatec.Calendar.translations'), factory);}); h.on('publish', 'Zapatec.Calendar', function(id, Calendar, next) {Calendar._TT["DEF_DATE_FORMAT"] = "%d\/%m\/%Y"; next(id, Calendar);});});
+
+$j(document).ready(function() {var followView = new jive.FollowUserApp.ProfileFollowView({i18n: {startFollowingMessage: '<p>Ora stai seguendo {0}.</p>', stopFollowingMessage:  '<p>Hai smesso di seguire {0}.</p>', pendingConnectionMessage: '<p>Nota: {0} dovrà approvare la tua richiesta</p>'}, bidirectional: false}); var jiveUserFollow = new jive.FollowUserApp.Main({followView: followView}); $j("input[placeholder]").placeHeld();});
+
+</script>
+<script>var containerType = '14'; var containerID = '4588';var spotlightSearchURL = "spotlight-search";</script><script>window._jive_images_enabled = false;</script><script>
+reg(["jive.rte"], ["/7.0.0.0/resources/scripts/gen/cad09f952c6d4a05a5701d9365fe1993.js"],function(){
+window.errorHandlerMessage = "An error occurred:";
+            window.editorErrorHandler = function(message, exception) {
+              // if the message is something other than a timeout, show the message plus the error code
+              if (message.indexOf('Timeout') == -1) {
+                  $j('#dwr-error-text').text(errorHandlerMessage + ' Error Code: ' + message);
+                  $j('#dwr-error-table').fadeIn();
+                  setTimeout(function() {
+                      $j('#dwr-error-table').fadeOut();
+                  }, 10000);
+              }
+            };
+            if(typeof(tinyMCE) != "undefined"){tinyMCE.addI18n('it.jivemacros',{"unused.jive.key" : "nothing."});}
+          window.RawHTMLSaveFunction = function(element_id, html, body){
+              var text = $j('#wysiwygtext');
+              if (text.is(':not(:visible)')) {
+                  return html;
+              }else{
+                  return text.val();
+              }
+          }
+          jive.rte.multiRTE = new Array();
+  
+          //Not used by RTEWrap, but we need this for backward compatibility; see CS-23883
+          window.refreshLinks = function() {
+              jive.rte.multiRTE.forEach(function(rteID) {
+                  if ($j('#' + rteID + '_parent').length < 1) {
+                      // safari 2, text only
+                      $j('#' + rteID + '_toggle_html').hide();
+                      $j('#jivePreferredEditorModeLinkHREF').hide();
+                      return;
+                  }
+  
+                  if(currentMode == 'rawhtml') {
+                      $j('#' + rteID + '_toggle_html').css('display', 'block');
+                  }else{
+                      $j('#' + rteID + '_toggle_html').hide();
+                  }
+  
+                  if (preferredMode == currentMode) {
+                      $j('#jivePreferredEditorModeLinkHREF').hide();
+                  } else {
+                      $j('#jivePreferredEditorModeLinkHREF').css('display', 'block');
+                  }
+              });
+          }
+  
+          window.editor = new jive.ext.y.HashTable();
+          
+
+
+jive.rte.macros.push(new jive.rte.Macro("color","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("size","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("font","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("toc","","IMAGE", true, true, [], [], true,false));
+jive.rte.macros.push(new jive.rte.Macro("code","","TEXT", false, true, [{ name: "sql", deleteAll: true, params: [{ name: "__default_attr", value :"sql"} ]},{ name: "html", deleteAll: true, params: [{ name: "__default_attr", value :"html"} ]},{ name: "xml", deleteAll: true, params: [{ name: "__default_attr", value :"xml"} ]},{ name: "java", deleteAll: true, params: [{ name: "__default_attr", value :"java"} ]},{ name: "plain", deleteAll: true, params: [{ name: "__default_attr", value :"plain"} ]}], [{name: "__default_attr",value: ["sql","html","xml","java","plain"]}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("noformat","","TEXT", true, false, [], [], true,false));
+jive.rte.macros.push(new jive.rte.Macro("thread","thread/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("message","message/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("external-site","bookmarks/","INLINE", false, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("document","docs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("tag","tags/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""},{name: "tag",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("microblog","status/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("polls","polls/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("blogpost","blogs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("blog","blogs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""},{name: "name",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("community","community/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("space","community/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("user","people/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""},{name: "username",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("project","project/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("task","view-task.jspa?task=","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("group","groups/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("quote","","TEXT", false, true, [], [{name: "title",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("vimeo","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("veoh","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("dailymotion","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("youtube","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("kaltura","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""},{name: "playerKey",value: ""},{name: "playerID",value: ""},{name: "partnerID",value: ""},{name: "playerColor",value: "#FFFFFF"}], false,false));
+jive.rte.macros.push(new jive.rte.Macro("brightcove","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""},{name: "playerKey",value: ""},{name: "playerID",value: ""},{name: "partnerID",value: ""},{name: "playerColor",value: "#FFFFFF"}], false,false));
+jive.rte.macros.push(new jive.rte.Macro("application","","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "__title",value: ""},{name: "__view",value: ""},{name: "__params",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("appEmbeddedView","","INLINE", true, false, [], [{name: "_default_attr",value: ""},{name: "_appuuid",value: ""},{name: "_title",value: ""},{name: "_view",value: ""},{name: "_context",value: ""},{name: "_url",value: ""},{name: "_previewimage",value: ""},{name: "_icon",value: ""},{name: "_action_id",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("tilestream","external/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("idea","","INLINE", true, false, [{ name: "default", deleteAll: true, params: [{ name: "id", value :""} ,{ name: "__default_attr", value :""} ,{ name: "title", value :""} ]}], [{name: "id",value: ""},{name: "title",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("videomacro","","IMAGE", true, false, [{ name: "default", deleteAll: true, params: [{ name: "id", value :""} ,{ name: "videoid", value :""} ,{ name: "__default_attr", value :""} ,{ name: "jivemacro_uid", value :""} ,{ name: "width", value :""} ,{ name: "height", value :""} ,{ name: "imageURL", value :""} ]}], [{name: "id",value: ""},{name: "height",value: ""},{name: "width",value: ""},{name: "jivemacro_uid",value: ""},{name: "__default_attr",value: ""},{name: "videoid",value: ""},{name: "imageURL",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("videolink","","INLINE", true, false, [{ name: "default", deleteAll: true, params: [{ name: "id", value :""} ,{ name: "__default_attr", value :""} ,{ name: "jivemacro_uid", value :""} ,{ name: "title", value :""} ,{ name: "zero", value :""} ]}], [{name: "id",value: ""},{name: "title",value: ""},{name: "jivemacro_uid",value: ""},{name: "__default_attr",value: ""},{name: "zero",value: ""}], true,false));
+define('jive.rte', jive.rte);
+
+
+});
+</script><script src="./how to add values to multi valued properties us...   Adobe Community_files/it.js"></script><script src="./how to add values to multi valued properties us...   Adobe Community_files/e656448eed27061d7ecef25806b0194e.js"></script>
+<script>
+reg(["apps/shared/models/lazy_corev3"],["/7.0.0.0/resources/scripts/gen/76f7a12fab9d0a07d4b7c7653e6eae11.js"]);
+
+reg(["apps/share/main"],[]);
+
+reg(["soy!jive.UserPicker.soy.renderModalSkillSearchButton"],[]);
+
+reg(["apps/userpicker/views/select_skill_view"],["/7.0.0.0/resources/scripts/gen/34b3ac55dfb7dd77f3d8fda4c66fff7f.js"]);
+
+var jiveMembership = new jive.MembershipApp.Main({objectID:4588});
+var pickerArgs = {
+objectType: 1,
+objectID: 1105563,
+personalContainerTitleKey:'nav.bar.create.personal_container.title.thread',
+personalContainerCaptionKey:'nav.bar.create.personal_container.caption.thread',
+searchPlaceholderKey:'place.picker.move.search.thread',
+containerID: 4588,
+containerType: 14};
+var jiveMoveContent = new jive.Move.Content.Main(pickerArgs);
+var jiveThreadToDoc = new jive.ThreadToDoc.Main($j.extend({maxMessages:100,
+threadMessageCount: 6}, pickerArgs));
+var jiveLockThread = new jive.Modalizer.Main({triggers:['#jive-link-lock a','#jive-link-unlock a']});
+var jiveBranchThread = new jive.Modalizer.Main({liveTriggers:['.js-link-branch'], width: 'medium'});
+var jiveDeleteContent = new jive.Modalizer.Main({triggers:['#jive-link-delete a'], liveTriggers:['.js-link-delete']});
+var jiveReportAbuse = new jive.Modalizer.Main({triggers:['#jive-link-abuse a'],liveTriggers:['.js-link-abuse'], width:
+'medium'});
+$j(function() { new jive.EmailNotification.Main(1105563, 1); });
+
+
+var _editor_lang = "it";
+var _jive_video_picker__url = "?container=4588&containerType=14";
+
+
+    
+    function toggleFeatured() {
+
+        ToggleFeatured.toggleFeatured(1, 1105563, 4588, 14, {
+            callback:function(featured) {
+
+                if (featured) {
+                    $j('#featured-toggle-feature').hide();
+                    $j('#featured-toggle-unfeature').show();
+                } else {
+                    $j('#featured-toggle-unfeature').hide();
+                    $j('#featured-toggle-feature').show();
+                }
+
+
+
+                Jive.AlertMessage('content-featured-notify', {
+                    beforeStart:function() {
+                        if (featured) {
+                            $j('#content-featured-notify').html('<div><span class="jive-icon-med jive-icon-info"></span>Questo elemento è ora in primo piano!</div>');
+                           
+                        } else {
+                            $j('#content-featured-notify').html('<div><span class="jive-icon-med jive-icon-info"></span>Questo elemento è stato rimosso dai contenuti in primo piano.</div>');
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    function toggleFeaturedOnProfile() {
+        ToggleFeatured.toggleFeaturedOnProfile(1, 1105563, {
+            callback:function(featured) {
+                if (featured) {
+                    $j('#featured-toggle-feature-onprofile').hide();
+                    $j('#featured-toggle-unfeature-onprofile').show();
+                } else {
+                    $j('#featured-toggle-unfeature-onprofile').hide();
+                    $j('#featured-toggle-feature-onprofile').show();
+                }
+
+
+
+                Jive.AlertMessage('content-featured-notify', {
+                    beforeStart:function() {
+                        if (featured) {
+                            $j('#content-featured-notify').html('<div><span class="jive-icon-med jive-icon-info"></span>Questo elemento è ora in primo piano!</div>');
+                        } else {
+                            $j('#content-featured-notify').html('<div><span class="jive-icon-med jive-icon-info"></span>Questo elemento è stato rimosso dai contenuti in primo piano.</div>');
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+
+reg(["jive/rte/syntax/SyntaxHighlighter"],["/7.0.0.0/resources/scripts/gen/34b23eba7763edef75f76c1876fca8e9.js"]);
+
+reg(["apps/outcomes/actionView"],["/7.0.0.0/resources/scripts/gen/d66b5370262c54d14b411d9ebbed234b.js"]);
+
+reg(["apps/outcomes/summaryView"],["/7.0.0.0/resources/scripts/gen/229e33d3334326e691e2b8ad364b5244.js"]);
+
+reg(["apps/shared/controllers/switchboard", "apps/shared/controllers/localexchange", "apps/shared/views/itemList", "apps/shared/models/core_deferred", "underscore", "jive/promise_util"],["/7.0.0.0/resources/scripts/gen/9f6a2b61cfe7eee79de0c2867a12b549.js"]);
+
+        function initBadgeHelper(badgeHelper) {
+        badgeHelper.enableHeaderBadges();
+        }
+        require(['apps/outcomes/badgeHelper'],initBadgeHelper);
+
+
+    define('forumMacroDiscussionApp', ['apps/discussion_app/main'], function() {
+    var options = {
+    isThreaded:         false,
+    isModerated:        false,
+    isFinalized:        false,
+    resourceType:       1,
+    resourceID:         1105563,
+
+    containerType:      14,
+    containerID:        4588,
+
+    listAction:         "/comment-list.jspa",
+    //TODO: edit and delete actions
+    editAction: "/update-advanced-comment.jspa",
+    deleteAction: "/thread-delete!input.jspa?start=0&amp;tstart=0",
+    resourceVersionID:  -1,
+
+    preferredMode:      'advanced',
+    currentMode:        'advanced',
+    rteDisabledBrowser: false,
+    isAnonymous:        true,
+
+    question:           true,
+    imagesEnabled:      false,
+    rteOptions : {
+    controller    : jiveControl,
+    preset        : "mini-w-quote",
+    preferredMode : "advanced",
+    startMode     : "advanced",
+    mobileUI      : false,
+    toggleText    : 'Mostra editor completo',
+    alwaysUseTabText : 'Usa sempre questo editor',
+    editDisabledText : 'Stai utilizzando un dispositivo che ti permette solamente di aggiungere contenuti.',
+    editDisabledSummary : 'Se accedi a {0} da un computer, puoi aggiungere e modificare i tuoi contenuti.',
+    communityName : 'Adobe Community',
+    height        : 300,
+    images_enabled: false,
+    imagePickerUrl : "/image-picker!input.jspa?containerType=14&container=4588&messageID=4876896&postedFromGUIEditor=true&reply=true",
+    destroyImagePickerUrl : _jive_base_url + "/image-picker!clean.jspa"
+    },
+    i18n: {
+    postSuccessText:         'L’aggiunta della tua risposta è andata a buon fine, ma prima che possa essere pubblicata deve essere approvata da un moderatore.',
+    postErrorText:           'Si è verificato un errore nel tentativo di inviare il post. Riprova.',
+    forumThrdReplyTo:        'Rispondi a',
+
+    // Question text for discussions-question.soy
+    questionNotAnswered:     'Questa domanda è {0}Senza risposta{1}.',
+    markQuestionAsAssumedAnswered: '{0}{1}Segna come Presumibilmente con risposta{2}{3}',
+    questionAssumedAnswered: 'Questa domanda è {0}Presumibilmente con risposta{1}.',
+    questionAnswered: 'Questa domanda è ora {0}Con risposta{1}.',
+    correctAnswer: 'Risposta esatta',
+    helpfulAnswer: 'Risposta utile',
+    helpfulAnswers: 'Risposte utili',
+    byWord: 'da',
+    onWord: 'il',
+    leftParen: '(',
+    rightParen: ')',
+    unmarkAsCorrectAnswer: 'Annulla impostazione come Corretta',
+    unmarkAsHelpfulAnswer: 'Deseleziona come Utile',
+    seeAnswerInContext: 'Visualizza la risposta nel contesto',
+    seeThisAnswer: 'Visualizza questa risposta',
+    allHelpfulAnswersAwarded: 'Hai assegnato punti a tutte le risposte utili disponibili',
+    oneHelpfulAnswerLeft: 'Hai {0} altra risposta utile cui assegnare punti.',
+    someHelpfulAnswersLeft: 'Hai {0} altre risposte utili cui assegnare punti.',
+    postUserWroteLabel: '{0} ha scritto',
+    postGuestWroteLabel: 'L’ospite ha scritto',
+    formSubmitPleaseWait:'Attendi...',
+    postReplyMustBeApprvdText:'Nota: il tuo contenuto deve essere approvato da un moderatore, prima che possa essere pubblicato.',
+    globalLoginRequired:'Non sei più collegato. Per continuare, effettua l\'\'{0}accesso{1}.',
+    advEditor:'Usa editor avanzato'
+    }
+    };
+
+    // Create DiscusssionApp
+    return jive.DiscussionApp.instance = new jive.DiscussionApp.Main(options);
+
+    });
+
+
+reg(["apps/rate/main"],[]);
+
+reg(["soy!jive.rate.soy.renderRating"],[]);
+
+        new jive.MoreLikeThisApp.Main({
+            objectType: 2,
+            objectID: 4876896,
+            containerID: "jive-more-like-this-2-4876896",
+            numResults: 5,
+            noContentMessage: "Nessun contenuto simile trovato",
+            errorMessage: "Impossibile recuperare contenuti dal server:"
+        });
+
+
+reg(["apps/shared/controllers/browser_events"],["/7.0.0.0/resources/scripts/gen/faf8193092caedf7e3c16563e05dd71b.js"]);
+
+reg(["apps/onboarding/views/like_content"],["/7.0.0.0/resources/scripts/gen/edaf6e408c918777ce0ebf617ff42fab.js"]);
+
+reg(["Zapatec.Calendar"],["/7.0.0.0/resources/scripts/gen/4d8271e6a749882a0a090760da15b40b.js"]);
+
+reg(["apps/direct_messaging/factory", "apps/microblogging/views/attachment_view"],["/7.0.0.0/resources/scripts/gen/88048505a76ee6dd12fc79067b6b66bd.js"]);
+
+reg(["apps/onboarding/views/create_wall_entry"],["/7.0.0.0/resources/scripts/gen/7d60e11f2f03d4e8864e8f49cb39ac62.js"]);
+
+reg(["apps/onboarding/views/connect_colleagues"],["/7.0.0.0/resources/scripts/gen/f147d54c0d4635f0fc7b48f01dcbdf56.js"]);
+
+reg(["apps/onboarding/views/create_private_group"],["/7.0.0.0/resources/scripts/gen/b6d074034d466a400ea801ec41bfdfb6.js"]);
+
+reg(["apps/onboarding/views/create_thread"],["/7.0.0.0/resources/scripts/gen/abe2a5d9909155e5c952dfe03392f533.js"]);
+
+reg(["apps/shared/controllers/socket_holder"],["/7.0.0.0/resources/scripts/gen/0bd0659789293c7880e3289e3e21096c.js"]);
+
+reg(["jive/app/core_container/mock"],["/7.0.0.0/resources/scripts/gen/fb1c3a2287cb1c24d13124131db919a4.js"]);
+
+reg(["apps/onboarding/views/tour_ui"],["/7.0.0.0/resources/scripts/gen/5291f8f52ad0b4f2cb450f871e5da96e.js"]);
+
+reg(["apps/trial/views/trial_tip_helper"],[]);
+
+reg(["apps/onboarding/views/follow_user"],["/7.0.0.0/resources/scripts/gen/2190cc37deb27a72ae733a3e1a484383.js"]);
+
+reg(["apps/feedback/main"],["/7.0.0.0/resources/scripts/gen/a9c6503b937ddb5e177b2bb75b347f29.js"]);
+
+reg(["apps/onboarding/views/about_you"],["/7.0.0.0/resources/scripts/gen/8c5a01daa973f7e1dd0796873054253d.js"]);
+
+reg(["apps/metric/models/metric_source"],["/7.0.0.0/resources/scripts/gen/db1665be4b3f823970e345a1275d7da8.js"]);
+
+reg(["apps/onboarding/views/invite_to_group"],["/7.0.0.0/resources/scripts/gen/b3840481498bf03604b1c13b71142f5b.js"]);
+
+reg(["apps/onboarding/views/invite_external_users"],["/7.0.0.0/resources/scripts/gen/4121c7409be414765d20f6174fb10383.js"]);
+
+reg(["apps/trial/views/trial_view"],["/7.0.0.0/resources/scripts/gen/863a2aacea795c620914bdc184278247.js"]);
+
+reg(["apps/onboarding/views/add_document_collaborator"],["/7.0.0.0/resources/scripts/gen/5529dc37f22acf4401db991fb4f3e9a0.js"]);
+
+reg(["apps/home/views/badge_menu_template_loader"],["/7.0.0.0/resources/scripts/gen/f9a22a5ce6f4b4c23cf067821355ed8c.js"]);
+
+reg(["apps/onboarding/views/jive_for_outlook"],["/7.0.0.0/resources/scripts/gen/89fdd90c0a63eab7454699817193797f.js"]);
+
+reg(["apps/onboarding/views/learn_system"],["/7.0.0.0/resources/scripts/gen/3d988878c38b4f2263102f1146f2d5f5.js"]);
+
+reg(["apps/autosearch/lightbox"],["/7.0.0.0/resources/scripts/gen/5251cdf2c5dd30033ba900110d160694.js"]);
+
+reg(["apps/onboarding/views/create_or_set_shared_group"],["/7.0.0.0/resources/scripts/gen/93507491b3f444f478fe4a3d0a69a578.js"]);
+
+reg(["apps/onboarding/views/jive_for_office"],["/7.0.0.0/resources/scripts/gen/44fb6924d55a7be6c02b0bc3f8c64a94.js"]);
+
+reg(["apps/onboarding/views/mobile_login"],["/7.0.0.0/resources/scripts/gen/39906727ac11032b0d9b45eb7a725c77.js"]);
+
+reg(["jive/app/core_container/main"],["/7.0.0.0/resources/scripts/gen/ab32d49fe2c70e917d0095b1ed11202b.js"]);
+
+reg(["apps/onboarding/views/create_blogpost"],["/7.0.0.0/resources/scripts/gen/85e0d99368e17ffa44e732d22f7ecb2f.js"]);
+
+reg(["apps/navbar/menu/satellite/main"],["/7.0.0.0/resources/scripts/gen/3b17bef8afbb72c05a8f8ead939806a6.js"]);
+
+reg(["apps/filters/view/item_grid_view"],["/7.0.0.0/resources/scripts/gen/7eca6472a16bccd2b7adc1125d371e9f.js"]);
+
+reg(["apps/onboarding/views/jive_anywhere"],["/7.0.0.0/resources/scripts/gen/4f7053becabfbddf687e68023c330955.js"]);
+
+reg(["apps/onboarding/views/create_document"],["/7.0.0.0/resources/scripts/gen/148c2fdd8d01bba7d70363e6decce283.js"]);
+
+reg(["apps/onboarding/views/create_project"],["/7.0.0.0/resources/scripts/gen/8f83cf5dc73e2addd3971bd3bf26ac89.js"]);
+
+reg(["apps/onboarding/views/fill_out_profile"],["/7.0.0.0/resources/scripts/gen/9adaa1c92a185a83cdc96ebe4db93e44.js"]);
+
+reg(["apps/onboarding/views/upload_or_move_file"],["/7.0.0.0/resources/scripts/gen/510a6e2119c912b8b3b79db56185c11a.js"]);
+
+reg(["apps/onboarding/views/create_or_join_group"],["/7.0.0.0/resources/scripts/gen/d5568cc369fd7fbf9bc0130b37fe9412.js"]);
+
+reg(["apps/onboarding/views/invite_users"],["/7.0.0.0/resources/scripts/gen/ea89b36061875babc2afcc89b3532d30.js"]);
+
+reg(["apps/trial/models/trial_panel_source"],["/7.0.0.0/resources/scripts/gen/2c785dbdb7359ec14d414c1060a4a042.js"]);
+
+reg(["apps/onboarding/views/create_comment_or_message"],["/7.0.0.0/resources/scripts/gen/86d274bfc9d987868227c8df90a491c1.js"]);
+
+reg(["apps/browse/container/model/container_source"],[]);
+
+reg(["jive/app/core_container/common_container"],["/7.0.0.0/resources/scripts/gen/758617a152c738046caf041b9267977e.js"]);
+
+$j(function(){require(['jive.adobe.mt.translate.Main'], function(Main) {new Main({ mt_service_url : '//cls.adobe.com/CLS/rest/MTEngine/StringTranslation/json'});});});
+
+$j(function(){require(['jive.adobe.sso.Main'], function(Main) {new Main({ imsServer : 'https://adobeid-na1.services.adobe.com'});});});
+
+$j(function() {var tipsApp = new jive.Tips.Main({tipGroups:[], skippedTipGroupIDs: []});});
+
+$j(function(){require(['apps/navbar/menu/home/navbar_menu_home_main'], function(Main) {jive.Navbar.Menu.Home.GlobalController = new Main('#j-satNav-indicator');});});
+
+require([ 'apps/activity_stream/activity_notifier', 'apps/activity_stream/models/activity_stream_source' ], function(ActivityNotifier, ActivityStreamSource) {}); $j(window).load(function(){jive.onLoadEventComplete = true;});
+
+var authSource = new jive.Authentication.Source({forceSecure: false});
+
+reg(["jive/promise_util"],[]);
+
+reg(["apps/microblogging/link_builder"],["/7.0.0.0/resources/scripts/gen/28af18c89f1bbc23e20257931ae1383e.js"]);
+
+reg(["apps/microblogging/status_input_drop_down"],["/7.0.0.0/resources/scripts/gen/7f389d3e271f335a4d106dc305621007.js"]);
+
+reg(["jive/fresh_action_queue"],[]);
+
+reg(["apps/status_input/data_source", "underscore"],["/7.0.0.0/resources/scripts/gen/fd4744577bd293fd7de1ca7e8a23877c.js"]);
+
+reg(["jive/app/rte/artifacts"],[]);
+
+window.tinyMCE_GZ = { loaded: true };
+
+</script>
+<!-- plugin javascript --><!-- end plugin javascript --><script src="./how to add values to multi valued properties us...   Adobe Community_files/8178a1b1b668ec3133f1abe30e46e8f5.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"3830971,3785722,4096822","applicationTime":60,"beacon":"beacon-1.newrelic.com","queueTime":0,"licenseKey":"e1336a1f47","transactionName":"b1xUN0YHXEVRWxIMWFYWZRdGE0ZFcVsSDFhWFkILRgNTUg==","agent":"js-agent.newrelic.com\/nr-476.min.js","errorBeacon":"bam.nr-data.net"}</script><script src="./how to add values to multi valued properties us...   Adobe Community_files/theme.js"></script><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;"><iframe id="_atssh845" title="AddThis utility frame" src="./how to add values to multi valued properties us...   Adobe Community_files/sh174.htm" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;"></iframe></div><script type="text/javascript" src="./how to add values to multi valued properties us...   Adobe Community_files/core157.js"></script><script src="./how to add values to multi valued properties us...   Adobe Community_files/nr-476.min.js"></script><iframe id="destination_publishing_iframe_adobe_0" src="./how to add values to multi valued properties us...   Adobe Community_files/dest4.htm" style="display: none; width: 0px; height: 0px;"></iframe><script type="text/javascript" src="./how to add values to multi valued properties us...   Adobe Community_files/e1336a1f47"></script></body></html>

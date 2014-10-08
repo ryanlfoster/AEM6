@@ -1,0 +1,21 @@
+.jive-widget-imagenav ul.j-image-links > li.j-image-link-row > ul {
+    list-style: none;
+}
+
+.jive-widget-imagenav ul.j-image-links > li.j-image-link-row > ul > li {
+	float:left;
+	padding: 5px;
+    height: 200px;
+    width: 200px;
+}
+
+.jive-widget-imagenav ul.j-image-links > li.j-image-link-row > ul > li .j-slide-image-wrapper,
+#published-images .j-slide-image-wrapper,
+.j-image-link-create .j-preview-box .j-slide .j-slide-image-wrapper {
+    background: transparent;
+    box-shadow: none;
+}
+
+.jive-widget-imagenav .j-slide {
+    height: 150px;
+}
