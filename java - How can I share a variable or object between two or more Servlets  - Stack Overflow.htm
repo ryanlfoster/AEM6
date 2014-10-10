@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>java - How can I share a variable or object between two or more Servlets? - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico?v=038622610830">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=fd7230a85918">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=fde65a5a78c6">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="How can I share a variable or object between two or more Servlets?">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I would like to know if there is some way to share a variable or an object between two or more Servlets, I mean some &quot;standard&quot; way. I suppose that this is not a good practice but is a easier way to ">
+    <meta property="og:url" content="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets">
+    <link rel="canonical" href="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/java - How can I share a variable or object between two or more Servlets  - Stack Overflow.htm">
+
+    
+    
+    <script type="text/javascript" async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/ados"></script><script async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/quant.js"></script><script async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/beacon.js"></script><script async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/analytics.js"></script><script type="text/javascript" async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/ados.js"></script><script src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/jquery.min.js"></script>
+    <script src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/stub.en.js"></script>
+    <link rel="stylesheet" type="text/css" href="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/all.css">
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;How can I share a variable or object between two or more Servlets?&#39;" href="http://stackoverflow.com/feeds/question/123657">
+    <script>
+        
+        StackExchange.ready(function () {
+                
+                StackExchange.using("snippets", function () {
+                    StackExchange.snippets.initSnippetRenderer();
+                });
+                
+
+            StackExchange.using("postValidation", function () {
+                StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+            });
+
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:2,shownCommentCount:2,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:123657});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '123657');
+            
+                    });
+    </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1412936218,"networkMetaHostname":"meta.stackexchange.com","routeName":"Questions/Show","styleCode":true,"enableUserHovercards":true,"snippets":{"enabled":true,"domain":"stacksnippets.net"},"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"nonAsciiTags":true,"enableSocialMediaInSharePopup":true,"useGoogleOAuth2":true},"user":{"fkey":"e8496381268d08a1be635d82dcfb75d5","isAnonymous":true,"ab":{"homepage_recommended_algo":{"v":"a","g":1},"new_user_inbox_message":{"v":"a","g":1}}}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"abaf4164bd30","js/moderator.en.js":"6330bcad1fbe","js/full-anon.en.js":"786951f2df06","js/full.en.js":"5fe61a7afbb5","js/wmd.en.js":"9446e67d8e16","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"8f014fcebc63","js/help.en.js":"56d0a3a560ae","js/tageditor.en.js":"55273fa7648e","js/tageditornew.en.js":"47c168409790","js/inline-tag-editing.en.js":"1498d8619942","js/revisions.en.js":"c7eee8ab1fda","js/review.en.js":"167823c5920c","js/tagsuggestions.en.js":"bc2c996faeda","js/post-validation.en.js":"d11f7ba1b251","js/explore-qlist.en.js":"4e6f969d97ee","js/events.en.js":"c202ec541511","js/keyboard-shortcuts.en.js":"ed1056b5771a","js/external-editor.en.js":"0cab63d6a599","js/external-editor.en.js":"0cab63d6a599","js/snippet-javascript.en.js":"e67749f2ffb7","js/snippet-javascript-codemirror.en.js":"7b066d23b47d"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    
+    
+<script async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/full-anon.en.js"></script><script async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/snippet-javascript.en.js"></script><script async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/post-validation.en.js"></script><script async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/prettify-full.en.js"></script><script async="" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/external-editor.en.js"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><script type="text/javascript" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/adFeedback.js"></script><link rel="stylesheet" href="http://static.adzerk.net/Extensions/adFeedback.css"><link href="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/sidebar.min.css" type="text/css" rel="stylesheet"></head>
+<body class="question-page new-topbar">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+<div class="topbar">
+    <div class="topbar-wrapper">
+        
+        <div class="js-topbar-dialog-corral">
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="http://stackoverflow.com/">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+            <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+                    <a href="http://blog.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:7 })">blog</a>
+            </div>
+
+
+
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                </li>
+                            <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    <a class="site-link js-gps-track" href="http://careers.stackoverflow.com/?utm_source=stackoverflow.com&utm_medium=site-ui&utm_campaign=multicollider" data-gps-track="site_switcher.click({ item_type:9 })">
+                        <div class="site-icon favicon favicon-careers" title="Stack Overflow Careers"></div>
+                        Stack Overflow Careers
+                    </a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+your communities        </h3>
+            
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <div class="call-to-login">
+                        <a href="https://stackoverflow.com/users/signup?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f123657%2fhow-can-i-share-a-variable-or-object-between-two-or-more-servlets" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a>
+                    or
+                    <a href="https://stackoverflow.com/users/login?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f123657%2fhow-can-i-share-a-variable-or-object-between-two-or-more-servlets" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a>
+
+                    to customize your list.
+            </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a></h3>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+            
+            <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 130 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+            
+        </div>
+
+        <div class="topbar-links">
+            
+                <div class="links-container">
+                    <span class="topbar-menu-links">
+                            <a href="https://stackoverflow.com/users/signup?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f123657%2fhow-can-i-share-a-variable-or-object-between-two-or-more-servlets" class="login-link">sign up</a>
+                            <a href="https://stackoverflow.com/users/login?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f123657%2fhow-can-i-share-a-variable-or-object-between-two-or-more-servlets" class="login-link">log in</a>
+                            <a href="http://stackoverflow.com/tour">tour</a>
+
+                            <a href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="http://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+                            <a href="http://careers.stackoverflow.com/">stack overflow careers</a>
+                    </span>
+                </div>
+
+			<div class="search-container">
+                <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="search" value="" tabindex="1" autocomplete="off" maxlength="240">
+                </form>
+			</div>
+            	
+        </div>      
+    </div> 
+</div>
+<script>
+    StackExchange.ready(function () { StackExchange.topbar.init(); });
+</script>
+    <div class="container">
+        <div id="header" class="headeranon">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs mainnavsanon">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="http://stackoverflow.com/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="http://stackoverflow.com/tags">Tags</a></li>
+                        <li><a id="nav-users" href="http://stackoverflow.com/users">Users</a></li>
+                        <li><a id="nav-badges" href="http://stackoverflow.com/help/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="http://stackoverflow.com/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+	<link itemprop="image" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+			<!--googleoff: all-->
+
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+            <a href="http://stackoverflow.com/tour" id="tell-me-more" class="button">Take the 2-minute tour</a>
+            <span id="close"><a title="click to dismiss">×</a></span>
+        </span>
+        <div id="blurb">
+            Stack Overflow is a question and answer site for professional and enthusiast programmers. It's 100% free, no registration required.
+        </div>        
+    </div>
+    <script>
+        $('#tell-me-more').click(function () {
+            var clickSource = $("body").attr("class") + '-mini';
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("question-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+            }
+
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("aboutpage.click", { aboutclick_location: clickSource } , true);
+            });
+        });
+        $('#herobox-mini #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "close" }, true);
+            });
+            $.cookie("hero", "none", { path: "/", expires: 365 });
+            var $hero = $("#herobox-mini");
+            $hero.slideUp('fast', function () { $hero.remove(); });
+            return false;
+        });
+    </script>
+</div>
+			<!--googleon: all-->
+			<div id="question-header">
+			<h1 itemprop="name"><a href="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/java - How can I share a variable or object between two or more Servlets  - Stack Overflow.htm" class="question-hyperlink">How can I share a variable or object between two or more Servlets?</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="123657" id="question">
+
+    <script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk780203831",4).setZone(43) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk780203831"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjoyOTExLCJjaCI6MTE3OCwiY3IiOjEwNzY4LCJkaSI6IjMzMjE4OTQ3ZGM0NzRhMzc4N2ZiNWI2NGZiOGYxNWY5IiwiZG0iOjEsImZjIjoxNjg3NCwiZmwiOjc0NzIsImlwIjoiOTMuNTcuOTEuMjUzIiwia3ciOiJqYXZhLHdlYi1hcHBsaWNhdGlvbnMsc2VydmxldHMiLCJudyI6MjIsInBjIjowLCJwciI6MTYwNCwicnQiOjEsInJmIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLml0LyIsInN0Ijo4Mjc3LCJ1ayI6InVlMS05NjIyYzdhZTFkMTU0MzIwOTI5MWE2OTFkNmViOTUxOCIsInpuIjo0MywidHMiOjE0MTI5MzYyOTg0MjYsInVyIjoiaHR0cDovL2NhcmVlcnMuc3RhY2tvdmVyZmxvdy5jb20vam9icy90ZWxlY29tbXV0ZT91dG1fc291cmNlPXN0YWNrZXhjaGFuZ2UuY29tJnV0bV9tZWRpdW09YWQmdXRtX2NhbXBhaWduPWhvdXNlLWFkcy1jYXRjaC1hbGwtYWxsLXNpdGVzJnV0bV9jb250ZW50PWxiLXdvcmstZnJvbS1ob21lLWRvZyJ9&s=Q7nARUpK7rsRXFsi3aksaHi-GMU" rel="nofollow" target="_blank" title=""><img src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/a61df59863ed44e59446d0b9bb805c56.jpg" title="" alt="" border="0" width="728" height="90"></a><img height="0px" width="0px" border="0" style="position:absolute;" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/i.gif"></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="123657">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">18</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+    
+    <a class="star-off" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>13</b></div>   
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+        <p>I would like to know if there is some way to share a variable or an object between two or more Servlets, I mean some "standard" way. I suppose that this is not a good practice but is a easier way to build a prototype.</p>
+
+<p>I don't know if it depends on the technologies used, but I'll use Tomcat 5.5</p>
+
+<p>Thanks.</p>
+
+<p></p><hr><p></p>
+
+<p>I want to share a Vector of objects of a simple class (just public attributes, strings, ints, etc). My intention is to have a static data like in a DB, obviously it will be lost when the Tomcat is stopped. (is Just for Testing)</p>
+
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/java" class="post-tag js-gps-track" title="show questions tagged &#39;java&#39;" rel="tag">java</a> <a href="http://stackoverflow.com/questions/tagged/web-applications" class="post-tag js-gps-track" title="show questions tagged &#39;web-applications&#39;" rel="tag">web-applications</a> <a href="http://stackoverflow.com/questions/tagged/servlets" class="post-tag js-gps-track" title="show questions tagged &#39;servlets&#39;" rel="tag">servlets</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/q/123657" title="short permalink to this question" class="short-link" id="link-post-123657">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/123657/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/123657/revisions" title="show all edits to this post">edited <span title="2008-09-23 20:43:00Z" class="relativetime">Sep 23 '08 at 20:43</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2008-09-23 20:29:55Z" class="relativetime">Sep 23 '08 at 20:29</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/19689/david-ameller"><div class="gravatar-wrapper-32"><img src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/f2ec9f9d395edc29bc8048513da0fa74" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/19689/david-ameller">David Ameller</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">465</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="19 bronze badges"><span class="badge3"></span><span class="badgecount">19</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-123657" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-28208" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">It largely depends on what kind of object/variable it is. Does the variable belong to one class, and you just want access? Is it a constant? An example would be nice.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/12682/swati" title="8841 reputation" class="comment-user">Swati</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#comment28208_123657"><span title="2008-09-23 20:34:14Z" class="relativetime-clean">Sep 23 '08 at 20:34</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-28240" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I wish this helps :)</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/19689/david-ameller" title="465 reputation" class="comment-user owner">David Ameller</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#comment28240_123657"><span title="2008-09-23 20:43:24Z" class="relativetime-clean">Sep 23 '08 at 20:43</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-123657" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#" onclick=""></a>
+            </div>
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								5 Answers
+                                <span style="display:none;" itemprop="answerCount">5</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+        <a href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="123785"></a>
+<div id="answer-123785" class="answer accepted-answer" data-answerid="123785" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="123785">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">40</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I think what you're looking for here is request, session or application data.</p>
+
+<p>In a servlet you can add an object as an attribute to the request object, session object or servlet context object:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> doGet</span><span class="pun">(</span><span class="typ">HttpServletRequest</span><span class="pln"> request</span><span class="pun">,</span><span class="pln"> </span><span class="typ">HttpServletResponse</span><span class="pln"> response</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">String</span><span class="pln"> shared </span><span class="pun">=</span><span class="pln"> </span><span class="str">"shared"</span><span class="pun">;</span><span class="pln">
+    request</span><span class="pun">.</span><span class="pln">setAttribute</span><span class="pun">(</span><span class="str">"sharedId"</span><span class="pun">,</span><span class="pln"> shared</span><span class="pun">);</span><span class="pln"> </span><span class="com">// add to request</span><span class="pln">
+    request</span><span class="pun">.</span><span class="pln">getSession</span><span class="pun">().</span><span class="pln">setAttribute</span><span class="pun">(</span><span class="str">"sharedId"</span><span class="pun">,</span><span class="pln"> shared</span><span class="pun">);</span><span class="pln"> </span><span class="com">// add to session</span><span class="pln">
+    </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">getServletConfig</span><span class="pun">().</span><span class="pln">getServletContext</span><span class="pun">().</span><span class="pln">setAttribute</span><span class="pun">(</span><span class="str">"sharedId"</span><span class="pun">,</span><span class="pln"> shared</span><span class="pun">);</span><span class="pln"> </span><span class="com">// add to application context</span><span class="pln">
+    request</span><span class="pun">.</span><span class="pln">getRequestDispatcher</span><span class="pun">(</span><span class="str">"/URLofOtherServlet"</span><span class="pun">).</span><span class="pln">forward</span><span class="pun">(</span><span class="pln">request</span><span class="pun">,</span><span class="pln"> response</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>If you put it in the request object it will be available to the servlet that is forwarded to until the request is finished:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="pln">request</span><span class="pun">.</span><span class="pln">getAttribute</span><span class="pun">(</span><span class="str">"sharedId"</span><span class="pun">);</span></code></pre>
+
+<p>If you put it in the session it will be available to all the servlets going forward but the value will be tied to the user:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="pln">request</span><span class="pun">.</span><span class="pln">getSession</span><span class="pun">().</span><span class="pln">getAttribute</span><span class="pun">(</span><span class="str">"sharedId"</span><span class="pun">);</span></code></pre>
+
+<p>Until the session expires based on inactivity from the user.</p>
+
+<p>Is reset by you:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="pln">request</span><span class="pun">.</span><span class="pln">getSession</span><span class="pun">().</span><span class="pln">invalidate</span><span class="pun">();</span></code></pre>
+
+<p>Or one servlet removes it from scope:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="pln">request</span><span class="pun">.</span><span class="pln">getSession</span><span class="pun">().</span><span class="pln">removeAttribute</span><span class="pun">(</span><span class="str">"sharedId"</span><span class="pun">);</span></code></pre>
+
+<p>If you put it in the servlet context it will be available while the application is running:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="kwd">this</span><span class="pun">.</span><span class="pln">getServletConfig</span><span class="pun">().</span><span class="pln">getServletContext</span><span class="pun">().</span><span class="pln">getAttribute</span><span class="pun">(</span><span class="str">"sharedId"</span><span class="pun">);</span></code></pre>
+
+<p>Until you remove it:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="kwd">this</span><span class="pun">.</span><span class="pln">getServletConfig</span><span class="pun">().</span><span class="pln">getServletContext</span><span class="pun">().</span><span class="pln">removeAttribute</span><span class="pun">(</span><span class="str">"sharedId"</span><span class="pun">);</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/123785" title="short permalink to this answer" class="short-link" id="link-post-123785">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/123785/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/123785/revisions" title="show all edits to this post">edited <span title="2008-09-23 21:24:15Z" class="relativetime">Sep 23 '08 at 21:24</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2008-09-23 20:51:01Z" class="relativetime">Sep 23 '08 at 20:51</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/9193/william"><div class="gravatar-wrapper-32"><img src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/83a517f64b40f9771dedd3df0093019c" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/9193/william">William</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">4,483</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="21 silver badges"><span class="badge2"></span><span class="badgecount">21</span></span><span title="29 bronze badges"><span class="badge3"></span><span class="badgecount">29</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-123785" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-28301" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Can you please extend your answer for ServletContext ?</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/19689/david-ameller" title="465 reputation" class="comment-user owner">David Ameller</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#comment28301_123785"><span title="2008-09-23 20:57:28Z" class="relativetime-clean">Sep 23 '08 at 20:57</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-123785" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+<script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk2121769102",4).setZone(44) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk2121769102"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjoyOTExLCJjaCI6MTE3OCwiY3IiOjU5MjMsImRpIjoiYmI4ZDA3ZDUwYjMxNDJhYmIyNWE3MjU4OTU4N2U5YzQiLCJkbSI6MSwiZmMiOjEwMTg4LCJmbCI6NzQ3MiwiaXAiOiI5My41Ny45MS4yNTMiLCJrdyI6ImphdmEsd2ViLWFwcGxpY2F0aW9ucyxzZXJ2bGV0cyIsIm53IjoyMiwicGMiOjAsInByIjoxNjA0LCJydCI6MSwicmYiOiJodHRwczovL3d3dy5nb29nbGUuaXQvIiwic3QiOjgyNzcsInVrIjoidWUxLTk2MjJjN2FlMWQxNTQzMjA5MjkxYTY5MWQ2ZWI5NTE4Iiwiem4iOjQ0LCJ0cyI6MTQxMjkzNjI5ODQyOCwidXIiOiJodHRwOi8vY2FyZWVycy5zdGFja292ZXJmbG93LmNvbT91dG1fc291cmNlPXN0YWNrZXhjaGFuZ2UuY29tJnV0bV9tZWRpdW09YWQmdXRtX2NhbXBhaWduPWhvdXNlLWFkcy1jYXRjaC1hbGwtYWxsLXNpdGVzJnV0bV9jb250ZW50PWxiLXBkZiJ9&s=hF44hwbE1p-uohkr8u5-bR2555Y" rel="nofollow" target="_blank" title=""><img src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/46a9844d6e504212a85bc72ddd7dd829.png" title="" alt="" border="0" width="728" height="90"></a><img height="0px" width="0px" border="0" style="position:absolute;" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/i(1).gif"></div>
+  
+<a name="123696"></a>
+<div id="answer-123696" class="answer" data-answerid="123696" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="123696">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Couldn't you just put the object in the HttpSession and then refer to it by its attribute name in each of the servlets?</p>
+
+<p>e.g:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="pln">getSession</span><span class="pun">().</span><span class="pln">setAttribute</span><span class="pun">(</span><span class="str">"thing"</span><span class="pun">,</span><span class="pln"> object</span><span class="pun">);</span></code></pre>
+
+<p>...then in another servlet:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="typ">Object</span><span class="pln"> obj </span><span class="pun">=</span><span class="pln"> getSession</span><span class="pun">.</span><span class="pln">getAttribute</span><span class="pun">(</span><span class="str">"thing"</span><span class="pun">);</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/123696" title="short permalink to this answer" class="short-link" id="link-post-123696">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/123696/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/123696/revisions" title="show all edits to this post">edited <span title="2008-09-23 20:53:30Z" class="relativetime">Sep 23 '08 at 20:53</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2008-09-23 20:38:02Z" class="relativetime">Sep 23 '08 at 20:38</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2177/yalestar"><div class="gravatar-wrapper-32"><img src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/81dc9f9b9c4e177960521d1c70931be0" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2177/yalestar">yalestar</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">3,929</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="22 silver badges"><span class="badge2"></span><span class="badgecount">22</span></span><span title="37 bronze badges"><span class="badge3"></span><span class="badgecount">37</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-123696" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-27483788" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">doesnt object have to be serializable for this to work?</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/243233/jus12" title="4748 reputation" class="comment-user">Jus12</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#comment27483788_123696"><span title="2013-09-06 16:56:04Z" class="relativetime-clean">Sep 6 '13 at 16:56</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-123696" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="123702"></a>
+<div id="answer-123702" class="answer" data-answerid="123702" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="123702">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">6</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Depends on the scope of the intended use of the data.</p>
+
+<p>If the data is only used on a per-user basis, like user login info, page hit count, etc. use the session object 
+(httpServletRequest.getSession().get/setAttribute(String [,Object]))</p>
+
+<p>If it is the same data across multiple users (total web page hits, worker threads, etc) use the ServletContext attributes.  servlet.getServletCongfig().getServletContext().get/setAttribute(String [,Object])).  This will only work within the same war file/web applicaiton.  Note that this data is not persisted across restarts either.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/123702" title="short permalink to this answer" class="short-link" id="link-post-123702">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/123702/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2008-09-23 20:39:11Z" class="relativetime">Sep 23 '08 at 20:39</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/8020/shemnon"><div class="gravatar-wrapper-32"><img src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/aac193ff8179814e011441e13cff164e" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/8020/shemnon">shemnon</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">2,775</span><span title="14 silver badges"><span class="badge2"></span><span class="badgecount">14</span></span><span title="30 bronze badges"><span class="badge3"></span><span class="badgecount">30</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-123702" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-28345" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Using the ServletContext can easily get you into trouble if you're not careful. For instance, you couldn't use it to implement a page hit count in the naive way: get the current page hit count from the context, increment it, and set the value to the context. Multi-threading kills that solution.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/9304/javadocmd" title="1674 reputation" class="comment-user">JavadocMD</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#comment28345_123702"><span title="2008-09-23 21:06:49Z" class="relativetime-clean">Sep 23 '08 at 21:06</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31388" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Meta critque - the question is asking for functionality a backing data store should be handling via transactions anyway.  Complaints about ACID should result in using an ACID data service.  ServletContext and Session violate all of ACID in some way.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/8020/shemnon" title="2775 reputation" class="comment-user">shemnon</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#comment31388_123702"><span title="2008-09-24 19:46:05Z" class="relativetime-clean">Sep 24 '08 at 19:46</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-123702" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="123818"></a>
+<div id="answer-123818" class="answer" data-answerid="123818" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="123818">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">4</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Put it in one of the 3 different scopes. </p>
+
+<p>request - lasts life of request</p>
+
+<p>session - lasts life of user's session</p>
+
+<p>application - lasts until applciation is shut down</p>
+
+<p>You can access all of these scopes via the HttpServletRequest variable that is passed in to the methods that extend from the <a href="http://java.sun.com/j2ee/1.4/docs/api/javax/servlet/http/HttpServlet.html" rel="nofollow">HttpServlet class</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/123818" title="short permalink to this answer" class="short-link" id="link-post-123818">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/123818/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2008-09-23 20:56:32Z" class="relativetime">Sep 23 '08 at 20:56</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/543/bpapa"><div class="gravatar-wrapper-32"><img src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/picture" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/543/bpapa">bpapa</a><br>
+        <span class="reputation-score" title="reputation score 10520" dir="ltr">10.5k</span><span title="16 gold badges"><span class="badge1"></span><span class="badgecount">16</span></span><span title="73 silver badges"><span class="badge2"></span><span class="badgecount">73</span></span><span title="114 bronze badges"><span class="badge3"></span><span class="badgecount">114</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-123818" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-123818" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="16058123"></a>
+<div id="answer-16058123" class="answer" data-answerid="16058123" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="16058123">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Another option, share data betwheen contexts...</p>
+
+<p><a href="http://my.opera.com/wyi/blog/2007/08/22/share-data-between-servlets-on-tomcat" rel="nofollow">http://my.opera.com/wyi/blog/2007/08/22/share-data-between-servlets-on-tomcat</a></p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="pln">  </span><span class="pun">&lt;</span><span class="typ">Context</span><span class="pln"> path</span><span class="pun">=</span><span class="str">"/myApp1"</span><span class="pln"> docBase</span><span class="pun">=</span><span class="str">"myApp1"</span><span class="pln"> crossContext</span><span class="pun">=</span><span class="str">"true"</span><span class="pun">/&gt;</span><span class="pln">
+  </span><span class="pun">&lt;</span><span class="typ">Context</span><span class="pln"> path</span><span class="pun">=</span><span class="str">"/myApp2"</span><span class="pln"> docBase</span><span class="pun">=</span><span class="str">"myApp2"</span><span class="pln"> crossContext</span><span class="pun">=</span><span class="str">"true"</span><span class="pun">/&gt;</span></code></pre>
+
+<p>On myApp1:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="pln">  </span><span class="typ">ServletContext</span><span class="pln"> sc </span><span class="pun">=</span><span class="pln"> getServletContext</span><span class="pun">();</span><span class="pln">
+  sc</span><span class="pun">.</span><span class="pln">setAttribute</span><span class="pun">(</span><span class="str">"attribute"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"value"</span><span class="pun">);</span></code></pre>
+
+<p>On myApp2:</p>
+
+<pre class="lang-java prettyprint prettyprinted"><code><span class="pln">  </span><span class="typ">ServletContext</span><span class="pln"> sc </span><span class="pun">=</span><span class="pln"> getServletContext</span><span class="pun">(</span><span class="str">"/myApp1"</span><span class="pun">);</span><span class="pln">
+  </span><span class="typ">String</span><span class="pln"> anwser </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="typ">String</span><span class="pun">)</span><span class="pln">sc</span><span class="pun">.</span><span class="pln">getAttribute</span><span class="pun">(</span><span class="str">"attribute"</span><span class="pun">);</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/16058123" title="short permalink to this answer" class="short-link" id="link-post-16058123">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/16058123/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-04-17 10:53:21Z" class="relativetime">Apr 17 '13 at 10:53</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/1450967/ggrandes"><div class="gravatar-wrapper-32"><img src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/9589c674c943d4220415132f08ff249a" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1450967/ggrandes">ggrandes</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">638</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-16058123" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-16058123" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="http://stackoverflow.com/questions/123657/answer/submit" method="post" class="post-form">
+						    <input type="hidden" id="post-id" value="123657">
+                            <input type="hidden" id="qualityBanWarningShown" name="qualityBanWarningShown" value="false">
+                            <input type="hidden" name="referrer" value="https://www.google.it/">
+							<h2 class="space">Your Answer</h2>
+
+
+
+            <script>
+            StackExchange.ifUsing("editor", function () {
+                StackExchange.using("externalEditor", function () {
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.init();
+                    });
+                });
+            }, "code-snippets");
+        </script>
+    
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+            // Have to fire editor after snippets, if snippets enabled
+            if (StackExchange.options.snippets.enabled) {
+                StackExchange.using("snippets", function() {
+                    createEditor();
+                });
+            }
+            else {
+                createEditor();
+            }
+        });
+
+        function createEditor() {
+            prepareEditor({
+                heartbeatType: 'answer',
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                ,immediatelyShowMarkdownHelp:true
+                });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px;"><span style="background-position: 0px -20px;"></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px;"><span style="background-position: -20px -20px;"></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px;"><span style="background-position: -60px -20px;"></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px;"><span style="background-position: -80px -20px;"></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px;"><span style="background-position: -100px -20px;"></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px;"><span style="background-position: -140px -20px;"></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px;"><span style="background-position: -160px -20px;"></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px;"><span style="background-position: -180px -20px;"></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="e8496381268d08a1be635d82dcfb75d5">
+        <input id="author" name="author" type="text">
+    </div>
+</div>
+							<div style="position: relative;">
+								
+            <div class="form-item new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f123657%2fhow-can-i-share-a-variable-or-object-between-two-or-more-servlets%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Stack Exchange</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid">
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false">
+                    <input type="hidden" name="use-google-oauth2" class="use-google-oauth2" value="false">
+                    <input type="button" class="submit-openid" value="Submit" style="display:none">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <script>
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            </script>
+            <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="text" size="30" maxlength="100" value="" tabindex="106">
+                    <span class="edit-field-overlay">required, but not shown</span>
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', '%2fquestions%2f123657%2fhow-can-i-share-a-variable-or-object-between-two-or-more-servlets%23new-answer');
+                    }
+                );
+            </script>
+            <noscript>
+                        &lt;h3&gt;Post as a guest&lt;/h3&gt;
+    &lt;div class="form-item"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+                    &lt;script&gt;
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            &lt;/script&gt;
+            &lt;td class="vm"&gt;
+                &lt;div&gt;
+                    &lt;label for="display-name"&gt;Name&lt;/label&gt;
+                    &lt;input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105"&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label for="m-address"&gt;Email&lt;/label&gt;
+                    &lt;input id="m-address" name="m-address" type="text" size="30" maxlength="100" value="" tabindex="106"&gt;
+                    &lt;span class="edit-field-overlay"&gt;required, but not shown&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+            </noscript>
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets#" class="discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1">								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/java" class="post-tag" title="show questions tagged &#39;java&#39;" rel="tag">java</a> <a href="http://stackoverflow.com/questions/tagged/web-applications" class="post-tag" title="show questions tagged &#39;web-applications&#39;" rel="tag">web-applications</a> <a href="http://stackoverflow.com/questions/tagged/servlets" class="post-tag" title="show questions tagged &#39;servlets&#39;" rel="tag">servlets</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2008-09-23 20:29:55Z"><b>6 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>17381 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://stackoverflow.com/questions/123657/how-can-i-share-a-variable-or-object-between-two-or-more-servlets?lastactivity" class="lastactivity-link" title="2013-04-17 10:53:21Z">1 year ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <div class="related">
+                <div class="bulletin-title">
+                    Blog
+                </div>
+                <hr>
+    <div class="spacer">
+        <div class="bulletin-item-type">
+                <a href="http://blog.stackoverflow.com/2014/10/new-editing-badges-and-enhancements-to-suggested-edits/?cb=1" class="question-hyperlink">
+<div class="favicon favicon-stackexchangemeta" title="Meta Stack Exchange"></div>                </a>
+            </div>
+                <div class="bulletin-item-content">
+                    <a href="http://blog.stackoverflow.com/2014/10/new-editing-badges-and-enhancements-to-suggested-edits/?cb=1" class="question-hyperlink">Editing is essential: new badges and review enhancements</a>
+                </div>
+                <br class="cbt">
+            </div>
+    </div>
+</div>			
+			<script>
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk1287852810",[17,2221]).setZone(45) ; });                    
+            </script>
+              
+        <div id="hireme" class=" orange looking tagged">  <a href="http://careers.stackoverflow.com/?a=33bEc&utm_source=stackoverflow.com&utm_medium=ad&utm_campaign=jobs-large-sidebar-orange-looking" class="top" target="_blank"> <span>Looking for a job?</span> </a> <ul class="jobs"> <li> <a href="http://careers.stackoverflow.com/jobs/49745/ios-developer-perugia-provincia-software-vendini?a=42vnWjpXnr&utm_source=stackoverflow.com&utm_medium=ad&utm_campaign=jobs-large-sidebar-orange-looking" target="_blank" title="iOS Developer - Perugia provincia - Software engineer at Vendini. Click to learn more."> <span class="title">iOS Developer - Perugia provincia - Software engineer</span> <span class="company">Vendini</span> <span class="location">Gualdo Tadino, Italy / remote /…</span> <span class="post-tag">mobile</span> <span class="post-tag">ios</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/69935/net-web-developer-esprinet-spa?a=5Gb47Rv7AS&utm_source=stackoverflow.com&utm_medium=ad&utm_campaign=jobs-large-sidebar-orange-looking" target="_blank" title=".NET WEB DEVELOPER at Esprinet S.p.A. Click to learn more."> <span class="title">.NET WEB DEVELOPER</span> <span class="company">Esprinet S.p.A</span> <span class="location">Torri Bianche, Italy</span> <span class="post-tag">.net</span> <span class="post-tag">c#</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/49734/operations-engineer-sistemista-vendini?a=42rX0u5PpN&utm_source=stackoverflow.com&utm_medium=ad&utm_campaign=jobs-large-sidebar-orange-looking" target="_blank" title="Operations Engineer - Sistemista at Vendini. Click to learn more."> <span class="title">Operations Engineer - Sistemista</span> <span class="company">Vendini</span> <span class="location">Gualdo Tadino, Italy / remote /…</span> <span class="post-tag">centos</span> <span class="post-tag">linux</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/63366/sr-security-engineer-gopro-gopro?a=5961KhvhSk&utm_source=stackoverflow.com&utm_medium=ad&utm_campaign=jobs-large-sidebar-orange-looking" target="_blank" title="Sr. Security Engineer @ GoPro at GoPro. Click to learn more."> <span class="title">Sr. Security Engineer @ GoPro</span> <span class="company">GoPro</span> <span class="location">San Francisco, CA</span> <span class="post-tag">c</span> <span class="post-tag">java</span> </a> </li> </ul> <img alt="" class="impression" src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/42vnWjpXnr-5Gb47Rv7AS-42rX0u5PpN-5961KhvhSk-33bEc" style="display:none"></div>
+			  
+    
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/9973795?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">2</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/9973795/tomcat-access-properties-from-jsp?lq=1" class="question-hyperlink">Tomcat - Access properties from JSP</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/15649488?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/15649488/cookie-sharing-across-application-deployed-on-same-server?lq=1" class="question-hyperlink">Cookie sharing across application deployed on same server</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/23760158?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/23760158/pass-database-connection-from-gwt-app-to-java-program?lq=1" class="question-hyperlink">Pass Database Connection from GWT App to Java Program</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/23497874?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">-1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/23497874/data-transfer-between-two-servlets?lq=1" class="question-hyperlink">data transfer between two servlets</a>
+</div>			</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/1445590?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">3
+    </div>
+</a><a href="http://stackoverflow.com/questions/1445590/how-can-state-be-maintained-between-java-servlets?rq=1" class="question-hyperlink">How can state be maintained between Java Servlets?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/1515654?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">31
+    </div>
+</a><a href="http://stackoverflow.com/questions/1515654/what-is-a-lightweight-fast-java-servlet-container?rq=1" class="question-hyperlink">What is a lightweight, fast, java servlet container?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/3106452?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted large">410
+    </div>
+</a><a href="http://stackoverflow.com/questions/3106452/how-do-servlets-work-instantiation-session-variables-and-multithreading?rq=1" class="question-hyperlink">How do servlets work? Instantiation, session variables and multithreading</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/3771103?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">21
+    </div>
+</a><a href="http://stackoverflow.com/questions/3771103/how-do-i-get-a-list-of-all-httpsession-objects-in-a-web-application?rq=1" class="question-hyperlink">How do I get a list of all HttpSession objects in a web application?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/5270146?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/5270146/how-to-access-an-object-that-was-created-in-one-servlet-from-another-servlet?rq=1" class="question-hyperlink">How to access an object that was created in one servlet from another servlet</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/6903578?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/6903578/servlet-many-contexts-how-to-share-db-connection?rq=1" class="question-hyperlink">servlet - many contexts - how to share db connection?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/13146051?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">2
+    </div>
+</a><a href="http://stackoverflow.com/questions/13146051/how-to-implement-a-servlet-applet-combination-with-two-different-functions?rq=1" class="question-hyperlink">How to implement a servlet/applet combination with two different functions?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/14044825?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">-4
+    </div>
+</a><a href="http://stackoverflow.com/questions/14044825/what-is-used-more-in-practice-jsp-or-servlets?rq=1" class="question-hyperlink">What is used more in practice, JSP or Servlets?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/15404432?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">2
+    </div>
+</a><a href="http://stackoverflow.com/questions/15404432/shared-objects-between-webapps-of-the-same-tomcat?rq=1" class="question-hyperlink">shared objects between webapps of the same tomcat</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/15426335?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/15426335/classcasterror-when-share-objects-between-webapp?rq=1" class="question-hyperlink">ClassCastError when share objects between webapp</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/29642/will-a-recommendation-letter-such-as-that-written-for-john-f-nash-be-convincing" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Will a recommendation letter such as that written for John F. Nash be convincing?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="http://skeptics.stackexchange.com/questions/23434/does-a-pair-of-trainers-shoes-hanging-on-a-telephone-wire-mean-the-house-nearb" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Does a pair of trainers (shoes) hanging on a telephone wire mean the house nearby is a crack den?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-gaming" title="Arqade"></div><a href="http://gaming.stackexchange.com/questions/186382/what-is-vanilla" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:41 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is Vanilla?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/2693/a-blanket-for-my-baby-snake" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A blanket for my baby snake
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/69138/why-were-the-monsters-inc-monsters-told-that-touching-kids-would-kill-them" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why were the "Monsters, Inc." monsters told that touching kids would kill them?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-superuser" title="Super User"></div><a href="http://superuser.com/questions/822461/does-streaming-use-the-same-amount-of-data-as-downloading" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:3 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Does streaming use the same amount of data as downloading?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-earthscience" title="Earth Science Stack Exchange"></div><a href="http://earthscience.stackexchange.com/questions/2604/could-the-extraction-of-energy-by-wind-turbines-be-harmful-to-the-environment" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:553 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Could the extraction of energy by wind turbines be harmful to the environment?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/1273/repeatable-unavoidable-cataclysmic-events" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Repeatable, Unavoidable Cataclysmic Events
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/26292695/what-is-the-advantage-of-linspace-over-the-colon-operator" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the advantage of linspace over the colon ":" operator?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-music" title="Musical Practice &amp; Performance Stack Exchange"></div><a href="http://music.stackexchange.com/questions/24167/how-to-record-a-piano-with-high-quality" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:240 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to record a piano with high quality?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/182412/why-do-roots-of-polynomials-tend-to-have-absolute-value-close-to-1" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why do roots of polynomials tend to have absolute value close to 1?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/38667/prolific-perfect-pangram-programs-pertaining-to-printable-ascii" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Prolific Perfect Pangram Programs Pertaining to Printable ASCII
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-biology" title="Biology Stack Exchange"></div><a href="http://biology.stackexchange.com/questions/22011/neurons-with-thousands-of-connections-where-are-the-extra-connections-coming-fr" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:375 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Neurons with thousands of connections: where are the extra connections coming from?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-gis" title="Geographic Information Systems Stack Exchange"></div><a href="http://gis.stackexchange.com/questions/116794/how-to-determine-if-layer-is-a-point" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:79 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to Determine if Layer is a Point
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-blender" title="Blender Stack Exchange"></div><a href="http://blender.stackexchange.com/questions/16602/color-faces-with-wrong-normals" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:502 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    color faces with wrong normals
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/49239/i-failed-to-open-a-lock-now-what" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    I failed to open a lock. Now what?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/2602/the-sheikh-dies" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    The Sheikh dies
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="http://physics.stackexchange.com/questions/139544/storing-a-planet-sized-chunk-of-metal-inside-a-star" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Storing a Planet-sized Chunk of Metal Inside a Star
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/160212/watch-youtube-videos-in-terminal" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Watch YouTube videos in terminal
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/8986/can-a-passenger-realistically-replace-suddenly-incapacitated-pilots" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can a passenger realistically replace suddenly incapacitated pilots?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/9005/what-stops-planes-from-being-stolen" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What stops planes from being stolen?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/183083/who-first-used-gave-a-coordinate-representation-of-a-graph" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Who first used/gave a coordinate representation of a graph?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/49317/what-is-the-workflow-in-commercial-rpg-writing" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the workflow in Commercial RPG writing?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-earthscience" title="Earth Science Stack Exchange"></div><a href="http://earthscience.stackexchange.com/questions/2599/what-does-it-mean-for-waves-to-feel-the-bottom" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:553 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What does it mean for waves to "feel" the bottom?
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://stackoverflow.com/feeds/question/123657" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/123657/ivc/de34');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/123657/ivc/de34" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">lang-java</div></div>
+
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                        <a href="http://stackoverflow.com/help/badges">badges</a>
+                    <a href="http://blog.stackoverflow.com/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="professional system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com/" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems.">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="Information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (13)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (10)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com/?utm_source=stackoverflow.com&utm_medium=site-ui&utm_campaign=footerlink">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo © 2014 stack exchange inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a>                   with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2014.10.10.1927
+            </div>
+            
+        </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    ados.run.push(function () { ados_setKeywords('java,web-applications,servlets');; ados_load(); });         
+</script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-1');        
+        
+        ga('set', 'dimension2', '|java|web-applications|servlets|');         
+        ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>        
+    
+    
+<iframe src="./java - How can I share a variable or object between two or more Servlets  - Stack Overflow_files/bar.htm" id="xh-bar" class="top" style="height: 0px; visibility: hidden;"></iframe></body></html>
