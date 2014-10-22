@@ -1,0 +1,15 @@
+body { margin-left: 85px; }
+div#uptop {
+	position: fixed;
+	text-align: center;
+	padding-left: 0px;
+	margin-left: -75px;
+	margin-top: -50px;
+	bottom: 10px;
+	z-index: 10;
+	padding-right: 5px;
+	border-right: 1px solid black;	
+}
+div#uptop a {
+	text-decoration: none;
+}

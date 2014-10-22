@@ -1,0 +1,781 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0044)http://jwebnet.net/advancedgooglesearch.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     
+     <title>Unofficial Google Advanced Search</title>
+     <link href="./Unofficial Google Advanced Search_files/main.css" rel="stylesheet" type="text/css">
+     <link href="./Unofficial Google Advanced Search_files/google.css" rel="stylesheet" type="text/css">
+     <script type="text/javaScript" src="./Unofficial Google Advanced Search_files/JulianDate.js"></script>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5106898092925617";
+/* Google Search */
+google_ad_slot = "6104211622";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="./Unofficial Google Advanced Search_files/show_ads.js">
+</script>
+
+     <p title="bread crumb trail">The <a href="http://www.jwebnet.net/">JWebNet.net main page</a> &gt; Unofficial Google Advanced Search</p>
+     <h1>Unofficial Google Advanced Search</h1>
+     <h2 id="empSearch">Google Search Box</h2>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcSearch">Search</label>
+             <input id="srcSearch" type="text" name="q" size="31" maxlength="255" value="">
+             <input type="submit" value="Google Search">
+     </div></form>
+
+     <h2 id="contents">Table of Contents</h2>
+     <div><a href="http://jwebnet.net/advancedgooglesearch.html#intro">Skip to content</a></div>
+     <ol>
+             <li><a href="http://jwebnet.net/advancedgooglesearch.html#intro">Introduction</a></li>
+             <li><a href="http://jwebnet.net/advancedgooglesearch.html#notes">Notes</a></li>
+             <li><a href="http://jwebnet.net/advancedgooglesearch.html#searchuris">Search URI Examples</a>
+                     <ol>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#basicSearchURI">Basic Search URI Example</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advSearchURI">Advanced Search URI Example</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advImageSearchURI">Advanced Image Search URI Example</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#cliSearchURI">Example Client Search URIs</a></li>
+                             <li>Miscellaneous Query Parameters
+                                     <ol>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#uriDupe">Showing Duplicate Content</a></li>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#uriBBN">Browse By Name</a></li>
+                                     </ol>
+                             </li>
+                     </ol>
+             </li>
+             <li>Basic Operators
+                     <ol>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#basicPlus">+ Required</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#basicMinus">- Excluded</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#basicOR">OR Operator</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#basicQuotes">" " Complete Phrase</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#basicTilde">~ Similar Words</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#basicAst">* Wildcard Search</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#basicRange">.. Number Range</a></li>
+                     </ol>
+             </li>
+             <li>Advanced Google Operators
+                     <ol>
+                             <li>Time-based and Date-based
+                                     <ol>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advDate">date: Last X Months</a></li>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advDateRange">daterange: Between Two Dates</a></li>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advDatePeriod">tbs=qdr: Limit by Time Period</a></li>
+                                     </ol>
+                             </li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advFileType">filetype: File Types</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advSite">site: Restrict To Site</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advCache">cache: Google Cache</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advLink">link: Sites That Link To</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advRelated">related: Related Sites</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advInfo">info: Website Information</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advDefine">define: Define Word</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advStocks">stocks: Stock Symbols</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advWeather">weather: Weather Forcast</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advMusic">music: Music Search</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advMovie">movie: Movie Search</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#advFlights">Flight Information</a></li>
+                     </ol>
+             </li>
+             <li>SEO-oriented Operators
+                     <ol>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#seoAllInTitle">allintitle: All Words In Title</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#seoInTitle">intitle: Word In Title</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#seoAllInText">allintext: All Words In Text</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#seoInText">intext: Word In Text</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#seoAllInURL">allinurl: All Words In URL</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#seoInURL">inurl: Word in URL</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#seoAllInAnchor">allinanchor: All Words In Anchor</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#seoInAnchor">inanchor: Word In Anchor</a></li>
+                     </ol>
+             </li>
+             <li>Google Calculator Guide
+                     <ol>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#calcMath">Basic Math</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#calcRoots">Roots</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#calcTrig">Trigonometry</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#calcLn">Logarithms, Base e</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#calcLog">Logarithms, Base 10</a></li>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#calcFrac">Factorials</a></li>
+                             <li>Conversions
+                                     <ol>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#convDR">Degrees and Radians</a></li>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#convBases">Number Bases</a></li>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#convDist">Distance</a></li>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#convSTT">Speed, Time and Temperature</a></li>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#convMoney">Currency</a></li>
+                                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#convCook">Cooking</a></li>
+                                     </ol>
+                             </li>
+                     </ol>
+             </li>
+             <li>Google Image Search
+                     <ol>
+                             <li><a href="http://jwebnet.net/advancedgooglesearch.html#imgRestrict">Restricting image results</a></li>
+				<li><a href="http://jwebnet.net/advancedgooglesearch.html#imgType">Showing only images of a certain type</a></li>
+				<li><a href="http://jwebnet.net/advancedgooglesearch.html#imgSize">Showing only images of a certain size</a></li>
+				<li><a href="http://jwebnet.net/advancedgooglesearch.html#imgColor">Showing only images of a certain color</a></li>
+				<li><a href="http://jwebnet.net/advancedgooglesearch.html#imgSource">Showing only images of a certain source</a></li>
+                     </ol>
+             </li>
+
+             <li><a href="http://jwebnet.net/advancedgooglesearch.html#credits">Credits and contact information</a></li>
+     </ol>
+   <p>
+             <a href="http://jwebnet.net/advancedgooglesearch.html#contents">Back to the table of contents</a>
+     </p>
+
+     <h3 id="intro">1. Introduction</h3>
+     <p><em>Disclamer: </em><em>This site is not controlled or supported by <a href="https://www.google.com/">Google</a> in anyway. <br>
+     Any problems with the page can be directed to Joseph Becher, care of the address at the bottom of this page.</em></p>
+     <p>
+             Welcome to the Unoffical Google Advanced Search page. 
+     </p>
+     <p>
+             This page is provided as a reference and a guide to using the advanced search operators that Google provides. <br>
+             Most of the operators have a Google Search box pre-filled so you can see example results.
+     </p>
+     <p>
+         With the announcement of <a href="http://www.google.com/support/websearch/bin/answer.py?answer=173733&hl=en">SSL support on Google.com</a> I changed all the search examples to use SSL as well.
+     </p>
+     <h3 id="notes">2. Notes</h3>
+     <ul>
+             <li>Google is case insensitive, meanting that 'gOoGle' is the same as 'GOOGLE' and 'google'</li>
+             <li>Search operators are case sensitive, meaning that 'OR' is not the same as 'or'</li>
+             <li>Without using any operators, Google will show pages with all words first, trying to find the words in order</li>
+             <li>Google excludes common words (known as stop words) like 'I', 'the', 'a' etc</li>
+             <li>Pay attention to operators that must be used alone</li>
+     </ul>
+     <h3 id="searchuris">3. Search URIs</h3>
+     <h4 id="basicSearchURI">3.1. Basic Search URI</h4>
+     <p>
+             <code>
+                     https://www.google.com/search?<br>
+                     hl=en<br>
+                     &amp;q=test<br>
+                     &amp;btnG=Google+Search
+             </code>
+     </p>
+     <h4 id="advSearchURI">3.2. Advanced Search URI</h4>
+     <p>
+             Google advanced search sends the following URI to the server. Here is the decoding:<br>
+             <code>
+                     https://www.google.com/search?<br>
+                     as_q=test (query string)<br>
+                     &amp;hl=en (language)<br>
+                     &amp;num=10 (number of results [10,20,30,50,100])<br>
+                     &amp;btnG=Google+Search<br>
+                     &amp;as_epq= (complete phrase)<br>
+                     &amp;as_oq= (at least one)<br>
+                     &amp;as_eq= (excluding)<br>
+                     &amp;lr= (language results. [lang_countrycode])<br>
+                     &amp;as_ft=i (filetype include or exclude. [i,e])<br>
+                     &amp;as_filetype= (filetype extension)<br>
+                     &amp;as_qdr=all (date [all,M3,m6,y])<br>
+                     &amp;as_nlo= (number range, low)<br>
+                     &amp;as_nhi= (number range, high)<br>
+                     &amp;as_occt=any (terms occur [any,title,body,url,links])<br>
+                     &amp;as_dt=i (restrict by domain [i,e])<br>
+                     &amp;as_sitesearch= (restrict by [site])<br>
+                     &amp;as_rights= (usage rights [cc_publicdomain,cc_attribute,cc_sharealike,cc_noncommercial,cc_nonderived]<br>
+                     &amp;safe=images (safesearch [safe=on,images=off])<br>
+                     &amp;as_rq= (similar pages)<br>
+                     &amp;as_lq= (pages that link)<br>
+                     &amp;gl=us (2-digit country code in lowercase)
+             </code><br>
+             The department of Information and Computing Services for the University of California at Irvine maintains a <a href="http://ftp.ics.uci.edu/pub/websoft/wwwstat/country-codes.txt">list of country codes</a>.
+     </p>
+     <p>
+             Note: Usage Rights does not seem to be available as a search operator. 
+             If you know of one, please email Joseph Becher at the address at the bottom of the page.
+     </p>
+	<h4 id="advImageSearchURI">3.3. Advanced Image Search URI</h4>
+     <p>
+             Google advanced image search sends the following URI to the server. Here is the decoding:</p>
+             <p><code>
+			https://www.google.com/imghp?<br>
+			as_q= (query string)<br>
+			&amp;hl=en (language)<br>
+			&amp;btnG=Google+Search<br>
+			&amp;as_epq= (complete phrase)<br>
+			&amp;as_oq= (at least one)<br>
+			&amp;as_eq= (excluding)<br>
+			&amp;imgtype= (restrict by image type)<br>
+			&amp;imgsz= (restrict by image size)<br>
+			&amp;imgc= (restrict by image color)<br>
+			&amp;as_filetype= (filetype extension)<br>
+			&amp;as_sitesearch= (restrict by [site])<br>
+			&amp;safe=off (safesearch [safe=on,images=off])<br>
+			&amp;as_st=y
+             </code></p>
+             <p>
+             Image type, size and color restrictions are explained more in depth under the <a href="http://jwebnet.net/advancedgooglesearch.html#imgRestrict">restricting image search results section</a>.
+     </p>
+     <h4 id="cliSearchURI">3.4. Client Search URIs</h4>
+     <p>
+             Searching from Firefox 2.0.0.4:
+             </p><p>
+             <code>
+                     https://www.google.com/search?<br>
+                     q=test<br>
+                     &amp;ie=utf-8<br>
+                     &amp;oe=utf-8<br>
+                     &amp;aq=t<br>
+                     &amp;rls=org.mozilla:en-US:official<br>
+                     &amp;client=firefox-a
+             </code></p>
+             <p>
+             Searching from Internet Explorer 7.0.5730.11:
+             </p><p>
+             <code>
+                     https://www.google.com/search?<br>
+                     q=test<br>
+                     &amp;sourceid=ie7<br>
+                     &amp;rls=com.microsoft:en-US<br>
+                     &amp;ie=utf8<br>
+                     &amp;oe=utf8
+             </code></p>
+     <p>
+             So far the only diference I can see is that the Firefox search allows images, where the Internet Explorer ones does not. If anybody wants to explain the query strings, or add their own, please email Joseph Becher at the address at the bottom of the page.
+     </p>
+     <h4>3.4. Miscellaneous Query Parameters</h4>
+     <h5 id="uriDupe">3.4.1. Showing Duplicate Content</h5>
+     <p>
+             Adding &amp;filter=0 to the search URI will show similar results. This is the same as clicking the message
+     </p>
+     <p>
+             <em>In order to show you the most relevant results, we have omitted some entries very similar to the X already displayed.<br>
+             If you like, you can repeat the search with the omitted results included.</em>
+     </p>
+     <p>
+             that is found on the last page of the results.
+     </p>
+     <p>
+             Thanks to Ray Pennisi. Details from <cite><a href="http://www.threadwatch.org/node/3985">the 'New Duplicate Content Filter at Google?' post at threadwatch.org</a>.</cite>.
+     </p>
+     <h5 id="uriBBN">3.4.2. Browse By Name</h5>
+     <p>
+             "Browse By Name" is a search method that first surfaced in the Google Toolbar. It was added to Firefox 2.0+ as the default search from the location bar. To use, it requires the following two parameters:
+     </p>
+     <p>
+             <code>&amp;sourceid=navclient&amp;gfns=1</code>
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcBBN">Search</label>
+             <input type="hidden" name="sourceid" value="navclient"><input type="hidden" name="gfns" value="1">
+             <input id="srcBBN" type="text" name="q" size="31" maxlength="255" value="">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <p>
+             Thanks to Kevin Goodsell. Details from <cite><a href="http://www.squarefree.com/2004/09/09/googles-browse-by-name-in-firefox/">the 'Googles "Browse By Name" in Firefox' post at squarefree.com</a>.</cite>
+     </p>
+     <h3>4. Basic Operators</h3>
+     <h4 id="basicPlus">4.1. + Required</h4>
+     <p>
+             Forces Google to include the word. Can be used with stop words, as in 'over +the fence'.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcPlus">Search</label>
+             <input id="srcPlus" type="text" name="q" size="31" maxlength="255" value="pig +farm">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="basicMinus">4.2. - Excluded</h4>
+     <p>
+             Excludes the word, ensuring that it will not appear of result, as in 'pig -bacon'.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcMinus">Search</label>
+             <input id="srcMinus" type="text" name="q" size="31" maxlength="255" value="pig -bacon">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="basicOR">4.3. OR Operator</h4>
+     <p>
+             Gives you a choice. You can have 'one' OR 'the other', as in 'cats OR dogs'. Remember that this operator must be in all CAPS. You can also use the symbol for OR, '|', known as the pipe.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcOR">Search</label>
+             <input id="srcOR" type="text" name="q" size="31" maxlength="255" value="cats | dogs">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="basicQuotes">4.4. " " Complete Phrase</h4>
+     <p>
+             Putting words in quotes talls Google to search for the complete phrase. This can also include stop words, as in "the search engine".
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcQuotes">Search</label>
+             <input id="srcQuotes" type="text" name="q" size="31" maxlength="255" value="&quot;the search engine&quot;">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="basicTilde">4.5. ~ Similar Words</h4>
+     <p>
+             Search for similar words, or synonyms. Searching search ~tips will returns results with 'help', 
+             'guide', 'tutorial' etc.
+   </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcTilde">Search</label>
+             <input id="srcTilde" type="text" name="q" size="31" maxlength="255" value="search ~tips">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="basicAst">4.6. * Wildcard Search</h4>
+     <p>
+             The '*' is called a wildcard. Searching for 'looking for *' will return results like 'looking for dogs', 
+             'looking for cats' etc. You can also use the wildcard with phrases, such as "Los Angeles * jobs" to search for jobs in Los Angeles, etc.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcAst">Search</label>
+             <input id="srcAst" type="text" name="q" size="31" maxlength="255" value="doughnuts with *">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="basicRange">4.7. .. Number Range</h4>
+     <p>
+             Search within a range of numbers. Searching for 'computer $500..1000' will find computers between $500 and $1000 dollars.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcRange">Search</label>
+             <input id="srcRange" type="text" name="q" size="31" maxlength="255" value="2..20 doughnuts">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h3>5. Advanced google operators</h3>
+     <h4>5.1. Time-based and Date-based</h4>
+     <h5 id="advDate">5.1.1. date: Last X Months</h5>
+     <p>
+             Search for 'new' pages Google added in the last X months, such as 'google date:3'<br>
+             date: accepts 3, 6 and 12.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcDate">Search</label>
+             <input id="srcDate" type="text" name="q" size="31" maxlength="255" value="google date:3">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h5 id="advDateRange">5.1.2. daterange: Between Two Dates</h5>
+     <p>
+             You may limit your search to an exact date of a "range" of dates that a page was added by Google. Dates must be entered in julian format.<br>
+             Searching for 'google daterange:2453006-2453371' returns pages that Google indexed in the year 2004.
+     </p>
+     <form action="" name="formJD">
+     <p>
+             Date (DD/MM/YYYY):
+             <label for="srcDay">Day</label>
+             <input id="srcDay" type="text" name="nday" value="" size="2" onchange="check_day(this.value)"> /
+             <label for="srcMonth">Month</label>
+             <input id="srcMonth" type="text" name="nmonth" value="" size="2" onchange="check_month(this.value)"> /
+             <label for="srcYear">Year</label>
+             <input id="srcYear" type="text" name="nyear" value="" size="5">
+             
+             <input type="button" value="Convert" onclick="computeJD(this.form)"> 
+             <label for="srcJD">Julian Day</label><input id="srcJD" type="text" name="JD" value="" size="20">
+     </p>
+     </form>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcDateRange">Search</label>
+             <input id="srcDateRange" type="text" name="q" size="31" maxlength="255" value="google daterange:2453006-2453371">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h5 id="advDatePeriod">5.1.3. tbs=qdr: Limit Results by Time Period</h5>
+     <p>
+             With <a href="http://googleblog.blogspot.com/2009/05/more-search-options-and-other-updates.html">Google's release of Search options</a> you can now limit your search results by time period. The format is as follows:
+     </p>
+     <p>
+             &amp;tbs=rltm:1 [real time results]<br>
+             &amp;tbs=qdr:s [past second]<br>
+             &amp;tbs=qdr:n [past minute]<br>
+             &amp;tbs=qdr:h [past hour]<br>
+             &amp;tbs=qdr:d [past 24 hours (day)]<br>
+             &amp;tbs=qdr:w [past week]<br>
+             &amp;tbs=qdr:m [past month]<br>
+             &amp;tbs=qdr:y [past year]<br>     
+     </p>
+     <p>
+             As an example, <a href="https://www.google.com/search?q=google&tbs=qdr:d">Results for 'Google' within the last day</a> (http://www.google.com/search?q=google&amp;tbs=qdr:d) will return search results for Google from the last 24 hours (1 day).<br>
+             Of special interest is the real-time search option. By adding &amp;tbs=rltm:1 to your search URI you can choose real-time results.<br>
+             For example, the <a href="https://www.google.com/search?q=google&tbs=rltm:1">search for Google results in real-time</a> (https://www.google.com/search?q=google&amp;tbs=rltm:1) will return real-time results for 'Google' from blogs and Twitter©.
+     </p>
+     <h4 id="advFileType">5.3. filetype: Filetypes</h4>
+     <p>
+             Google will return files of this type.<br>
+             Currently officially supported file types are pdf, ps, wk1, wk2, wk3, wk4, wk5, wki, wks, wku, lwp, mw, xls, ppt, doc, wks, wps, wdb, wri, rtf, swf, ans, txt, but other are supported as well, like xml, cpp, java etc.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcFileType">Search</label>
+             <input id="srcFileType" type="text" name="q" size="31" maxlength="255" value="google filetype:pdf">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advSite">5.4. site: Restrict To Site</h4>
+     <p>
+             Restricts the results to the given domain. site:jwebnet.net will find all indexed pages on www.jwebnet.net, while site:jwebnet.net design will find all design-related pages on www.jwebnet.net .<br>
+             You can also find your supplemental results using this query: site:www.jwebnet.net *** -sljktf.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcSite">Search</label>
+             <input id="srcSite" type="text" name="q" size="31" maxlength="255" value="site:jwebnet.net">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advCache">5.5. cache: Google Cache</h4>
+     <p>
+             Displays the page from Google's saved cache. Other words in the search will be highlighted in the returned page.<br>
+             Very helpful if a page is down or deleted.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcCache">Search</label>
+             <input id="srcCache" type="text" name="q" size="31" maxlength="255" value="cache:google.com search">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advLink">5.6. link: Sites That Link To</h4>
+     <p>
+             Returns pages that link to the your search. link:http://en.wikipedia.org/wiki/Google will list webpages with links pointing to wikipedia's page for Google.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcLink">Search</label>
+             <input id="srcLink" type="text" name="q" size="31" maxlength="255" value="link:www.jwebnet.net">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advRelated">5.7. related: Related Sites</h4>
+     <p>
+             Returns pages that Google thinks are related.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcRelated">Search</label>
+             <input id="srcRelated" type="text" name="q" size="31" maxlength="255" value="related:www.google.com">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advInfo">5.8. info: Website Information</h4>
+     <p>
+             returns some informations about the given web page. Typically website and description. <br>
+             Note the information below the results on this search
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcInfo">Search</label>
+             <input id="srcInfo" type="text" name="q" size="31" maxlength="255" value="info:www.google.com">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advDefine">5.9. define: Define Word</h4>
+     <p>
+             Searched for the the definition of a word.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcDefine">Search</label>
+             <input id="srcDefine" type="text" name="q" size="31" maxlength="255" value="define:Google">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advStocks">5.10. stocks: Stock Symbols</h4>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcStocks">Search</label>
+             <input id="srcStocks" type="text" name="q" size="31" maxlength="255" value="stocks:goog">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advWeather">5.11. weather: Weather Forcast</h4>
+     <p>
+             Returns the weather forcast.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcWeather">Search</label>
+             <input id="srcWeather" type="text" name="q" size="31" maxlength="255" value="weather:los angeles">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advMusic">5.12. music: Music Search</h4>
+     <p>
+             Returns track and album information for the search term.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcMusic">Search</label>
+             <input id="srcMusic" type="text" name="q" size="31" maxlength="255" value="music:transformers">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advMovie">5.13. movie: Movie Search</h4>
+     <p>
+             Returns all movies related to the search term given. Sample: movie:transformers<br>
+             Clicking on a movie title allows you to pull showtimes. You can also find movies by locations: movie:nyc , movie 10015. 
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcMovie">Search</label>
+             <input id="srcMovie" type="text" name="q" size="31" maxlength="255" value="movie:transformers">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="advFlights">5.14. Flight Information</h4>
+     <p>
+             Search for flights inside USA using the airport code. sample: jfk lax
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcFlights">Search</label>
+             <input id="srcFlights" type="text" name="q" size="31" maxlength="255" value="lax">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h3>6. SEO-oriented Operators</h3>
+     <h4 id="seoAllInTitle">6.1. allintitle: All Words In Title</h4>
+     <p>
+             Search for documents with all the words in their title.<br>
+             This operator cannot be combined with others.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcAllInTitle">Search</label>
+             <input id="srcAllInTitle" type="text" name="q" size="31" maxlength="255" value="allintitle:google search">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="seoInTitle">6.2. intitle: Word In Title</h4>
+     <p>
+             Search for documents with the first word after the intitle operator in their title.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcInTitle">Search</label>
+             <input id="srcInTitle" type="text" name="q" size="31" maxlength="255" value="intitle:google search">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="seoAllInText">6.3. allintext: All Words In Text</h4>
+     <p>
+             Search for documents with all the in their text.<br>
+             This operator cannot be combined with others.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcAllInText">Search</label>
+             <input id="srcAllInText" type="text" name="q" size="31" maxlength="255" value="allintext:google search">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="seoInText">6.4. intext: Word in Text</h4>
+     <p>
+             Search for documents with the first word after the intext operator in their text.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcInText">Search</label>
+             <input id="srcInText" type="text" name="q" size="31" maxlength="255" value="intext:google search">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="seoAllInURL">6.5. allinurl: All Words In URL</h4>
+     <p>
+             Search for documents with all the words in their url. <br>
+             This operator cannot be combined with others.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcAllInURL">Search</label>
+             <input id="srcAllInURL" type="text" name="q" size="31" maxlength="255" value="allinurl:google search">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="seoInURL">6.6. inurl: Word In URL</h4>
+     <p>
+             Search for documents with the first word after the inurl operator in their url.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcInURL">Search</label>
+             <input id="srcInURL" type="text" name="q" size="31" maxlength="255" value="inurl:google search">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="seoAllInAnchor">6.7. allinanchor: All Words In Anchor</h4>
+     <p>
+             Search for documents with all the words in an anchor.<br>
+             This operator cannot be combined with others.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcAllInAnchor">Search</label>
+             <input id="srcAllInAnchor" type="text" name="q" size="31" maxlength="255" value="allinanchor:google search">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h4 id="seoInAnchor">6.8. inanchor: Word In Anchor</h4>
+     <p>
+             Search for documents with the first word after the operator in an anchor.
+     </p>
+     <form method="get" action="https://www.google.com/search"><div>
+             <label for="srcInAnchor">Search</label>
+             <input id="srcInAnchor" type="text" name="q" size="31" maxlength="255" value="inanchor:google search">
+             <input type="submit" value="Google Search">
+     </div></form>
+     <h3>7. Google Calculator Guide</h3>
+
+     <h4 id="calcMath">7.1. + - * % ^ Basic Math</h4>
+     <p>
+             You can use Google as a calculator for basic math:<br>
+     </p>
+     <ul>
+             <li>3+2 returns 5</li>
+             <li>4-1 returns 3</li>
+             <li>6*8 returns 48</li>
+             <li>15/5 returns 3</li>
+             <li>3^2 returns 9 (3 raised to power 2)</li>
+             <li>5%2 returns 1 (the remainder after division)</li>
+     </ul>
+     <h4 id="calcRoots">7.2. sqrt,nth root of x Roots</h4>
+     <p>
+             sqrt(49) returns 7, if you need non-square roots you can use for example 3th root of 27.
+     </p>
+     <h4 id="calcTrig">7.3. sin, cos, arctan, tan... Trigonometry</h4>
+     <p>
+             Google calculator supports various trigonometic functions, expecting a radians value, that can be expressed also using the pi constant: sin(pi/2), tan (2/3*pi)
+     </p>
+     <h4 id="calcLn">7.4 ln Logarithm, Base e</h4>
+     <p>
+             Returns natural (base e) logarithm: ln(e^5)
+     </p>
+     <h4 id="calcLog">7.5. log Logarithm, Base 10</h4>
+     <p>
+             Returns base 10 logarithm: log(100)
+     </p>
+     <h4 id="calcFrac">7.6. ! Factorials</h4>
+     <p>
+             Returns n factorial: 3!
+     </p>
+     <p>
+             Numbers can be entered also in hexadecimal, octal and binary base, using 0x, 0o and 0b prefixes, for example 5 +0xf+0b1001
+     </p>
+     <h4>7.7. Conversions</h4>
+
+     <p>
+             Google can do conversions too.
+     </p>
+     <h5 id="convDR">7.7.1. Degrees and Radians</h5>
+     <p>
+             in degrees<br>
+             in radians
+     </p>
+     <p>
+             You can convert radians to degrees: pi/2 in degrees or convert degrees into radians: 90 degrees in radians
+     </p>
+     <h5 id="convBases">7.7.2. Number Bases</h5>
+     <p>
+             in hex<br>
+             in binary<br>
+             in octal<br>
+             in decimal
+     </p>
+     <p>
+             You can convert to each of the given bases: 16 in hex , 16 in octal, 16 in binary, 0�11 in decimal<br>
+             You can also use 2007 in roman numerals (in case you're building a temple and you need to know how to write the year on it)
+     </p>
+     <h5 id="convDist">7.7.3. Distance</h5>
+     <p>
+             You can use 100miles in km , 1m in mm, but also 200000 km in light-second etc.
+     </p>
+     <h5 id="convSTT">7.7.4. speed, time, temperature</h5>
+     <p>
+             Google can convert speed, time and temerature.
+     </p>
+     <ul>
+             <li>100mph in kph</li>
+             <li>1 month in seconds</li>
+             <li>280 kelvin in celsius</li>
+             <li>50 fahrenheit in celsius</li>
+     </ul>
+     <h5 id="convMoney">7.7.5. Currency</h5>
+     <p>
+             3 € in $ or 3 euros in dollars
+     </p>
+     <h5 id="convCook">7.7.6. Cooking</h5>
+     <p>
+             Google can help with cooking...
+     </p>
+     <ul>
+     <li>3 teaspoons in oz</li>
+     <li>1 cup + 1 tablespoon in teaspoon</li>
+     </ul>
+     <h4>8. Google Image Search</h4>
+	<p>
+	Google Image Search has advanced operators as well. They can be selected at <a href="https://www.google.com/advanced_image_search">Google's Advanced Image search page</a>.
+	</p>
+	<h5 id="imgRestrict">8.1. Showing Duplicate Content</h5>
+     <p>
+             Adding &amp;filter=0 to the search URI will show similar results. This is the same as clicking the message
+     </p>
+     <p>
+             <em>In order to show you the most relevant results, we have omitted some entries very similar to the X already displayed.<br>
+             If you like, you can repeat the search with the omitted results included.</em>
+     </p>
+     <p>
+             that is found on the last page of the results.
+     </p>
+     <p>
+             Thanks to Ray Pennisi. Details from <cite><a href="http://www.threadwatch.org/node/3985">the 'New Duplicate Content Filter at Google?' post at threadwatch.org</a>.</cite>.
+     </p>
+     <h5 id="imgType">8.2. Showing only images of a certain type</h5>
+	<p>
+		Adding &amp;imgtype= to the search URI lets you filter your results to a certain type:
+	</p>
+     <ol>
+             <li>&amp;imgtype=news (news only)</li>
+             <li>&amp;imgtype=face (faces only)</li>
+             <li>&amp;imgtype=photo (photos only)</li>
+             <li>&amp;imgtype=clipart (clipart only)</li>
+             <li>&amp;imgtype=lineart (lineart only)</li>
+     </ol>
+     <h5 id="imgSize">8.3. Showing only images of a certain size</h5>
+     <p>
+		Adding &amp;imgsz= to the search URI lets yout filter your results to a certain size:
+	</p>
+     <ol>
+             <li>&amp;imgsz=icon (small)</li>
+             <li>&amp;imgsz=small|medium|large|xlarge (medium)</li>
+             <li>&amp;imgsz=xxlarge (large)</li>
+             <li>&amp;imgsz=huge (large)</li>
+     </ol>
+     <p>
+		As you can see, using the URI, it is possible to filter the size further then you can with the options on the advanced search page. If anybody knows what dimensions the sizes break down to, please send Joseph Becher an email at the address at the bottom of this page.
+	</p>
+     <h5 id="imgColor">8.4. Showing only images of a certain color</h5>
+     <p>
+		Adding &amp;imgc= to the search URI lets yout filter your results to a certain color:
+	</p>
+     <ol>
+             <li>&amp;imgc=mono (black and white)</li>
+             <li>&amp;imgc=gray (grayscale)</li>
+             <li>&amp;imgc=color (full color) DEFAULT</li>
+     </ol>
+     <h5 id="imgSource">8.5. Showing only images from a certain source</h5>
+     <p>
+		Add "source:life" to any Google image search and search only the LIFE photo archive. 
+		For example: https://images.google.com/images?q=Winter+Olympics+source:life will <a href="https://images.google.com/images?q=Winter+Olympics+source:life">search the LIFE photo archive for images related to the Winter Olympics</a>.
+	</p>
+	<p>
+		Thanks to William Ryken for pointing this out.
+	</p>
+     <p>
+             Who knows what other things Google can do. If you know of something not here, please email Joseph Becher at the address below.
+     </p>
+
+     <div id="uptop"><a href="http://jwebnet.net/advancedgooglesearch.html#contents">↑<br>Contents</a></div>
+     <h2 id="credits">Credits and Contact Information</h2>
+   <p>
+             Thanks to <cite><a href="http://www.mapelli.info/tips/ultimate-google-search-tips-guide">mapelli.info's Ultimate Google Search tips guide</a></cite>, 
+             <cite><a href="http://www.google.com/intl/en/help/refinesearch.html">Google's refine search page</a></cite>,
+             <cite><a href="http://www.seobook.com/archives/002047.shtml">SEOBook's page</a></cite> and
+             <cite><a href="http://www.google.com/intl/en/help/cheatsheet.html">Google's Cheat sheet</a></cite> for the information on these tips.
+     </p>
+     <p>
+             <a href="http://validator.w3.org/check?uri=referer"><img src="./Unofficial Google Advanced Search_files/valid_html401_80x15_22.png" alt="Using Valid HTML 4.01" title="" height="15px" width="80px"></a>|
+             <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="./Unofficial Google Advanced Search_files/valid-css_80x15.png" alt="Using Valid CSS" title="" height="15px" width="80px"></a>|
+             <img src="./Unofficial Google Advanced Search_files/wai-aaa_80x15.gif" alt="Conforms to WCAG 2.0 Accessability Guidlines (Level AAA)" title="" height="15px" width="80px">
+     </p>
+     <address>Joseph Becher can be reached at jwbecher@jwebnet.net</address>
+     <p>
+     <a href="http://jwebnet.net/decretal.php">&nbsp;<!-- plush-epizootic --></a>
+
+<a href="http://jwebnet.net/decretal.php" style="display: none;">&nbsp;plush-epizootic</a>
+
+</p><div style="display: none;"><a href="http://jwebnet.net/decretal.php">plush-epizootic</a></div>
+
+<!-- <a href="http://jwebnet.net/decretal.php">plush-epizootic</a> -->
+
+<div style="position: absolute; top: -250px; left: -250px;"><a href="http://jwebnet.net/decretal.php">plush-epizootic</a></div>
+
+     <p>
+             <script src="./Unofficial Google Advanced Search_files/urchin.js" type="text/javascript">
+             </script>
+             <script type="text/javascript">
+                     _uacct = "UA-246703-1";
+                     urchinTracker();
+             </script>
+     </p>
+
+</body></html>
