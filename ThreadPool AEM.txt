@@ -14,11 +14,14 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CompletionService;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorCompletionService;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 import javax.servlet.ServletException;
@@ -257,13 +260,18 @@ public class GSAAssistenzaESupportoServlet extends GSAMovieSearchBaseServlet  {
 
 	    Callable<String> aCallable = new Callable<String>(){
 	        public String call(){
+	        	Random rand = new Random();
+
+	            // nextInt is normally exclusive of the top value,
+	            // so add 1 to make it inclusive
+	            int randomNum = rand.nextInt((6 - 1) + 1) + 1;
 	        	try {
-	        	    Thread.sleep(1000);                 //1000 milliseconds is one second.
+	        	    Thread.sleep(1000 * randomNum);                 //1000 milliseconds is one second.
 	        	} catch(InterruptedException ex) {
 	        	    Thread.currentThread().interrupt();
 	        	}
-	        	logger.debug("aCallable EXECUTED");
-	            return "Run";
+	        	logger.debug("aCallable id = " + paramStr + " EXECUTED with random=" + randomNum);
+	            return "Runned quello con id = " + paramStr + "randomNUM=" + Integer.toString(randomNum);
 	        }
 	    };
 
@@ -294,26 +302,48 @@ public class GSAAssistenzaESupportoServlet extends GSAMovieSearchBaseServlet  {
 	    Runnable YOUR_CUSTOM_THREAD = new Thread(createRunnable("abcd"));
 	    List<Future<String>> futures = new ArrayList<Future<String>>(10);
 	    
-	    for(int i = 0; i < 10; i++)
-	    {
-	    	futures.add(this.threadPool.submit(createCallable("abcd")));
-	    }
-	    for(Future<String> future : futures)
-	    {
-	    	try {
-				String result = future.get();
-				logger.debug("valore FUTURE:" + result);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (ExecutionException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-	    }
+//	    for(int i = 0; i < 10; i++)
+//	    {
+//	    	futures.add(this.threadPool.submit(createCallable("abcd")));
+//	    }
+//	    for(Future<String> future : futures)
+//	    {
+//	    	try {
+//				String result = future.get();
+//				logger.debug("valore FUTURE:" + result);
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			} catch (ExecutionException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//	    }
 	    
-	    logger.debug("SCAVALLATo");
-	    
+//	    logger.debug("SCAVALLATo");
+	    ExecutorService threadPool = Executors.newFixedThreadPool(4);
+	    CompletionService<String> pool = new ExecutorCompletionService<String>(threadPool);
+	     
+	    for(int i = 0; i < 10; i++){
+	       pool.submit(createCallable(Integer.toString(i)));
+	    }
+	     
+	    for(int i = 0; i < 10; i++){
+	       try {
+			String result = pool.take().get();
+			logger.debug("valore NON BLOCKING per index: " + i + " "+ result);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	     
+	       //Compute the result
+	    }
+	     
+	    threadPool.shutdown();
 	    
 	    
 	    
